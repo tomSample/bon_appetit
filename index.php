@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+$_SESSION['user_id'] = 1;
+// unset($_SESSION['user_id']);
+$isLoggedIn = isset($_SESSION['user_id']);
+
+$currentPage = basename($_SERVER['PHP_SELF']);
+?>
+
 <?php include 'layout.php'; ?>
 <?php include 'header.php'; ?>
 
