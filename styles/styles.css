@@ -403,3 +403,149 @@ footer {
         display: unset!important;
     }
 }
+
+/* =======customers======= */
+
+
+.icon {
+    width: 15;
+    height: 15;
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+    padding-top: 0.2rem;
+}
+.icon__intern {
+    width: 15;
+    height: 15;
+    margin-left: 0.5rem;
+}
+
+.subtitle {
+    display: flex;
+}
+
+#profile .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+#page__title {
+    text-align: center;
+    background-color: var(--orange);
+}
+
+#profile .grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#profile .grid__item__left {
+    padding-right: 2rem;
+    font-weight: bold;
+}
+
+#profile p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.25rem;
+    font-size: 1.05rem;
+}
+
+#identity, #love {
+    background-color: var(--orange);
+}
+
+#identity {
+    padding-top: 0.5rem;
+}
+
+#history, #setup {
+    background-color: var(--black);
+}
+
+#history h2, #history p, #setup h2, #setup label, #setup p, #setup h4 {
+    color: var(--white);
+}
+
+#history h2, #love h2 {
+    padding-bottom: 0.75rem;
+}
+
+#history .first {
+    color: var(--white);
+    padding: 0.15rem;
+    font-size: 1.05rem;
+}
+
+#history .follow {
+    color: var(--white);
+    padding: 0.15rem;
+    font-weight: normal;
+    font-size: 1.05rem;
+}
+
+#history img {
+    filter: invert(100%);
+    margin-bottom: 0.3rem;
+}
+
+#history .add {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: .75rem;
+}
+
+#love p {
+    padding-top: 0.1rem;
+}
+
+#setup {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#setup h2 {
+    padding-bottom: 1rem;
+}
+
+#chosen input {
+    margin-bottom: .5rem;
+}
+
+#chosen label {
+    font-size: 1.05rem;
+    padding-left: 0.5rem;
+}
+
+#chosen p {
+    font-size: .85rem;
+    color: #778899;
+}
+
+#chosen h4, #chosen .delete {
+    text-align: center;
+}
+
+/* ==== administration ==== */
+
+.views__list li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.views__list li::after {
+    display: block;
+    content:"";
+    width: 100px;
+    height: 1px;
+    background: var(--orange);
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    transform: translateY(0.4rem);
+}
