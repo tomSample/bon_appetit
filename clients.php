@@ -1,27 +1,8 @@
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php include 'layout.php'; ?>
+<?php include 'header.php'; ?>
 
-    <title>Profil</title>
-    <meta name="clients" content="Profil">
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles\styles.css" type="text/css">
-</head>
 
 <body>
-
-    <!-- ===header=== -->
-
-    <header class="header">
-
-    </header>
-
-    <!-- ===fin header=== -->
-
 
     <!-- ===main=== -->
       
@@ -139,9 +120,7 @@
 
     <!-- ===footer=== -->
 
-    <footer class="footer">
-
-    </footer>
+<?php include 'footer.php'; ?>
 
     <!-- ===fin footer=== -->
 </body>
@@ -152,5 +131,3 @@
     <a href="https://www.flaticon.com/free-icons/modify" title="modify icons">Modify icons created by Freepik - Flaticon</a>
     <a href="https://www.flaticon.com/free-icons/plus" title="plus icons">Plus icons created by dmitri13 - Flaticon</a> 
     <a href="https://www.flaticon.com/free-icons/user-interface" title="user interface icons">User interface icons created by QudaDesign - Flaticon</a> -->
-
-</html>
