@@ -1,11 +1,13 @@
 <?php
 session_start();
 
-$_SESSION['user_id'] = 1;
-// unset($_SESSION['user_id']);
+
+
+$_SESSION['user_id'] = 1;       // simule l'état de connexion : user connecté si =1
+// unset($_SESSION['user_id']);   // décommenter pour simuler la déconnexion (et commenter la ligne précédente)
 $isLoggedIn = isset($_SESSION['user_id']);
 
-$currentPage = basename($_SERVER['PHP_SELF']);
+$currentPage = basename($_SERVER['PHP_SELF']);  // variable permettant de savoir sur quelle page se trouve l'user
 ?>
 
 <?php include 'layout.php'; ?>
