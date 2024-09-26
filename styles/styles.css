@@ -119,6 +119,7 @@ nav {
     border: 1px solid;
     border-radius: 40px;
     background-color: var(--blue);
+    cursor: pointer;
 }
 
 /* =======main======= */
@@ -128,6 +129,34 @@ nav {
     padding-left: 1rem;
     padding-right: 1rem;
     background-color: var(--black);
+}
+
+.main-container {
+    height: 60vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--orange);
+}
+
+.logout-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logout-a {
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logout-flex-container {
+    height: 60vh;
 }
 
 .home-img-container {
