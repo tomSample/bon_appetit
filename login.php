@@ -1,7 +1,8 @@
 <?php include 'layout.php'; ?>
+<?php include 'header.php'; ?>
 
 <!-- ===header=== -->
-
+<!-- 
         <header>
             <nav>        
             <img class="header-logo" src="img\logo_bon_appetit.jpg" alt="">
@@ -9,7 +10,7 @@
                 <button class="header-button">Retour à l'accueil</button>
             </a>
             </nav>
-        </header>
+        </header> -->
 
 <!-- ===fin header=== -->
 

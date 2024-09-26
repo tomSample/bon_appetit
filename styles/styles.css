@@ -80,8 +80,18 @@ nav {
     background-color: var(--orange);
 }
 
-.hero-banner p {
-    font-size: 3rem;
+.hero-banner-search {
+    width: fit-content;
+}
+
+.hero-banner-subtitle {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hero-banner-search-subtitle {
+    font-size: 1.5rem;
+    padding-block: 0.5rem;
 }
 
 .hero-banner form {
@@ -106,7 +116,6 @@ nav {
 .submit-button {
     width: 6rem;
     height: 4rem;
-    margin-left: 4rem;
     border: 1px solid;
     border-radius: 40px;
     background-color: var(--blue);
@@ -148,11 +157,15 @@ footer {
 }
 
 .footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    width: 90%;
     padding-block: 2rem;
 }
 
 .contact-footer-box {
-    width : 25%;
+    width : fit-content;
     height: 6rem;
     background-color: var(--lightgrey);
     padding: 1rem;
@@ -166,13 +179,6 @@ footer {
 .contact-footer-box img {
     width: 50px;
     height: 50px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    margin-inline: auto;
-    width: 70%;
 }
 
 .footer-box {
@@ -231,24 +237,12 @@ footer {
 
 /* ======= RESPONSIVE ======= */
 
-@media screen and (max-width: 1100px) {
 
-    .mobile-footer-container {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    footer {
-        background-color: var(--black);
-    }
+@media screen and (max-width: 800px) {
 
     .footer-container {
         display:none;
     }
-}
-
-
-@media screen and (max-width: 800px) {
 
     h1{
         font-size: 3.5rem;
@@ -272,9 +266,13 @@ footer {
         height: auto;
     }
 
+    .header-container {
+        width: 100%;
+    }
+
     .header-button {
-        width: 6rem;
-        height: 4rem;
+        width: 5rem;
+        height: 3rem;
     }
 
     .hero-banner {
@@ -286,33 +284,38 @@ footer {
         padding-inline: 1rem;
     }
 
-    .hero-banner-text {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        margin-inline: auto;
-        text-wrap: balance;
-
+    .hero-banner-search {
+        width: 100%;
     }
 
-    .hero-banner p {
-        font-size: 2rem;
+    .hero-banner-search-subtitle {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+
+    .hero-banner-text {
+        display: flex;
+        flex-direction: column;
+        margin-inline: auto;
+        text-align: center;
+        text-wrap: balance;
     }
 
     .hero-banner form {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 20vh;
     }
 
     #search-bar {
             width: 100%;
+            margin-block: 1.5rem;
     }
 
     .hero-banner button  {
-        width: 8rem;
-        margin-left:0;
+        width: 5rem;
+        height: 3rem;
         margin-inline: auto;
     }
 
@@ -333,8 +336,8 @@ footer {
         padding: 0;
         padding-inline: 1rem;
         border: unset;
-        background-color: unset;
-        border-radius: unset;
+        background-color: var(--lightgrey);
+        padding: 1rem;
     }
 
     .footer-content-1 {
@@ -345,7 +348,6 @@ footer {
     }
 
     .footer-content-2 {
-        width: 80%;
         height: unset;
         padding-top: 1rem;;
         padding-inline: 1rem;
@@ -356,20 +358,20 @@ footer {
     }
 
     .footer-content-2 h2 {
-        margin-left: 2rem;
         color: var(--white);
+        text-align: center;
     }
 
     .footer-box h2 {
-        text-align: left; 
+        text-align: center; 
         color: var(--white) ;
     }
 
     .footer-box-padtop {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        padding-top: 0;
+        justify-content: space-between;
+        padding-top: 0;    
     }
 
     .footer-box-padtop-1 a {
@@ -379,10 +381,7 @@ footer {
     .footer-box-padtop a {
         display: flex;
         align-items: center;
-        justify-content:center ;
-        width: fit-content;
-        flex-direction: row;
-        text-decoration: none;
+        padding-top: 0.5rem;
     }
 
     .footer-box-padtop img {
