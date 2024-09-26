@@ -1,17 +1,5 @@
 <?php include 'layout.php'; ?>
-
-<!-- ===header=== -->
-
-        <header>
-            <nav>        
-            <img class="header-logo" src="img\logo_bon_appetit.jpg" alt="">
-            <a href=index.php>
-                <button class="header-button">Retour à l'accueil</button>
-            </a>
-            </nav>
-        </header>
-
-<!-- ===fin header=== -->
+<?php include 'header.php'; ?>
 
 <!-- ===hero banner=== -->
 
@@ -24,11 +12,9 @@
 
 <!-- ===fin hero-banner=== -->
 
-<!-- ===footer=== -->
 
 <?php include 'footer.php'; ?>
 
-<!-- ===fin footer=== -->
 
 </body>
 </html>

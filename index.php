@@ -1,20 +1,19 @@
 <?php include 'layout.php'; ?>
 <?php include 'header.php'; ?>
 
+<!-- ===fin header=== -->
+
 <!-- ===hero banner=== -->
 <body>
     <section class="hero-banner">
         <div class="hero-banner-text">
             <h1>Bon appétit !</h1>
-            <p class="hero-banner-subtitle">Le bon resto au bon endroit</p>
+            <p>Le bon resto au bon endroit</p>
         </div>
-        <div class="hero-banner-search">
-            <p class="hero-banner-search-subtitle">Entrez une ville:</p>
-            <form>
-                <input id="search-bar" type="search" placeholder="Saisissez une ville">
-                <button class="submit-button" type="submit">Rechercher</button>
-            </form>
-        </div>
+        <form>
+            <input id="search-bar" type="search" placeholder="Entrez une ville, une adresse et trouvez le bon resto">
+            <button class="submit-button" type="submit">Rechercher</button>
+        </form>
     </section>
 
 <!-- ===fin hero-banner=== -->
