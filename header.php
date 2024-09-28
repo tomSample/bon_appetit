@@ -21,6 +21,7 @@
                     </a>
                 <?php endif; ?>
 
+        <!-- vérifie si la page visible par l'utilisateur est index.php + s'il est connecté -->
 
                 <?php if ($currentPage == 'index.php') : ?>
                     <?php if ($isLoggedIn): ?>
@@ -30,6 +31,9 @@
                     <a href="logout.php">
                         <button class="header-button">Se déconnecter</button>
                     </a>
+
+        <!-- et s'il n'est pas connecté : -->
+
                     <?php else: ?>
                         <a href="inscription.php">
                             <button class="header-button">Inscription</button>

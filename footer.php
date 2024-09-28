@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="footer-content-2">
-            <h2>Contact</h2>
+            <!-- <h2>Contact</h2> -->
                 <div class="footer-box-padtop">
                     <a href=""><span class="material-symbols-outlined">call</span></a>
                     <a href=""><span class="material-symbols-outlined">mail</span></a>
@@ -62,7 +62,7 @@
                     <a href=""><img src ="img\facebook_logo_round_2.png" alt=""></a>
                     <a href=""><img src ="img\instagram-icon.png" alt=""></a>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
     </section>
 </footer>

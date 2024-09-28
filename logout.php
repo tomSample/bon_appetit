@@ -9,14 +9,14 @@
                 <p>Voulez-vous vous déconnecter ?</p>
                 <div class="logout-content">
 
-        <!-- Bouton "Oui" qui redirigera vers la page d'accueil déconnectée-->
+        <!-- Bouton "oui" qui redirigera vers la page d'accueil déconnectée-->
 
                     <a class="logout-a" href="index.php">
                         <button class="submit-button">Oui</button>
                     </a>
-
+        <!-- Bouton "non"  retour arrière-->
                     
-                    <a class="logout-a" href="">
+                    <a class="logout-a" href="javascript:history.back()">
                         <button id="go-back" class="submit-button">Non</button>
                     </a>
                 </div>
