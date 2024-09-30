@@ -13,7 +13,7 @@
             </div>
             <form>
                 <input id="search-bar" type="search" placeholder="Entrez une ville, une adresse et trouvez le bon resto">
-                <button class="submit-button" type="submit">Rechercher</button>
+                <button class="hero-search-bar-button" type="submit">Rechercher</button>
             </form>
         </section>
 <!-- ===fin hero-banner=== -->
@@ -38,14 +38,16 @@
     <?php else: ?>
         <body>
         <section class="hero-banner">
-            <div class="hero-banner-text">
-                <h1>Bon appétit !</h1>
-                <p>Le bon resto au bon endroit</p>
+            <div class="hero-banner-container">
+                <div class="hero-banner-text">
+                    <h1>Bon appétit !</h1>
+                    <p>Le bon resto au bon endroit</p>
+                </div>
+                <form>
+                    <input id="search-bar" type="search" placeholder="Entrez un restaurant ou un type de cuisine">
+                    <button class="hero-search-bar-button" type="submit">Rechercher</button>
+                </form>
             </div>
-            <form>
-                <input id="search-bar" type="search" placeholder="Entrez un restaurant ou un type de cuisine">
-                <button class="submit-button" type="submit">Rechercher</button>
-            </form>
         </section>
 
 <!-- section des restos favoris -->
