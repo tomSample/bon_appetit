@@ -1,6 +1,6 @@
 <footer>
     <section class="footer-container">
-        <div class="footer-box _borderradius5">
+        <div class="footer-box">
             <div class="footer-box-title">
                 <h2>Découvrir</h2>
             </div>
@@ -9,7 +9,7 @@
                 <a class="links" src="">à propos</a>
             </div>
         </div>
-        <div class="contact-footer-box _borderradius5">
+        <div class="contact-footer-box">
             <div class="footer-box-title">
                 <h2>Contact</h2>
             </div>
@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-box _borderradius5">
+        <div class="footer-box">
             <div class="footer-box-title">
                 <h2>Aide</h2>
             </div>
@@ -38,14 +38,14 @@
 
     <section class="mobile-footer-container">
         <div class="footer-content-1">
-            <div class="footer-box _borderradius5">
+            <div class="footer-box">
                 <h2>Découvrir</h2>
                 <div class="footer-box-padtop box-1">
                     <a src="">ajouter votre restaurant</a>
                     <a src="">à propos</a>
                 </div>
             </div>
-            <div class="footer-box _borderradius5">
+            <div class="footer-box">
                 <h2>Aide</h2>
                 <div class="footer-box-padtop box-1">
                     <a src="">faq</a>
@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="footer-content-2">
-            <h2>Contact</h2>
+            <!-- <h2>Contact</h2> -->
                 <div class="footer-box-padtop">
                     <a href=""><span class="material-symbols-outlined">call</span></a>
                     <a href=""><span class="material-symbols-outlined">mail</span></a>
@@ -62,7 +62,7 @@
                     <a href=""><img src ="img\facebook_logo_round_2.png" alt=""></a>
                     <a href=""><img src ="img\instagram-icon.png" alt=""></a>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
     </section>
 </footer>
