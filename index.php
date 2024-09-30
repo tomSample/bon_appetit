@@ -54,10 +54,9 @@
             <div class="restaurant-title">    
                 <h2>Vos restaurants favoris</h2>
             </div>
-            <div>
                 <div class="restaurant-box">
                     <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
+                        <ul class="restaurant-id _borderradius5">
                             <li>
                                 <img src="img\resto_template_1.jpg">
                             </li>
@@ -69,7 +68,7 @@
                         </ul>
                     </a>
                     <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
+                        <ul class="restaurant-id _borderradius5">
                             <li>
                                 <img src="img\resto_template_1.jpg">
                             </li>
@@ -81,7 +80,7 @@
                         </ul>
                     </a>
                     <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
+                        <ul class="restaurant-id _borderradius5">
                             <li>
                                 <img src="img\resto_template_1.jpg">
                             </li>
@@ -93,7 +92,7 @@
                         </ul>
                     </a>
                     <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
+                        <ul class="restaurant-id _borderradius5">
                             <li>
                                 <img src="img\resto_template_1.jpg">
                             </li>
@@ -105,7 +104,6 @@
                         </ul>
                     </a>
                 </div>
-            </div>
         </section>
 
 <!-- section des resto les mieux notés de la ville -->
@@ -114,167 +112,245 @@
             <div class="restaurant-title">    
                 <h2>Les mieux notés</h2>
             </div>
-            <div>
-                <div class="restaurant-box">
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
-                            <li>
-                                <img src="img\resto_template_2.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                </div>
+            <div class="restaurant-box">
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_2.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_1.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_2.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_1.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_1.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_1.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_1.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
             </div>
         </section>
 
 <!-- section des autres resto de la ville -->
 
-<section class="main-container restaurant-container">
+        <section class="main-container restaurant-container">
             <div class="restaurant-title">    
                 <h2>Découvrez les resto de {nom ville}</h2>
             </div>
-            <div>
             <div class="restaurant-box">
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
-                            <li>
-                                <img src="img\resto_template_2.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
-                            <li>
-                                <img src="img\resto_template_2.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                </div>
-                <div class="restaurant-box">
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
-                            <li>
-                                <img src="img\resto_template_2.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
-                            <li>
-                                <img src="img\resto_template_2.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id _borderradius10">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                </div>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_2.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_1.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_2.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_1.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_1.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_2.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_1.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_2.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_1.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_1.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_1.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
+                <a href="restaurant.php">
+                    <ul class="restaurant-id _borderradius5">
+                        <li>
+                            <img src="img\resto_template_1.jpg">
+                        </li>
+                        <li>
+                            <p>Nom du restaurant 1</p>
+                            <p><span class="star-icon">star</span>Excellent !</p>
+                            <p>distance : 1km</p>
+                        </li>
+                    </ul>
+                </a>
             </div>
         </section>
 

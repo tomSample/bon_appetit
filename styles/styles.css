@@ -6,6 +6,7 @@
     --orange:#ffcc35;
     --black:#1a1a1a;
     --white:#ffffff;
+    --darkwhite:#ececec;
     --lightgrey: #434848;
     --darkgrey:#2e3333;
 }
@@ -83,10 +84,8 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 0.5rem;
     height: 60vh;
     background-color: var(--orange);
-    box-shadow:0 3px 8px var(--lightgrey);
 }
 
 .hero-banner-search {
@@ -177,8 +176,8 @@ nav {
     margin-block: 1rem;
     margin-inline: 1rem;
     padding: 1rem;
-    border: 1px solid var(--black);
-    box-shadow: 5px 2px 5px var(--lightgrey);
+    border: 1px solid var(--darkwhite);
+    box-shadow: 5px 2px 5px var(--darkwhite);
     background-color:var(--white);
 }
 
@@ -187,7 +186,7 @@ nav {
 }
 
 .restaurant-box img {
-    width: 250px;
+    width: 180px;
     height: auto; 
     aspect-ratio: 1/1;
 }
@@ -245,12 +244,11 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-inline: auto;
-    width: 90%;
+    width: 60%;
     padding-block: 2rem;
 }
 
 .contact-footer-box {
-    width : fit-content;
     height: 6rem;
     background-color: var(--lightgrey);
     padding: 1rem;
@@ -269,7 +267,6 @@ footer {
 .footer-box {
     display: flex;
     flex-direction: column;
-    width: 25%;
     height: 6rem;
     padding: 1rem;
     background-color: var(--lightgrey);
