@@ -1,15 +1,5 @@
 <?php include 'layout.php'; ?>
-
-<!-- ===header=== -->
-
-        <header>
-            <nav>        
-                <img class="header-logo" src="img/logo_bon_appetit.jpg" alt="">
-                <button class="header-button" onclick="location.href='index.html';">Retour à l'accueil</button>
-            </nav>
-        </header>
-
-<!-- ===fin header=== -->
+<?php include 'header.php'; ?>
 
 
 <!-- ===hero banner=== -->

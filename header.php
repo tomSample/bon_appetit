@@ -15,7 +15,6 @@
                 <?php endif; ?>
 
 
-
         <!-- vérifie si la page visible par l'utilisateur est forgotten-password.php -->
 
                 <?php if ($currentPage == 'forgotten-password.php') :?>
@@ -24,6 +23,17 @@
                         <button class="header-button">Retour à l'accueil</button>
                     </a>
                 <?php endif; ?>
+
+
+        <!-- vérifie si la page visible par l'utilisateur est login.php -->
+
+        <?php if ($currentPage == 'inscription.php') : ?>
+                    <a href="index.php">
+        <!-- affiche le bouton "Retour" dans le header -->
+                        <button class="header-button">Retour à l'accueil</button>
+                    </a>
+                <?php endif; ?>
+
 
 
 
