@@ -58,9 +58,9 @@
                 <div class="footer-box-padtop">
                     <a href=""><span class="material-symbols-outlined">call</span></a>
                     <a href=""><span class="material-symbols-outlined">mail</span></a>
-                    <a href=""><img src ="img\whatsapp-logo.png" alt=""></a>
-                    <a href=""><img src ="img\facebook_logo_round_2.png" alt=""></a>
-                    <a href=""><img src ="img\instagram-icon.png" alt=""></a>
+                    <a class="links" href=""><img src ="img\social network\whatsapp.png" alt=""></a>
+                    <a class="links" href=""><img src ="img\social network\facebook.png" alt=""></a>
+                    <a class="links" href=""><img src ="img\social network\instagram.png" alt=""></a>
                 </div>
             <!-- </div> -->
         </div>

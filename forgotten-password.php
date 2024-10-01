@@ -4,10 +4,12 @@
 <!-- ===hero banner=== -->
 
 <section class="hero-banner">
-    <form>
-        <input id="search-bar" type="search" placeholder="Entrez votre e-mail">
-    </form>
-    <button class="submit-button" type="submit">Confirmer</button>
+    <div class="_dp_column _w_30">
+        <form>
+            <input id="search-bar" type="search" placeholder="Entrez votre e-mail">
+        </form>
+        <button class="submit-button" type="submit">Confirmer</button>
+    </div>
 </section>
 
 <!-- ===fin hero-banner=== -->

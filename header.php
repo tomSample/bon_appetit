@@ -34,12 +34,9 @@
                     </a>
                 <?php endif; ?>
 
+        <!-- vérifie si la page visible par l'utilisateur est restaurant.php + s'il est connecté -->
 
-
-
-        <!-- vérifie si la page visible par l'utilisateur est index.php + s'il est connecté -->
-
-                <?php if ($currentPage == 'index.php') : ?>
+        <?php if ($currentPage == 'index.php' || $currentPage == 'restaurant.php' || $currentPage == 'clients.php') : ?>
                     <?php if ($isLoggedIn): ?>
                         <a href="moncompte.php">
                             <button class="header-button-1">Mon compte</button>
@@ -58,18 +55,6 @@
                     <?php endif; ?>
                 <?php endif; ?>
 
-        <!-- vérifie si la page visible par l'utilisateur est clients.php + s'il est connecté -->
-
-        <?php if ($currentPage == 'clients.php') : ?>
-                <?php if ($isLoggedIn): ?>
-                    <a href="moncompte.php">
-                        <button class="header-button-1">Mon compte</button>
-                    </a>
-                <a href="logout.php">
-                    <button class="header-button-2">Se déconnecter</button>
-                </a>
-                <?php endif; ?>
-            <?php endif; ?>
 
             
         </div>
