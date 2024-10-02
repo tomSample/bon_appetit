@@ -29,6 +29,7 @@
 <!-- <section>
     FILTERS
 </section> -->
+
 <section>
     <div class="resto-resume body-padding">
         <div class="_w_70">
@@ -42,7 +43,7 @@
 </section>
 
 <section class="_dp_flex">
-    <div id="resto-nav" class="_background_color_blue">
+    <div id="resto-nav">
         <div id="resto-anchors" class="_dp_column">
             <a href=#plats>Plats</a>
             <a href=#menus>Menus</a>
@@ -58,28 +59,14 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -88,28 +75,14 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Coucous grand-mère, 300g</p>
+                            <p>8,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -118,28 +91,14 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Pizza Margherita au feu de bois, 280g</p>
+                            <p>8.90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -148,28 +107,14 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -178,28 +123,14 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Coucous grand-mère, 300g</p>
+                            <p>8,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -208,13 +139,14 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Pizza Margherita au feu de bois, 280g</p>
+                            <p>8.90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -223,44 +155,47 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
+            <article class="item">
+                <a href="">
+                    <div>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Coucous grand-mère, 300g</p>
+                            <p>8,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
+                    </div>
+                </a>
+            </article>           
             <h3 id="menus" class="resto-subtitle">Menus</h3>
             <article class="item">
                 <a href="">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Pizza Margherita au feu de bois, 280g</p>
+                            <p>8.90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -269,28 +204,14 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -299,28 +220,14 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Coucous grand-mère, 300g</p>
+                            <p>8,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -329,28 +236,14 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -359,58 +252,14 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Coucous grand-mère, 300g</p>
+                            <p>8,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -420,28 +269,14 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Pizza Margherita au feu de bois, 280g</p>
+                            <p>8.90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -450,13 +285,14 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -465,13 +301,46 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Coucous grand-mère, 300g</p>
+                            <p>8,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
+                </a>
+            </article>
+            <article class="item">
+                <a href="">
                     <div>
-                        <button>+</button>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="item">
+                <a href="">
+                    <div>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Coucous grand-mère, 300g</p>
+                            <p>8,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -481,28 +350,14 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Pizza Margherita au feu de bois, 280g</p>
+                            <p>8.90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -511,13 +366,14 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
-                    </div>
-                    <div>
-                        <button>+</button>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -526,13 +382,46 @@
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
-                    <div>
-                        <h4>NOM DU PLAT</h4>
-                        <p>DESCRIPTION DU PLAT</p>
-                        <p>PRIX DU PLAT</p>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Coucous grand-mère, 300g</p>
+                            <p>8,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
+                </a>
+            </article>
+            <article class="item">
+                <a href="">
                     <div>
-                        <button>+</button>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="item">
+                <a href="">
+                    <div>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Coucous grand-mère, 300g</p>
+                            <p>8,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
                     </div>
                 </a>
             </article>
