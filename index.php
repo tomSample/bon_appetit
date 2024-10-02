@@ -12,7 +12,7 @@
                 <p>Le bon resto au bon endroit</p>
             </div>
             <form>
-                <input id="search-bar" type="search" placeholder="Entrez une ville, une adresse et trouvez le bon resto">
+                <input id="search-bar" type="search" placeholder="Entrez une ville ou une adresse">
                 <button class="submit-button" type="submit">Rechercher</button>
             </form>
         </section>
@@ -63,7 +63,7 @@
                             <li>
                                 <p>Nom du restaurant 1</p>
                                 <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
+                                <p>Distance : 1km</p>
                             </li>
                         </ul>
                     </a>
@@ -75,7 +75,7 @@
                             <li>
                                 <p>Nom du restaurant 1</p>
                                 <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
+                                <p>Distance : 1km</p>
                             </li>
                         </ul>
                     </a>
@@ -87,7 +87,7 @@
                             <li>
                                 <p>Nom du restaurant 1</p>
                                 <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
+                                <p>Distance : 1km</p>
                             </li>
                         </ul>
                     </a>
@@ -99,7 +99,7 @@
                             <li>
                                 <p>Nom du restaurant 1</p>
                                 <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
+                                <p>Distance : 1km</p>
                             </li>
                         </ul>
                     </a>
@@ -121,7 +121,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -133,7 +133,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -145,7 +145,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -157,7 +157,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -169,7 +169,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -181,7 +181,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -193,7 +193,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -215,7 +215,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -227,7 +227,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -239,7 +239,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -251,7 +251,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -263,7 +263,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -275,7 +275,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -287,7 +287,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -299,7 +299,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -311,7 +311,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -323,7 +323,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -335,7 +335,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
@@ -347,7 +347,7 @@
                         <li>
                             <p>Nom du restaurant 1</p>
                             <p><span class="star-icon">star</span>Excellent !</p>
-                            <p>distance : 1km</p>
+                            <p>Distance : 1km</p>
                         </li>
                     </ul>
                 </a>
