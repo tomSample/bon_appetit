@@ -254,7 +254,7 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: start;
     width: 100%;
     height: fit-content;
@@ -269,9 +269,12 @@ nav a {
     margin-block: 1rem;
     margin-inline: 1rem;
     padding: 1rem;
-    border: 1px solid var(--darkwhite);
-    box-shadow: 5px 2px 5px var(--darkwhite);
     background-color:var(--white);
+}
+
+.restaurant-id:hover {
+    box-shadow: var(--lightgrey) 0px 4px 16px;
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 .restaurant-box li {
@@ -347,9 +350,10 @@ footer a {
 }
 
 .contact-footer-box {
-    height: 6rem;
+    height: 7rem;
     background-color: var(--lightgrey);
     padding: 1rem;
+    margin-inline:0.5rem
 }
 
 .contact-footer-box span {
@@ -365,7 +369,7 @@ footer a {
 .footer-box {
     display: flex;
     flex-direction: column;
-    height: 6rem;
+    height: 7rem;
     padding: 1rem;
     background-color: var(--lightgrey);
 }
@@ -630,6 +634,7 @@ footer a {
 #book-button {
     width: 100px;
     height: 50px;
+    margin-right: 4rem;
     background-color: var(--green);
     cursor: pointer;
 }
@@ -720,7 +725,7 @@ footer a {
 /* ======= RESPONSIVE ======= */
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
     .footer-container {
         display:none;
@@ -757,10 +762,6 @@ footer a {
     .header-logo {
         width: 4rem;
         height: auto;
-    }
-
-    .header-container {
-        width: 100%;
     }
 
     .header-button {
@@ -869,6 +870,7 @@ footer a {
 
     .footer-content-2 {
         height: unset;
+        width: 100%;
         padding-top: 1rem;;
         padding-inline: 1rem;
         margin-inline: auto;
@@ -921,4 +923,64 @@ footer a {
     .box-1 {
         display: unset!important;
     }
+
+    .resto-id {
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+
+    #resto-id-photo {
+        display: flex;
+        margin-inline: auto;
+    }
+
+    #resto-nav {
+        display: none;
+    }
+
+    .list {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .photo-plat {
+        width: 100%;
+        max-width : 366.2px
+    }
+
+    .resto-id-text {
+        padding-left: 0;
+    }
+
+    .resto-id-title {
+        width: 100%;
+        text-align: left;
+    }
+
+    .resto-resume {
+        flex-direction: column;
+        padding-block: 2rem;
+    }
+
+    .mobile-resto-presentation {
+        width: 100%;
+    }
+
+    .mobile-resto-presentation h3 {
+        text-align: center;
+    }
+
+    #book-button {
+        margin-right:0;
+    }
+
+    .item-button {
+        display: none;
+    }
+
+    .footer-box {
+        margin-inline: 0.2rem;
+    }
+
 }
