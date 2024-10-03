@@ -38,7 +38,7 @@
 
         <?php if ($currentPage == 'index.php' || $currentPage == 'restaurant.php' || $currentPage == 'clients.php') : ?>
                     <?php if ($isLoggedIn): ?>
-                        <a href="moncompte.php">
+                        <a href="clients.php">
                             <button class="header-button-1">Mon compte</button>
                         </a>
                     <a href="logout.php">

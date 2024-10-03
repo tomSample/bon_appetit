@@ -93,22 +93,6 @@
                     </div>
                     <div class="item-content">
                         <div class="item-description">
-                            <p>Pizza Margherita au feu de bois, 280g</p>
-                            <p>8.90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button><strong>+</strong></button>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
                             <p>Lasagne au boeuf maison, 200g</p>
                             <p>11,90€</p>
                         </div>
@@ -127,22 +111,6 @@
                         <div class="item-description">
                             <p>Coucous grand-mère, 300g</p>
                             <p>8,90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button><strong>+</strong></button>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
-                            <p>Pizza Margherita au feu de bois, 280g</p>
-                            <p>8.90€</p>
                         </div>
                         <div class="item-button">
                             <button><strong>+</strong></button>
@@ -183,22 +151,6 @@
                 </a>
             </article>           
             <h3 id="menus" class="resto-subtitle">Menus</h3>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
-                            <p>Pizza Margherita au feu de bois, 280g</p>
-                            <p>8.90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button><strong>+</strong></button>
-                        </div>
-                    </div>
-                </a>
-            </article>
             <article class="item">
                 <a href="">
                     <div>
@@ -271,22 +223,6 @@
                     </div>
                     <div class="item-content">
                         <div class="item-description">
-                            <p>Pizza Margherita au feu de bois, 280g</p>
-                            <p>8.90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button><strong>+</strong></button>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
                             <p>Lasagne au boeuf maison, 200g</p>
                             <p>11,90€</p>
                         </div>
@@ -345,22 +281,6 @@
                 </a>
             </article>
             <h3 id="boissons" class="resto-subtitle">Boissons</h3>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
-                            <p>Pizza Margherita au feu de bois, 280g</p>
-                            <p>8.90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button><strong>+</strong></button>
-                        </div>
-                    </div>
-                </a>
-            </article>
             <article class="item">
                 <a href="">
                     <div>
