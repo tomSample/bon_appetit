@@ -1,3 +1,11 @@
+<?php
+session_start();
+//$_SESSION['user_id'] = 1;       // décommenter pour simuler l'état de connexion : user connecté si =1
+unset($_SESSION['user_id']);   // décommenter pour simuler la déconnexion (et commenter la ligne précédente)
+$currentPage = basename($_SERVER['PHP_SELF']);
+$isLoggedIn = isset($_SESSION['user_id']);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
