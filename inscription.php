@@ -6,18 +6,30 @@
 
         <section class="hero-banner">
             <div class="_dp_column _w_50">
-                <div>
+            <div class="inscription-container">
+                <div class="inscription-title">
                     <h1>Inscription</h1>
+                    <div class="inscription-undertitle">
                     <p>Indiquez vos informations</p>
-                </div>
-                <form>
+                    </div>
+                    </div>
+                    <form>
                     <div class="_dp_column">
-                        <input class="mail-search-bar _pg_block_1" type="search" placeholder="Entrez votre e-mail">
-                        <input class="password-search-bar _pg_block_1" type="search" placeholder="Entrez votre mot de passe">
-                        <input class="password-search-bar _pg_block_1" type="search" placeholder="Confirmez votre mot de passe">
+                        <div class="questionnaire">
+                        <input id="hero-search-bar" type="search" placeholder="Entrez votre nom d'utilisateur">
+                        </div>
+                        <div class="questionnaire">
+                        <input id="hero-search-bar" type="search" placeholder="Entrez votre mot de passe">
+                        </div>
+                        <div class="questionnaire">
+                        <input id="hero-search-bar" type="search" placeholder="Confirmez votre mot de passe">
+                        </div>
+                        <div class="inscription-confirmation-button">
                         <button class="submit-button submit-button-inscription" type="submit">S'inscrire</button>
+                        </div>
                     </div>
                 </form>
+            </div>
             </div>
         </section>
 

@@ -716,6 +716,34 @@ footer a {
     padding-top: 5rem;
 }
 
+/* ======= INSCRIPTION ======= */
+
+    .inscription-title {
+    text-align: center;
+  }
+
+  .inscription-title p {
+    text-align: center;
+  }
+
+.inscription-confirmation-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: -15%;
+  }
+
+
+.questionnaire {
+    display: flex;
+    height: 65px;
+    width: 500px;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
 /* ======= RESPONSIVE ======= */
 
@@ -921,4 +949,23 @@ footer a {
     .box-1 {
         display: unset!important;
     }
+
+    .questionnaire {
+        display: flex;
+        height: 50px;
+        width: 250px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        justify-content: center;
+      }
+    
+      .inscription-container {
+        justify-content: center;
+        margin-left: 100%;
+      }
+
+      .inscription-confirmation-button {
+        margin-top: 10%;
+        margin-bottom: -30%;
+      }
 }
