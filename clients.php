@@ -2,7 +2,7 @@
 <?php include 'header.php'; ?>
 
     <!-- ===main=== -->
-      
+    
     <section id="profile" class="fields">
         <div class="container" id="page__title">
             <div class="section-header">
