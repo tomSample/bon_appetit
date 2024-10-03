@@ -33,6 +33,11 @@ h2 {
     font-size: 2rem;
 }
 
+.invisible {
+    display: none;
+    font-size: 1rem;
+}
+
 /* a {
     padding: 1rem;
 } */
