@@ -54,8 +54,8 @@
     <div class="list-container _w_100">
         <div class="list">
             <h3 id="plats" class="resto-subtitle">Plats</h3>
-            <article class="item">
-                <a href="">
+            <article class="item">  
+                <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -68,26 +68,10 @@
                             <button><strong>+</strong></button>
                         </div>
                     </div>
-                </a>
+                </div>
             </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
-                            <p>Coucous grand-mère, 300g</p>
-                            <p>8,90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button><strong>+</strong></button>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
+            <article class="item">  
+                <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -100,26 +84,10 @@
                             <button><strong>+</strong></button>
                         </div>
                     </div>
-                </a>
+                </div>
             </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
-                            <p>Coucous grand-mère, 300g</p>
-                            <p>8,90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button><strong>+</strong></button>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
+            <article class="item">  
+                <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -132,27 +100,94 @@
                             <button><strong>+</strong></button>
                         </div>
                     </div>
-                </a>
+                </div>
             </article>
-            <article class="item">
-                <a href="">
+            <article class="item">  
+                <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
                     <div class="item-content">
                         <div class="item-description">
-                            <p>Coucous grand-mère, 300g</p>
-                            <p>8,90€</p>
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
                         </div>
                         <div class="item-button">
                             <button><strong>+</strong></button>
                         </div>
                     </div>
-                </a>
-            </article>           
+                </div>
+            </article>
+            <article class="item">  
+                <div onclick="togglePopup()">
+                    <div>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="item">  
+                <div onclick="togglePopup()">
+                    <div>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="item">  
+                <div onclick="togglePopup()">
+                    <div>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="item">  
+                <div onclick="togglePopup()">
+                    <div>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            
             <h3 id="menus" class="resto-subtitle">Menus</h3>
-            <article class="item">
-                <a href="">
+
+            <article class="item">  
+                <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -165,26 +200,10 @@
                             <button><strong>+</strong></button>
                         </div>
                     </div>
-                </a>
+                </div>
             </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
-                            <p>Coucous grand-mère, 300g</p>
-                            <p>8,90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button><strong>+</strong></button>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
+            <article class="item">  
+                <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -197,27 +216,45 @@
                             <button><strong>+</strong></button>
                         </div>
                     </div>
-                </a>
+                </div>
             </article>
-            <article class="item">
-                <a href="">
+            <article class="item">  
+                <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
                     <div class="item-content">
                         <div class="item-description">
-                            <p>Coucous grand-mère, 300g</p>
-                            <p>8,90€</p>
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
                         </div>
                         <div class="item-button">
                             <button><strong>+</strong></button>
                         </div>
                     </div>
-                </a>
+                </div>
             </article>
+            <article class="item">  
+                <div onclick="togglePopup()">
+                    <div>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
             <h3 id="desserts" class="resto-subtitle">Desserts</h3>
-            <article class="item">
-                <a href="">
+
+            <article class="item">  
+                <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -230,26 +267,10 @@
                             <button><strong>+</strong></button>
                         </div>
                     </div>
-                </a>
+                </div>
             </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
-                            <p>Coucous grand-mère, 300g</p>
-                            <p>8,90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button><strong>+</strong></button>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
+            <article class="item">  
+                <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -262,27 +283,45 @@
                             <button><strong>+</strong></button>
                         </div>
                     </div>
-                </a>
+                </div>
             </article>
-            <article class="item">
-                <a href="">
+            <article class="item">  
+                <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
                     <div class="item-content">
                         <div class="item-description">
-                            <p>Coucous grand-mère, 300g</p>
-                            <p>8,90€</p>
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
                         </div>
                         <div class="item-button">
                             <button><strong>+</strong></button>
                         </div>
                     </div>
-                </a>
+                </div>
             </article>
+            <article class="item">  
+                <div onclick="togglePopup()">
+                    <div>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
             <h3 id="boissons" class="resto-subtitle">Boissons</h3>
-            <article class="item">
-                <a href="">
+
+            <article class="item">  
+                <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -295,26 +334,10 @@
                             <button><strong>+</strong></button>
                         </div>
                     </div>
-                </a>
+                </div>
             </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
-                            <p>Coucous grand-mère, 300g</p>
-                            <p>8,90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button><strong>+</strong></button>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="item">
-                <a href="">
+            <article class="item">  
+                <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -327,27 +350,57 @@
                             <button><strong>+</strong></button>
                         </div>
                     </div>
-                </a>
+                </div>
             </article>
-            <article class="item">
-                <a href="">
+            <article class="item">  
+                <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
                     <div class="item-content">
                         <div class="item-description">
-                            <p>Coucous grand-mère, 300g</p>
-                            <p>8,90€</p>
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
                         </div>
                         <div class="item-button">
                             <button><strong>+</strong></button>
                         </div>
                     </div>
-                </a>
+                </div>
             </article>
+            <article class="item">  
+                <div onclick="togglePopup()">
+                    <div>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
         </div>
     </div>
 </section>
+
+
+<div id="popup-overlay">
+    <div class="popup-content">
+        <img src="img\lasagna.jpg" alt="">
+        <h2>Nom du Plat</h2>
+        <p>Description</p>
+        <button>Commander pour {prix}</button>
+    </div>
+</div>
+
+
 
 
 

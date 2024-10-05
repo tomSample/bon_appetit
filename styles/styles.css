@@ -8,6 +8,7 @@
     --black:#1a1a1a;
     --white:#ffffff;
     --darkwhite:#efefef;
+    --lightgrey-o7:rgb(67, 72, 72,0.7);
     --lightgrey: #434848;
     --darkgrey:#2e3333;
     --green: #afff90;
@@ -99,7 +100,7 @@ nav {
     position:fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index:99;
     left: 0;
 }
 
@@ -660,6 +661,7 @@ footer a {
     margin-inline: 0.2rem;
     margin-block: 0.2rem;
     background-color: var(--white);
+    cursor: pointer;
 }
 
 .item:hover {
@@ -715,6 +717,41 @@ footer a {
     width: 100%;
     padding-top: 5rem;
 }
+
+/* ======= POP-UP ======= */
+
+#popup-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:var(--lightgrey-o7);
+    z-index:100;
+    display:none;
+}
+
+#popup-overlay.open {
+    display: block !important;
+}
+
+.popup-content {
+    width:500px;
+    padding: 1rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    background-color: var(--white);
+}
+
+.popup-content img {
+    height: 300px;
+    aspect-ratio: 1/1;
+}
+
+
 
 
 /* ======= RESPONSIVE ======= */
