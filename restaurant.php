@@ -54,7 +54,23 @@
     <div class="list-container _w_100">
         <div class="list">
             <h3 id="plats" class="resto-subtitle">Plats</h3>
-            <article class="item">  
+            <article onclick="ArticleManager.togglePopup()" id="plats-article-1" class="item">  
+                <div>
+                    <div>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button><strong>+</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="plats-article-2" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -70,7 +86,7 @@
                     </div>
                 </div>
             </article>
-            <article class="item">  
+            <article id="plats-article-3" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -86,7 +102,7 @@
                     </div>
                 </div>
             </article>
-            <article class="item">  
+            <article id="plats-article-4" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -102,7 +118,7 @@
                     </div>
                 </div>
             </article>
-            <article class="item">  
+            <article id="plats-article-5" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -118,7 +134,7 @@
                     </div>
                 </div>
             </article>
-            <article class="item">  
+            <article id="plats-article-6" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -134,7 +150,7 @@
                     </div>
                 </div>
             </article>
-            <article class="item">  
+            <article id="plats-article-7" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -150,23 +166,7 @@
                     </div>
                 </div>
             </article>
-            <article class="item">  
-                <div onclick="togglePopup()">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
-                            <p>Lasagne au boeuf maison, 200g</p>
-                            <p>11,90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button><strong>+</strong></button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="item">  
+            <article id="plats-article-8" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -186,7 +186,7 @@
             
             <h3 id="menus" class="resto-subtitle">Menus</h3>
 
-            <article class="item">  
+            <article id="menus-article-1" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -202,7 +202,7 @@
                     </div>
                 </div>
             </article>
-            <article class="item">  
+            <article id="menus-article-2" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -218,7 +218,7 @@
                     </div>
                 </div>
             </article>
-            <article class="item">  
+            <article id="menus-article-3" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -234,7 +234,7 @@
                     </div>
                 </div>
             </article>
-            <article class="item">  
+            <article id="menus-article-4" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -253,7 +253,7 @@
             
             <h3 id="desserts" class="resto-subtitle">Desserts</h3>
 
-            <article class="item">  
+            <article id="desserts-article-1" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -269,7 +269,7 @@
                     </div>
                 </div>
             </article>
-            <article class="item">  
+            <article id="desserts-article-2" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -285,7 +285,7 @@
                     </div>
                 </div>
             </article>
-            <article class="item">  
+            <article id="desserts-article-3" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -301,7 +301,7 @@
                     </div>
                 </div>
             </article>
-            <article class="item">  
+            <article id="desserts-article-4" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -320,7 +320,7 @@
 
             <h3 id="boissons" class="resto-subtitle">Boissons</h3>
 
-            <article class="item">  
+            <article id="boissons-article-1" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -336,7 +336,7 @@
                     </div>
                 </div>
             </article>
-            <article class="item">  
+            <article id="boissons-article-2" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -352,7 +352,7 @@
                     </div>
                 </div>
             </article>
-            <article class="item">  
+            <article id="boissons-article-3" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -368,7 +368,7 @@
                     </div>
                 </div>
             </article>
-            <article class="item">  
+            <article id="boissons-article-4" class="item">  
                 <div onclick="togglePopup()">
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
@@ -393,10 +393,16 @@
 
 <div id="popup-overlay">
     <div class="popup-content">
-        <img src="img\lasagna.jpg" alt="">
-        <h2>Nom du Plat</h2>
-        <p>Description</p>
-        <button>Commander pour {prix}</button>
+        <div id="popup-img-content">
+            <img src="img\lasagna.jpg" alt="">
+        </div>
+        <div id="popup-img-text">
+            <h2>Nom du Plat</h2>
+            <p>Description</p>
+                <!-- addToCart -->
+            <button id="popup-button-addToCart">Commander pour {prix}</button>
+        </div>
+        <button onclick="ArticleManager.togglePopup()" id="popup-button-close">Fermer</button>
     </div>
 </div>
 

@@ -718,7 +718,7 @@ footer a {
     padding-top: 5rem;
 }
 
-/* ======= POP-UP ======= */
+/* =======Restaurant.php POP-UP ======= */
 
 #popup-overlay {
     position: fixed;
@@ -736,7 +736,10 @@ footer a {
 }
 
 .popup-content {
-    width:500px;
+    display: flex;
+    flex-direction: column;
+    width:450px;
+    height: 90vh;
     padding: 1rem;
     position: absolute;
     top:50%;
@@ -747,10 +750,52 @@ footer a {
 }
 
 .popup-content img {
-    height: 300px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
     aspect-ratio: 1/1;
 }
 
+#popup-img-content {
+    display: block;
+}
+
+#popup-img-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+#popup-button-addToCart {
+    width:100%;
+    height: 50px;
+}
+#popup-button-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+/* =======Restaurant.php <article> indisponible => grisé ======= */
+
+.unavailable {
+    position: relative;
+}
+
+.unavailable::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events:none;
+}
 
 
 
