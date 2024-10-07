@@ -70,8 +70,8 @@
                     </div>
                 </div>
             </article>
-            <article id="plats-article-2" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="plats-article-2" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -86,8 +86,8 @@
                     </div>
                 </div>
             </article>
-            <article id="plats-article-3" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="plats-article-3" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -102,8 +102,8 @@
                     </div>
                 </div>
             </article>
-            <article id="plats-article-4" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="plats-article-4" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -118,8 +118,8 @@
                     </div>
                 </div>
             </article>
-            <article id="plats-article-5" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="plats-article-5" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -134,8 +134,8 @@
                     </div>
                 </div>
             </article>
-            <article id="plats-article-6" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="plats-article-6" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -150,8 +150,8 @@
                     </div>
                 </div>
             </article>
-            <article id="plats-article-7" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="plats-article-7" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -166,8 +166,8 @@
                     </div>
                 </div>
             </article>
-            <article id="plats-article-8" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="plats-article-8" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -186,8 +186,8 @@
             
             <h3 id="menus" class="resto-subtitle">Menus</h3>
 
-            <article id="menus-article-1" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="menus-article-1" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -202,8 +202,8 @@
                     </div>
                 </div>
             </article>
-            <article id="menus-article-2" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="menus-article-2" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -218,8 +218,8 @@
                     </div>
                 </div>
             </article>
-            <article id="menus-article-3" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="menus-article-3" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -234,8 +234,8 @@
                     </div>
                 </div>
             </article>
-            <article id="menus-article-4" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="menus-article-4" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -253,8 +253,8 @@
             
             <h3 id="desserts" class="resto-subtitle">Desserts</h3>
 
-            <article id="desserts-article-1" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="desserts-article-1" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -269,8 +269,8 @@
                     </div>
                 </div>
             </article>
-            <article id="desserts-article-2" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="desserts-article-2" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -285,8 +285,8 @@
                     </div>
                 </div>
             </article>
-            <article id="desserts-article-3" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="desserts-article-3" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -301,8 +301,8 @@
                     </div>
                 </div>
             </article>
-            <article id="desserts-article-4" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="desserts-article-4" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -320,8 +320,8 @@
 
             <h3 id="boissons" class="resto-subtitle">Boissons</h3>
 
-            <article id="boissons-article-1" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="boissons-article-1" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -336,8 +336,8 @@
                     </div>
                 </div>
             </article>
-            <article id="boissons-article-2" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="boissons-article-2" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -352,8 +352,8 @@
                     </div>
                 </div>
             </article>
-            <article id="boissons-article-3" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="boissons-article-3" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
@@ -368,8 +368,8 @@
                     </div>
                 </div>
             </article>
-            <article id="boissons-article-4" class="item">  
-                <div onclick="togglePopup()">
+            <article onclick="ArticleManager.togglePopup()" id="boissons-article-4" class="item">  
+                <div>
                     <div>
                         <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
                     </div>
