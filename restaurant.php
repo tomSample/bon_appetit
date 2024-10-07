@@ -32,14 +32,52 @@
 
 <section>
     <div class="resto-resume body-padding">
-        <div class="_w_70">
+        <div class="_w_50">
             <h3>Présentation du restaurant</h3>
             <p class="_line_height _padding_block_1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum saepe similique cupiditate facere consequuntur unde accusantium facilis, sint doloremque. Reiciendis earum nobis commodi aut magnam placeat autem harum. Numquam, laudantium!</p>
         </div>
-        <div class="book">
-            <button id="book-button">Réserver une table</button>
-        </div>
-    </div>
+        <div class="book-container">
+            <div id="book-content">
+                <div>
+                    <h3>Réserver une table</h3>
+                </div>
+                <div id="book-info">
+                    <div>
+                        <input id="book-date" type="date" id="date" name="date" value="2021-07-22">
+                        <label for="hours">Heure :</label>
+                        <select id="hours" name="hours">
+                            <?php for ($i = 12; $i < 23; $i++): ?>
+                                <option value="<?php echo str_pad($i, 2, '0', STR_PAD_LEFT); ?>"><?php echo str_pad($i, 2, '0', STR_PAD_LEFT); ?></option>
+                            <?php endfor; ?>
+                        </select>
+
+                        <label for="minutes">Minutes :</label>
+                        <select id="minutes" name="minutes">
+                            <?php for ($i = 0; $i < 60; $i += 15): ?>
+                                <option value="<?php echo str_pad($i, 2, '0', STR_PAD_LEFT); ?>"><?php echo str_pad($i, 2, '0', STR_PAD_LEFT); ?></option>
+                            <?php endfor; ?>
+                        </select>
+                    </div>
+                    <div>
+                    <label for="guests">Nombre de couverts :</label>
+                        <select id="guests" name="guests">
+                            <option value="1">1</option>
+                            <option value="2" selected>2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="6">11</option>
+                            <option value="7">12</option>
+                        </select>
+                    </div>
+                    <button class="_borderradius10">Réserver</button>
+                </div>
+            </div>
 </section>
 
 <section class="_dp_flex">
@@ -384,8 +422,6 @@
                     </div>
                 </div>
             </article>
-
-
         </div>
     </div>
 </section>
@@ -400,7 +436,7 @@
             <h2>Nom du Plat</h2>
             <p>Description</p>
                 <!-- addToCart -->
-            <button onclick="ArticleManager.addToCart()" id="popup-button-addToCart" class="_borderradius10">Ajouter au panier</button>
+            <button onclick="ArticleManager.addToCart()" id="popup-button-addToCart" class="_borderradius10">Ajouter au panier pour {prix}</button>
         </div>
         <button onclick="ArticleManager.togglePopup()" id="popup-button-close">Fermer</button>
     </div>

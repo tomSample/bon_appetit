@@ -622,21 +622,61 @@ footer a {
     padding-block: 2rem;
 }
 
-.book {
+.book-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 120px;
+    width: 340px;
+    border: 1px solid var(--lightgrey);
+    background-color: var(--white);
 }
 
-#book-button {
-    width: 100px;
-    height: 50px;
-    background-color: var(--green);
-    cursor: pointer;
+#book-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+#book-content h3 {
+    text-align: center;
 }
 
 #book-button:hover {
     background-color: var(--darkgreen);
+}
+
+#book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+}
+
+#book-info div {
+    padding-block: 0.1rem;
+}
+
+#book-info button {
+    margin-inline: auto;
+    width: 50%;
+    padding-block: 0.2rem;
+    margin-block: 0.2rem;
+    background-color: var(--lightorange);
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#book-info button:hover {
+    background-color: var(--orange);
+}
+
+#book-button:hover {
+    background-color: var(--orange);
 }
 
 .photo-plat {
