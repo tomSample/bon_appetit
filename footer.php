@@ -48,7 +48,7 @@
             <div class="footer-box">
                 <h2>Aide</h2>
                 <div class="footer-box-padtop box-1">
-                    <!-- <a class="links" src="">FAQ</a> En bonus, on aura potentiellement pas le temps de s'en charger. -->
+                    <a class="links" src="">FAQ</a>
                     <a src="">Mentions légales</a>
                     <a src="">FAQ</a>
                 </div>
