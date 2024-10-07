@@ -1,6 +1,10 @@
 <?php include 'layout.php'; ?>
 <?php include 'header.php'; ?>
 
+<head>
+        <link rel="stylesheet" href="styles\administration.css" type="text/css">
+        <script src="./js/administration.js" defer></script>
+    </head>
 
 <body>
 
@@ -13,47 +17,96 @@
             </div>
         </div>
 
+    <!-- ===nav left=== -->
+
         <div class="container" id="views">
             <div class="grid" id="man__grid">
                 <div class="grid__item__nav">
                     <ul class="grid_nav">
                         <li class="grid__admin__nav">
-                            <a href="#">Restaurants</a>
+                            <a href="#" class="active" data-filter="shop">Restaurants</a>
                         </li>
                         <li class="grid__admin__nav">
-                            <a href="#">Clients</a>
+                            <a href="#" data-filter="customer">Clients</a>
                         </li>
                         <li class="grid__admin__nav">
-                            <a href="#">Tableau de bord</a>
+                            <a href="#" data-filter="table">Tableau de bord</a>
                         </li>
                         <li class="grid__admin__nav">
-                            <a href="#">Rapports</a>
+                            <a href="#" data-filter="report">Rapports</a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="grid__item__view" id="man__customers">
+    <!-- ===parts=== -->
 
-                    <div class="search" id="man__search">
-                        <input class="search__views" id = "man__input" type="search" placeholder="Recherchez un client">
+                <div class="grid__item__view" id="man__shops">
+                    <div class="search" id="man__search" data-category="shop">
+                        <input class="search__views" id = "man__input" type="search" placeholder="Rechercher un restaurant">
                         <button class="submit-button" id="man__button" type="submit">Rechercher</button>
                     </div>
                     <div class="views__list">
                         <ui>
-                            <li><a href="clients.html"></a>John Doe</li><!-- Lier le lien à la personne affichée -->
-
-                            <li><a href="clients.html"></a>Jane Tiger</li>
-
-                            <li><a href="clients.html"></a>Jean Paul</li>
+                            <li><a href="clients.html"></a>Restaurant 1, Ville
+                            </li><!-- Lier le lien au restaurant affiché -->
+                            <li><a href="clients.html"></a>Restaurant 2, Ville
+                            </li>
+                            <li><a href="clients.html"></a>Restaurant 3, Ville
+                            </li>
                         </ui> 
-
                     </div>
                 </div>
 
-
+                <div class="grid__item__view" id="man__customers">
+                    <div class="search" id="man__search" data-category="customer">
+                        <input class="search__views" id = "man__input" type="search" placeholder="Rechercher un client">
+                        <button class="submit-button" id="man__button" type="submit">Rechercher</button>
+                    </div>
+                    <div class="views__list">
+                        <ui>
+                            <li><a href="clients.html"></a>John Doe
+                            </li><!-- Lier le lien à la personne affichée -->
+                            <li><a href="clients.html"></a>Jane Tiger
+                            </li>
+                            <li><a href="clients.html"></a>Jean Paul
+                            </li>
+                        </ui> 
+                    </div>
+                </div>
                 
+                <div class="grid__item__view" id="man__tables">
+                    <div class="search" id="man__search" data-category="table">
+                        <input class="search__views" id = "man__input" type="search" placeholder="Rechercher une date">
+                        <button class="submit-button" id="man__button" type="submit">Rechercher</button>
+                    </div>
+                    <div class="views__list">
+                        <ui>
+                            <li><a href="clients.html"></a>John Doe
+                            </li><!-- Lier le lien à la personne affichée -->
+                            <li><a href="clients.html"></a>Jane Tiger
+                            </li>
+                            <li><a href="clients.html"></a>Jean Paul
+                            </li>
+                        </ui> 
+                    </div>
+                </div>
 
-
+                <div class="grid__item__view" id="man__reports">
+                    <div class="search" id="man__search" data-category="report">
+                        <input class="search__views" id = "man__input" type="search" placeholder="Rechercher une date">
+                        <button class="submit-button" id="man__button" type="submit">Rechercher</button>
+                    </div>
+                    <div class="views__list">
+                        <ui>
+                            <li><a href="clients.html"></a>John Doe
+                            </li><!-- Lier le lien à la personne affichée -->
+                            <li><a href="clients.html"></a>Jane Tiger
+                            </li>
+                            <li><a href="clients.html"></a>Jean Paul
+                            </li>
+                        </ui> 
+                    </div>
+                </div>
             </div>
         </div>
         
