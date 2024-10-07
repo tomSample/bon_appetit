@@ -42,25 +42,28 @@
 
                 <div class="grid__item__view" id="man__shops">
                     <div class="search" id="man__search" data-category="shop">
-                        <input class="search__views" id = "man__input" type="search" placeholder="Rechercher un restaurant">
-                        <button class="submit-button" id="man__button" type="submit">Rechercher</button>
+                        <input class="search__views" id = "shop__input" type="search" placeholder="Rechercher un restaurant">
+                        <button class="submit-button" id="shop__button" type="submit">Rechercher</button>
+                    </div>
+                    <div class="add_shop">
+                    <a src=""><i>Ajouter un restaurant</i></a>
                     </div>
                     <div class="views__list">
                         <ui>
-                            <li><a href="clients.html"></a>Restaurant 1, Ville <img class="change__icon" src="./img/icon/editing.png">
+                            <li><a href="clients.html"></a>Restaurant 1, Ville <img class="change__icon" src="./img/icon/order.png"><img class="change__icon" src="./img/icon/cutlery.png"><img class="change__icon" src="./img/icon/editing.png"><img class="change__icon" src="./img/icon/delete.png">
                             </li><!-- Lier le lien au restaurant affiché -->
-                            <li><a href="clients.html"></a>Restaurant 2, Ville <img class="change__icon" src="./img/icon/editing.png">
+                            <li><a href="clients.html"></a>Restaurant 2, Ville <img class="change__icon" src="./img/icon/order.png"><img class="change__icon" src="./img/icon/cutlery.png"><img class="change__icon" src="./img/icon/editing.png"><img class="change__icon" src="./img/icon/delete.png">
                             </li>
-                            <li><a href="clients.html"></a>Restaurant 3, Ville <img class="change__icon" src="./img/icon/editing.png">
+                            <li><a href="clients.html"></a>Restaurant 3, Ville <img class="change__icon" src="./img/icon/order.png"><img class="change__icon" src="./img/icon/cutlery.png"><img class="change__icon" src="./img/icon/editing.png"><img class="change__icon" src="./img/icon/delete.png">
                             </li>
                         </ui> 
                     </div>
                 </div>
 
-                <div class="grid__item__view" id="man__customers">
+                <div class="grid__item__view hide" id="man__customers">
                     <div class="search" id="man__search" data-category="customer">
-                        <input class="search__views" id = "man__input" type="search" placeholder="Rechercher un client">
-                        <button class="submit-button" id="man__button" type="submit">Rechercher</button>
+                        <input class="search__views" id = "customer__input" type="search" placeholder="Rechercher un client">
+                        <button class="submit-button" id="customer__button" type="submit">Rechercher</button>
                     </div>
                     <div class="views__list">
                         <ui>
@@ -74,10 +77,10 @@
                     </div>
                 </div>
                 
-                <div class="grid__item__view" id="man__tables">
+                <div class="grid__item__view hide" id="man__tables">
                     <div class="search" id="man__search" data-category="table">
-                        <input class="search__views" id = "man__input" type="search" placeholder="Rechercher une date">
-                        <button class="submit-button" id="man__button" type="submit">Rechercher</button>
+                        <input class="search__views" id = "table__input" type="search" placeholder="Rechercher une date">
+                        <button class="submit-button" id="table__button" type="submit">Rechercher</button>
                     </div>
                     <div class="views__list">
                         <ui>
@@ -91,10 +94,10 @@
                     </div>
                 </div>
 
-                <div class="grid__item__view" id="man__reports">
+                <div class="grid__item__view hide" id="man__reports">
                     <div class="search" id="man__search" data-category="report">
-                        <input class="search__views" id = "man__input" type="search" placeholder="Rechercher une date">
-                        <button class="submit-button" id="man__button" type="submit">Rechercher</button>
+                        <input class="search__views" id = "report__input" type="search" placeholder="Rechercher une date">
+                        <button class="submit-button" id="report__button" type="submit">Rechercher</button>
                     </div>
                     <div class="views__list">
                         <ui>
@@ -123,3 +126,8 @@
     <!-- ===fin footer=== -->
      
 </body>
+
+<!-- Crédits images -->
+<!-- <a href="https://www.flaticon.com/free-icons/purchase" title="purchase icons">Purchase icons created by Osama Wajid Khan - Flaticon</a>
+ <a href="https://www.flaticon.com/free-icons/restaurante" title="restaurante icons">Restaurante icons created by Aranagraphics - Flaticon</a>
+ <a href="https://www.flaticon.com/free-icons/trash" title="trash icons">Trash icons created by Freepik - Flaticon</a> -->
