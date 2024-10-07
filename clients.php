@@ -1,6 +1,10 @@
 <?php include 'layout.php'; ?>
 <?php include 'header.php'; ?>
 
+<head>
+        <link rel="stylesheet" href="styles\clients.css" type="text/css">
+    </head>
+
     <!-- ===main=== -->
     
     <section id="profile" class="fields">
@@ -11,7 +15,7 @@
         </div>
         <div class="container" id="identity">
             <div class="subtitle">
-                <h2>Identité</h2><img class="clients__icon" src="./img/icon/editing.png">
+                <h2>Identité</h2><img class="identity__icon" src="./img/icon/editing.png">
 
                     <!--Réutiliser inscription pour les modifications-->
             </div>
@@ -41,11 +45,11 @@
                     monadresse@email.fr<br>
                     06 78 98 65 15<br>
                     <br>
-                    32 rue de Paris<img class="clients_icon__intern" src="./img/icon/add.png"><br>
+                    32 rue de Paris<img class="clients__icon__intern" src="./img/icon/add.png"><br>
                     22300<br>
                     Lannion<br>
                     <br>
-                    Carte bleue<img class="clients_icon__intern" src="./img/icon/arrow.png"><br>
+                    Carte bleue<img class="clients__icon__intern" src="./img/icon/arrow.png"><br>
                     2659<br>
                     </p>
                 </div>
@@ -60,22 +64,22 @@
                 <table>
                     <tr><th class="first">Date</th><th class="first">Restaurant</th><th class="first">Prix</th>
                     </tr>
-                    <tr><th class="follow">12/06/2024</th><th class="follow">Aux plaisirs gustatifs</th><th class="follow">19 €</th><th><img class="icon" src="./img/icon/upload.png"></th>
+                    <tr><th class="follow">12/06/2024</th><th class="follow">Aux plaisirs gustatifs</th><th class="follow">19 €</th><th><img class="clients__icon" src="./img/icon/upload.png"></th>
                     </tr>
-                    <tr><th class="follow">13/08/2024</th><th class="follow">Aux plaisirs gustatifs</th><th class="follow">23 €</th><th><img class="icon" src="./img/icon/upload.png"></th>
+                    <tr><th class="follow">13/08/2024</th><th class="follow">Aux plaisirs gustatifs</th><th class="follow">23 €</th><th><img class="clients__icon" src="./img/icon/upload.png"></th>
                     </tr>
-                    <tr><th class="follow">15/09/2024</th><th class="follow">La corne d'abondance</th><th class="follow">32 €</th><th><img class="icon" src="./img/icon/upload.png"></th>
+                    <tr><th class="follow">15/09/2024</th><th class="follow">La corne d'abondance</th><th class="follow">32 €</th><th><img class="clients__icon" src="./img/icon/upload.png"></th>
                     </tr>
                 </table>
             </div>
             <div class="add">
-                <p>En voir plus</p><img class="icon" src="./img/icon/add.png">
+                <p>En voir plus</p><img class="clients__icon" src="./img/icon/add.png">
             </div>
         </div>
 
         <div class="container" id="love">
             <div class="subtitle">
-                <h2>Restaurant préféré</h2><img class="icon" src="./img/icon/editing.png">
+                <h2>Restaurant préféré</h2><img class="identity__icon" src="./img/icon/editing.png">
             </div>
             <div id="loved">
                 <p>Aux plaisirs gustatifs                    
