@@ -47,11 +47,11 @@
                     </div>
                     <div class="views__list">
                         <ui>
-                            <li><a href="clients.html"></a>Restaurant 1, Ville
+                            <li><a href="clients.html"></a>Restaurant 1, Ville <img class="change__icon" src="./img/icon/editing.png">
                             </li><!-- Lier le lien au restaurant affiché -->
-                            <li><a href="clients.html"></a>Restaurant 2, Ville
+                            <li><a href="clients.html"></a>Restaurant 2, Ville <img class="change__icon" src="./img/icon/editing.png">
                             </li>
-                            <li><a href="clients.html"></a>Restaurant 3, Ville
+                            <li><a href="clients.html"></a>Restaurant 3, Ville <img class="change__icon" src="./img/icon/editing.png">
                             </li>
                         </ui> 
                     </div>
