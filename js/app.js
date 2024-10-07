@@ -43,6 +43,11 @@ const ArticleManager = {
     togglePopup: function() {
         this.popup.classList.toggle('open');
     },
+
+    addToCart: function() {
+        console.log('Bouton ajouté au panier cliqué');
+        // Ajoutez ici la logique pour ajouter l'article au panier
+    },
 };
 
 // Initialiser ArticleManager après que le DOM est complètement chargé
@@ -54,7 +59,53 @@ document.addEventListener('DOMContentLoaded', function() {
 //  pour tester cette fonctionnalité
 //  1/ ouvrir la console
 //  2/ taper ArticleManager.addUnavailable('plats-article-1')
-//  3/ vérifier que l'article correspondant est grisé
-//     il est possible de cliquer sur le plat
-//     il est impossible de cliquer sur le bouton addToCart du popup
-//  4/ taper ArticleManager.removeUnavailable('plats-article-1') pour dégriser l'article
+//  3/ vérifier que l'article ait bien disparu.
+
+
+function quickAddToCart(event) {
+    event.stopPropagation();
+    const button = event.target.closest('button');
+    const articleId = event.target.closest('article').id;
+
+    // Remplace le contenu du bouton par les éléments de quantité
+    button.innerHTML = `
+        <div class="quantity-controls">
+            <button class="decrease-quantity" onclick="decreaseQuantity(event, '${articleId}')"><strong>-</strong></button>
+            <span class="quantity">1</span>
+            <button class="increase-quantity" onclick="increaseQuantity(event, '${articleId}')"><strong>+</strong></button>
+        </div>
+    `;
+
+    // Ajoutez l'article au panier (logique à définir)
+    console.log('Article ajouté au panier:', articleId);
+}
+
+function increaseQuantity(event, articleId) {
+    event.stopPropagation();
+    const quantitySpan = event.target.previousElementSibling;
+    let quantity = parseInt(quantitySpan.textContent);
+    quantity++;
+    quantitySpan.textContent = quantity;
+
+    // Mettez à jour la quantité dans le panier (logique à définir)
+    console.log('Quantité augmentée pour:', articleId, 'Nouvelle quantité:', quantity);
+}
+
+function decreaseQuantity(event, articleId) {
+    event.stopPropagation();
+    const quantitySpan = event.target.nextElementSibling;
+    let quantity = parseInt(quantitySpan.textContent);
+    quantity--;
+    if (quantity > 0) {
+        quantitySpan.textContent = quantity;
+        // Mettez à jour la quantité dans le panier (logique à définir)
+        console.log('Quantité diminuée pour:', articleId, 'Nouvelle quantité:', quantity);
+    } else {
+        // Restaurer le bouton initial
+        const button = event.target.closest('.quantity-controls').parentElement;
+        button.innerHTML = `<strong>+</strong>`;
+        button.onclick = quickAddToCart;
+        // Retirer l'article du panier (logique à définir)
+        console.log('Article retiré du panier:', articleId);
+    }
+}

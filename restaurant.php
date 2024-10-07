@@ -65,7 +65,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -177,7 +177,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -197,7 +197,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -229,7 +229,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -245,7 +245,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -264,7 +264,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -280,7 +280,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -296,7 +296,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -312,7 +312,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -331,7 +331,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -347,7 +347,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -363,7 +363,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -379,7 +379,7 @@
                             <p>11,90€</p>
                         </div>
                         <div class="item-button">
-                            <button><strong>+</strong></button>
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
                         </div>
                     </div>
                 </div>
@@ -400,11 +400,13 @@
             <h2>Nom du Plat</h2>
             <p>Description</p>
                 <!-- addToCart -->
-            <button id="popup-button-addToCart">Commander pour {prix}</button>
+            <button onclick="ArticleManager.addToCart()" id="popup-button-addToCart" class="_borderradius10">Ajouter au panier</button>
         </div>
         <button onclick="ArticleManager.togglePopup()" id="popup-button-close">Fermer</button>
     </div>
 </div>
+
+
 
 
 
