@@ -32,7 +32,7 @@
 
 <section>
     <div class="resto-resume body-padding">
-        <div class="_w_50">
+        <div class="_w_50 mobile-resto-presentation">
             <h3>Présentation du restaurant</h3>
             <p class="_line_height _padding_block_1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum saepe similique cupiditate facere consequuntur unde accusantium facilis, sint doloremque. Reiciendis earum nobis commodi aut magnam placeat autem harum. Numquam, laudantium!</p>
         </div>

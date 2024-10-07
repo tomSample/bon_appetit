@@ -975,7 +975,6 @@ footer a {
     .restaurant-box img {
         width: 150px;
         height: auto; 
-        aspect-ratio: 1/1;
     }
 
     .restaurant-title {
@@ -987,6 +986,54 @@ footer a {
         padding: 0;
         text-align: center;
         background-color: var(--orange);
+    }
+
+    #resto-nav {
+        display: none;
+    }
+
+    .resto-id {
+        flex-direction: column;
+    }
+
+    #resto-id-photo {
+        display: flex;
+        margin-inline: auto;
+    }
+
+    .mobile-resto-presentation {
+        width: 100%;
+    }
+
+    .resto-id-text {
+        padding-left:0;
+    }
+
+    .resto-resume {
+        flex-direction: column;
+    }
+
+    .resto-resume h3 {
+        text-align: center;
+    }
+
+    .resto-subtitle {
+        padding-top:2rem;
+    }
+
+    .book-container {
+        margin-inline: auto;
+        margin-top: 1.5rem;
+    }
+
+    .item {
+        width: 90%;
+        margin: auto;
+        margin-block: 1rem;
+    }
+
+    .photo-plat {
+        width: 100%;
     }
 
     .footer-box {
