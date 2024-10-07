@@ -1,0 +1,31 @@
+#management {
+    margin-top: 5rem;
+}
+
+.grid__item__view.hide {
+    display: none;
+}
+
+.grid__item__view {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#man__search {
+    display: grid;
+    justify-items: center;
+}
+
+#man__button {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.views__list {
+    background-color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    max-width: 20rem;
+    margin-inline: auto;
+}
