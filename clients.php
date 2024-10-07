@@ -11,7 +11,7 @@
         </div>
         <div class="container" id="identity">
             <div class="subtitle">
-                <h2>Identité</h2><img class="icon" src="./img/icon/editing.png">
+                <h2>Identité</h2><img class="clients__icon" src="./img/icon/editing.png">
 
                     <!--Réutiliser inscription pour les modifications-->
             </div>
@@ -41,11 +41,11 @@
                     monadresse@email.fr<br>
                     06 78 98 65 15<br>
                     <br>
-                    32 rue de Paris<img class="icon__intern" src="./img/icon/add.png"><br>
+                    32 rue de Paris<img class="clients_icon__intern" src="./img/icon/add.png"><br>
                     22300<br>
                     Lannion<br>
                     <br>
-                    Carte bleue<img class="icon__intern" src="./img/icon/arrow.png"><br>
+                    Carte bleue<img class="clients_icon__intern" src="./img/icon/arrow.png"><br>
                     2659<br>
                     </p>
                 </div>

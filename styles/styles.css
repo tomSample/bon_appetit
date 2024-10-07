@@ -427,16 +427,16 @@ footer a {
 /* =======customers======= */
 
 
-.icon {
-    width: 15;
-    height: 15;
+.clients__icon {
+    width: 15px;
+    height: 15px;
     margin-top: 0.2rem;
     margin-left: 0.5rem;
     padding-top: 0.2rem;
 }
-.icon__intern {
-    width: 15;
-    height: 15;
+.clients__icon__intern {
+    width: 15px;
+    height: 15px;
     margin-left: 0.5rem;
 }
 
@@ -957,7 +957,6 @@ footer a {
         display: unset!important;
     }
 
-<<<<<<< HEAD
     .resto-id {
         margin-top: 5rem;
         flex-direction: column;
@@ -1017,24 +1016,4 @@ footer a {
         margin-inline: 0.2rem;
     }
 
-=======
-    .questionnaire {
-        display: flex;
-        height: 50px;
-        width: 250px;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        justify-content: center;
-      }
-    
-      .inscription-container {
-        justify-content: center;
-        margin-left: 100%;
-      }
-
-      .inscription-confirmation-button {
-        margin-top: 10%;
-        margin-bottom: -30%;
-      }
->>>>>>> e3aa23ff9b2e0a61df6e5671a1588e08ddb5a9e1
 }
