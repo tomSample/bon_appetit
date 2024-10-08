@@ -46,15 +46,15 @@
                         <button class="submit-button" id="shop__button" type="submit">Rechercher</button>
                     </div>
                     <div class="add_shop">
-                    <a src=""><i>Ajouter un restaurant</i></a>
+                        <a src=""><i>Ajouter un restaurant</i></a>
                     </div>
                     <div class="views__list">
                         <ui>
-                            <li><a href="clients.html"></a>Restaurant 1, Ville <img class="change__icon" src="./img/icon/order.png"><img class="change__icon" src="./img/icon/cutlery.png"><img class="change__icon" src="./img/icon/editing.png"><img class="change__icon" src="./img/icon/delete.png">
+                            <li><a href="#">Restaurant 1</a>, Ville <img class="change__icon" src="./img/icon/order.png"><img class="change__icon" src="./img/icon/cutlery.png"><img class="change__icon" src="./img/icon/editing.png"><img class="change__icon" src="./img/icon/delete.png">
                             </li><!-- Lier le lien au restaurant affiché -->
-                            <li><a href="clients.html"></a>Restaurant 2, Ville <img class="change__icon" src="./img/icon/order.png"><img class="change__icon" src="./img/icon/cutlery.png"><img class="change__icon" src="./img/icon/editing.png"><img class="change__icon" src="./img/icon/delete.png">
+                            <li><a href="#">Restaurant 2</a>, Ville <img class="change__icon" src="./img/icon/order.png"><img class="change__icon" src="./img/icon/cutlery.png"><img class="change__icon" src="./img/icon/editing.png"><img class="change__icon" src="./img/icon/delete.png">
                             </li>
-                            <li><a href="clients.html"></a>Restaurant 3, Ville <img class="change__icon" src="./img/icon/order.png"><img class="change__icon" src="./img/icon/cutlery.png"><img class="change__icon" src="./img/icon/editing.png"><img class="change__icon" src="./img/icon/delete.png">
+                            <li><a href="#">Restaurant 3</a>, Ville <img class="change__icon" src="./img/icon/order.png"><img class="change__icon" src="./img/icon/cutlery.png"><img class="change__icon" src="./img/icon/editing.png"><img class="change__icon" src="./img/icon/delete.png">
                             </li>
                         </ui> 
                     </div>
@@ -67,11 +67,11 @@
                     </div>
                     <div class="views__list">
                         <ui>
-                            <li><a href="clients.html"></a>John Doe
+                            <li><a href="clients.html">John Doe</a>
                             </li><!-- Lier le lien à la personne affichée -->
-                            <li><a href="clients.html"></a>Jane Tiger
+                            <li><a href="clients.html">Jane Tiger</a>
                             </li>
-                            <li><a href="clients.html"></a>Jean Paul
+                            <li><a href="clients.html">Jean Paul</a>
                             </li>
                         </ui> 
                     </div>
@@ -82,13 +82,16 @@
                         <input class="search__views" id = "table__input" type="search" placeholder="Rechercher une date">
                         <button class="submit-button" id="table__button" type="submit">Rechercher</button>
                     </div>
+                    <div class="filter__table" id="f__table">
+                        <a href="#" class="active" d-filter="day">365</a> <a href="#" d-filter="week">52</a> <a href="#" d-filter="month">12</a> <a href="#" d-filter="year">1</a>
+                    </div>
                     <div class="views__list">
                         <ui>
-                            <li><a href="clients.html"></a>John Doe
-                            </li><!-- Lier le lien à la personne affichée -->
-                            <li><a href="clients.html"></a>Jane Tiger
+                            <li>Aujourd'hui, <a href="#">80% de couverts</a>, <a href="#">Trop bon !</a>, <a href="#">Restaurant 1</a>
+                            </li><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
+                            <li>Hier, <a href="#">60% de couverts</a>, <a href="#">Il va vraiment fa...</a>, <a href="#">Restaurant 4</a>
                             </li>
-                            <li><a href="clients.html"></a>Jean Paul
+                            <li>06/10/2024, <a href="#">70% de couverts</a>, <a href="#">Je reviendrai dans ce f...</a>, <a href="#">Restaurant 3</a>
                             </li>
                         </ui> 
                     </div>
@@ -96,16 +99,19 @@
 
                 <div class="grid__item__view hide" id="man__reports">
                     <div class="search" id="man__search" data-category="report">
-                        <input class="search__views" id = "report__input" type="search" placeholder="Rechercher une date">
+                        <input class="search__views" id= "report__input" type="search" placeholder="Rechercher une date">
                         <button class="submit-button" id="report__button" type="submit">Rechercher</button>
+                    </div>
+                    <div class="filter__table" id="f__table">
+                        <a href="#" class="active" d-filter="day">365</a> <a href="#" d-filter="week">52</a> <a href="#" d-filter="month">12</a> <a href="#" d-filter="year">1</a>
                     </div>
                     <div class="views__list">
                         <ui>
-                            <li><a href="clients.html"></a>John Doe
-                            </li><!-- Lier le lien à la personne affichée -->
-                            <li><a href="clients.html"></a>Jane Tiger
+                            <li>Aujourd'hui, 200k, 3 restaurants, 20€
                             </li>
-                            <li><a href="clients.html"></a>Jean Paul
+                            <li>Hier, 200k, 3 restaurants, 18€
+                            </li>
+                            <li>06/10/2024, 150k, 2 restaurants, 25€
                             </li>
                         </ui> 
                     </div>
