@@ -34,9 +34,9 @@ h2 {
     font-size: 2rem;
 }
 
-/* a {
-    padding: 1rem;
-} */
+a {
+    text-decoration: none;
+}
 
 ._borderradius5 {
     border-radius: 5px;
