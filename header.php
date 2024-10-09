@@ -14,7 +14,8 @@
                 $currentPage == 'inscription.php' ||
                 $currentPage == 'login.php' ||
                 $currentPage =='forgotten-password.php' ||
-                $currentPage =='logout.php') : ?>
+                $currentPage =='logout.php'||
+                $currentPage =='administration.php') : ?>
                     <?php if ($isLoggedIn): ?>
                         <a href="clients.php">
                             <button class="header-button-1">Mon compte</button>

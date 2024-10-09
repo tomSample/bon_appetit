@@ -58,7 +58,7 @@
                         </select>
                     </div>
                     <div>
-                    <label for="guests">Nombre de couverts :</label>
+                        <label for="guests">Nombre de couverts :</label>
                         <select id="guests" name="guests">
                             <option value="1">1</option>
                             <option value="2" selected>2</option>
@@ -238,22 +238,6 @@
                     </div>
                 </a>
             </article>
-            <article class="item">
-                <a href="">
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
-                            <p>Lasagne au boeuf maison, 200g</p>
-                            <p>11,90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
-                        </div>
-                    </div>
-                </div>
-            </article>
             <article onclick="ArticleManager.togglePopup()" id="menus-article-2" class="item">  
                 <div>
                     <div>
@@ -369,71 +353,6 @@
                     </div>
                 </div>
             </article>
-            <article onclick="ArticleManager.togglePopup()" id="plats-article-1" class="item">  
-                <div>
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
-                            <p>Lasagne au boeuf maison, 200g</p>
-                            <p>11,90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article onclick="ArticleManager.togglePopup()" id="plats-article-2" class="item">  
-                <div>
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
-                            <p>Lasagne au boeuf maison, 200g</p>
-                            <p>11,90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article onclick="ArticleManager.togglePopup()" id="plats-article-3" class="item">  
-                <div>
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
-                            <p>Lasagne au boeuf maison, 200g</p>
-                            <p>11,90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article onclick="ArticleManager.togglePopup()" id="plats-article-4" class="item">  
-                <div>
-                    <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
-                    </div>
-                    <div class="item-content">
-                        <div class="item-description">
-                            <p>Lasagne au boeuf maison, 200g</p>
-                            <p>11,90€</p>
-                        </div>
-                        <div class="item-button">
-                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
         </div>
     </div>
 </section>
