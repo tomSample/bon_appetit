@@ -1,5 +1,6 @@
 <?php include 'layout.php'; ?>
 <?php include 'header.php'; ?>
+<? var_dump($isLoggedIn); ?>
 
 <!-- ===fin header=== -->
 
