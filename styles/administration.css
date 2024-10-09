@@ -1,0 +1,53 @@
+#management {
+    margin-top: 5rem;
+}
+
+.grid__item__view.hide {
+    display: none;
+}
+
+.grid__item__view {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.grid_nav a.active {
+    color: var(--lightgrey);
+}
+
+#man__search {
+    display: grid;
+    justify-items: center;
+}
+
+.submit__button {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.views__list {
+    background-color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    max-width: 20rem;
+    margin-inline: auto;
+}
+
+.change__icon {
+    width: 15px;
+    height: 15px;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    padding-top: 0.2rem;
+}
+
+.submit-button {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.add_shop {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
