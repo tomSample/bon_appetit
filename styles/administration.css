@@ -2,6 +2,10 @@
     margin-top: 5rem;
 }
 
+#management a {
+    text-decoration: underline;
+}
+
 .grid__item__view.hide {
     display: none;
 }
@@ -58,5 +62,18 @@
 }
 
 #f__table a.active {
+    display: none;
+}
+
+#f__report {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#f__report a.active {
+    display: none;
+}
+
+.views__list.hide {
     display: none;
 }
