@@ -83,13 +83,43 @@
                         <button class="submit-button" id="table__button" type="submit">Rechercher</button>
                     </div>
                     <div class="filter__table" id="f__table">
-                        <a href="#" class="active" d-filter="day">365</a> <a href="#" d-filter="week">52</a> <a href="#" d-filter="month">12</a> <a href="#" d-filter="year">1</a>
+                        <a href="#" class="active ft hide" d-filter="day">jour</a> <a href="#" class="ft" d-filter="week">semaine</a> <a href="#" class="ft" d-filter="month">mois</a> <a href="#" class="ft" d-filter="year">année</a>
                     </div>
-                    <div class="views__list">
-                        <ui>
+                    <div class="views__list" id="view__table">
+                        <ui class="ft" d-filter="day">
                             <li>Aujourd'hui, <a href="#">80% de couverts</a>, <a href="#">Trop bon !</a>, <a href="#">Restaurant 1</a>
                             </li><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
                             <li>Hier, <a href="#">60% de couverts</a>, <a href="#">Il va vraiment fa...</a>, <a href="#">Restaurant 4</a>
+                            </li>
+                            <li>06/10/2024, <a href="#">70% de couverts</a>, <a href="#">Je reviendrai dans ce f...</a>, <a href="#">Restaurant 3</a>
+                            </li>
+                        </ui> 
+                    </div>
+                    <div class="views__list hide">
+                        <ui class="ft" d-filter="week">
+                            <li>Cette semaine, <a href="#">80% de couverts</a>, <a href="#">Trop bon !</a>, <a href="#">Restaurant 1</a>
+                            </li><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
+                            <li>Semaine passée, <a href="#">60% de couverts</a>, <a href="#">Il va vraiment fa...</a>, <a href="#">Restaurant 4</a>
+                            </li>
+                            <li>06/10/2024, <a href="#">70% de couverts</a>, <a href="#">Je reviendrai dans ce f...</a>, <a href="#">Restaurant 3</a>
+                            </li>
+                        </ui> 
+                    </div>
+                    <div class="views__list hide">
+                        <ui class="ft" d-filter="month">
+                            <li>Ce mois, <a href="#">80% de couverts</a>, <a href="#">Trop bon !</a>, <a href="#">Restaurant 1</a>
+                            </li><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
+                            <li>Mois passé, <a href="#">60% de couverts</a>, <a href="#">Il va vraiment fa...</a>, <a href="#">Restaurant 4</a>
+                            </li>
+                            <li>06/10/2024, <a href="#">70% de couverts</a>, <a href="#">Je reviendrai dans ce f...</a>, <a href="#">Restaurant 3</a>
+                            </li>
+                        </ui> 
+                    </div>
+                    <div class="views__list hide">
+                        <ui class="ft" d-filter="year">
+                            <li>Cette année, <a href="#">80% de couverts</a>, <a href="#">Trop bon !</a>, <a href="#">Restaurant 1</a>
+                            </li><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
+                            <li>Année passée, <a href="#">60% de couverts</a>, <a href="#">Il va vraiment fa...</a>, <a href="#">Restaurant 4</a>
                             </li>
                             <li>06/10/2024, <a href="#">70% de couverts</a>, <a href="#">Je reviendrai dans ce f...</a>, <a href="#">Restaurant 3</a>
                             </li>
@@ -102,14 +132,44 @@
                         <input class="search__views" id= "report__input" type="search" placeholder="Rechercher une date">
                         <button class="submit-button" id="report__button" type="submit">Rechercher</button>
                     </div>
-                    <div class="filter__table" id="f__table">
-                        <a href="#" class="active" d-filter="day">365</a> <a href="#" d-filter="week">52</a> <a href="#" d-filter="month">12</a> <a href="#" d-filter="year">1</a>
+                    <div class="filter__report" id="f__report">
+                        <a href="#" class="active fr hide" r-filter="day">jour</a> <a href="#" class="fr" r-filter="week">semaine</a> <a href="#" class="fr" r-filter="month">mois</a> <a href="#" class="fr" r-filter="year">année</a>
                     </div>
-                    <div class="views__list">
-                        <ui>
+                    <div class="views__list" r-filter="day">
+                        <ui class="fr" r-filter="day">
                             <li>Aujourd'hui, 200k, 3 restaurants, 20€
                             </li>
                             <li>Hier, 200k, 3 restaurants, 18€
+                            </li>
+                            <li>06/10/2024, 150k, 2 restaurants, 25€
+                            </li>
+                        </ui> 
+                    </div>
+                    <div class="views__list hide" r-filter="week">
+                        <ui class="fr" r-filter="week">
+                            <li>Cette semaine, 200k, 3 restaurants, 20€
+                            </li>
+                            <li>Semaine passée, 200k, 3 restaurants, 18€
+                            </li>
+                            <li>06/10/2024, 150k, 2 restaurants, 25€
+                            </li>
+                        </ui> 
+                    </div>
+                    <div class="views__list hide" r-filter="month">
+                        <ui class="fr" r-filter="month">
+                            <li>Ce mois, 200k, 3 restaurants, 20€
+                            </li>
+                            <li>Mois passé, 200k, 3 restaurants, 18€
+                            </li>
+                            <li>06/10/2024, 150k, 2 restaurants, 25€
+                            </li>
+                        </ui> 
+                    </div>
+                    <div class="views__list hide" r-filter="year">
+                        <ui class="fr" r-filter="year">
+                            <li>Cette année, 200k, 3 restaurants, 20€
+                            </li>
+                            <li>Année passée, 200k, 3 restaurants, 18€
                             </li>
                             <li>06/10/2024, 150k, 2 restaurants, 25€
                             </li>

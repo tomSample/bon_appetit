@@ -77,3 +77,7 @@
 .views__list.hide {
     display: none;
 }
+
+#view__table {
+    max-width: 30rem;
+}
