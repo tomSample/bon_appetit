@@ -289,6 +289,18 @@ nav a {
     box-shadow: 5px 2px 5px var(--darkwhite);
     background-color:var(--white);
 }
+/* 
+.item {
+    margin-inline: 0.2rem;
+    margin-block: 0.2rem;
+    background-color: var(--white);
+    cursor: pointer;
+} */
+
+.restaurant-id:hover {
+    box-shadow: var(--lightgrey) 0px 4px 16px;
+    transition: box-shadow 0.2s ease-in-out;
+}
 
 .restaurant-box li {
     list-style: none;
@@ -1078,6 +1090,7 @@ footer a {
 
     .item {
         width: 90%;
+        max-width: 220px;
         margin: auto;
         margin-block: 1rem;
     }
