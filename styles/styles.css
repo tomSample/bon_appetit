@@ -34,9 +34,16 @@ h2 {
     font-size: 2rem;
 }
 
+
 a {
     text-decoration: none;
 }
+
+.invisible {
+    display: none;
+    font-size: 1rem;
+}
+
 
 ._borderradius5 {
     border-radius: 5px;
@@ -111,6 +118,14 @@ nav a {
 .container {
     margin-inline: 4rem;
 }
+
+nav a {
+    padding:0;
+}
+
+/* .container {
+    margin-inline: 4rem;
+} */
 
 .header-logo {
     height: auto;
@@ -363,6 +378,7 @@ footer a {
     height: 6rem;
     background-color: var(--lightgrey);
     padding: 1rem;
+    margin-inline:0.5rem
 }
 
 .contact-footer-box span {
@@ -436,19 +452,6 @@ footer a {
 /* =======customers======= */
 
 
-.icon {
-    width: 15;
-    height: 15;
-    margin-top: 0.2rem;
-    margin-left: 0.5rem;
-    padding-top: 0.2rem;
-}
-.icon__intern {
-    width: 15;
-    height: 15;
-    margin-left: 0.5rem;
-}
-
 .subtitle {
     display: flex;
 }
@@ -459,6 +462,7 @@ footer a {
     align-items: center;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    margin-inline: 0rem;
 }
 
 #page__title {
