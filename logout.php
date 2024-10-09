@@ -1,8 +1,4 @@
-<!-- <?php
-session_start();
-session_unset();
-session_destroy();
-?> -->
+
 <?php include 'layout.php' ?>
 <?php include 'header.php' ?>
 
@@ -16,7 +12,7 @@ session_destroy();
 
         <!-- Bouton "oui" qui redirigera vers la page d'accueil déconnectée-->
 
-                    <a class="logout-a" href="index.php">
+                    <a class="logout-a" href="logout-action.php">
                         <button class="submit-button">Oui</button>
                     </a>
         <!-- Bouton "non"  retour arrière-->

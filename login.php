@@ -5,6 +5,9 @@ include 'users.php';
 
 $postData = $_POST;
 $errorMessage = '';
+$email = '';
+$password = '';
+$username = '';
 
 
 // vérifie si l'email et le password existent dans le tableau $postData 
@@ -20,6 +23,7 @@ if (isset($postData['email']) && isset($postData['password'])) {
     
     // parcourt le tableau des users pour vérifier si l'email et le password sont corrects
 
+
     else {
         foreach ($users as $user) {
             if (
@@ -28,8 +32,13 @@ if (isset($postData['email']) && isset($postData['password'])) {
             ) 
             // si oui alors l'utilisateur est reconnu
             {
-                $_SESSION['user_email'] = $user['email']; // Stocker l'ID de l'utilisateur dans la session
-                $_SESSION['user_password'] = $user['password']; // Stocker l'email de l'utilisateur dans la session
+                $email = $_SESSION['user_email'] = $user['email']; // Stocker l'ID de l'utilisateur dans la session
+                $password = $_SESSION['user_password'] = $user['password']; // Stocker l'email de l'utilisateur dans la session
+                $username = $_SESSION['user_name'] = $user['username']; // Stocker le nom de l'utilisateur dans la session
+                // COOKIES =)
+                setcookie("email", $email, time() + 3600);
+                setcookie("password", $password, time() + 3600);
+                setcookie("username", $username, time() + 3600);
                 header('Location: index.php');
                 exit;
             }

@@ -4,10 +4,12 @@
 
 $users = [
     [
+        'username' => 'user1',
         'email' => 'user@example.com',
         'password' => '0000',
     ],
     [
+        'username' => 'user2',
         'email' => 'user2@example.com',
         'password' => '1111',
     ],
