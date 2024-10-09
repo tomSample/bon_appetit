@@ -5,8 +5,9 @@
                 <h2>Découvrir</h2>
             </div>
             <div class="footer-box-padtop">
-                <a class="links" src="">Ajouter votre restaurant</a>
-                <a class="links" src="">A propos</a>
+                <a href ="" class="links">ajouter votre restaurant</a>
+                <a href ="" class="links">à propos</a>
+
             </div>
         </div>
         <div class="contact-footer-box">
@@ -27,8 +28,8 @@
                 <h2>Aide</h2>
             </div>
             <div class="footer-box-padtop">
-                <!-- <a class="links" src="">FAQ</a> En bonus, on aura potentiellement pas le temps de s'en charger. -->
-                <a class="links" src="">Mentions légales</a>
+                <a href="" class="links">faq</a>
+                <a href="" class="links">Mentions légales</a>
             </div>
         </div>
     </section>
@@ -41,16 +42,15 @@
             <div class="footer-box">
                 <h2>Découvrir</h2>
                 <div class="footer-box-padtop box-1">
-                    <a src="">Ajouter votre restaurant</a>
-                    <a src="">A propos</a>
+                    <a href="">ajouter votre restaurant</a>
+                    <a href="">à propos</a>
                 </div>
             </div>
             <div class="footer-box">
                 <h2>Aide</h2>
                 <div class="footer-box-padtop box-1">
-                    <a class="links" src="">FAQ</a>
-                    <a src="">Mentions légales</a>
-                    <a src="">FAQ</a>
+                    <a href="">faq</a>
+                    <a href="">Mentions légales</a>
                 </div>
             </div>
         </div>
