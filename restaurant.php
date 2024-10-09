@@ -50,8 +50,6 @@
                                 <option value="<?php echo str_pad($i, 2, '0', STR_PAD_LEFT); ?>"><?php echo str_pad($i, 2, '0', STR_PAD_LEFT); ?></option>
                             <?php endfor; ?>
                         </select>
-
-                        <label for="minutes">Minutes :</label>
                         <select id="minutes" name="minutes">
                             <?php for ($i = 0; $i < 60; $i += 15): ?>
                                 <option value="<?php echo str_pad($i, 2, '0', STR_PAD_LEFT); ?>"><?php echo str_pad($i, 2, '0', STR_PAD_LEFT); ?></option>

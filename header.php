@@ -19,9 +19,12 @@
                         <a href="clients.php">
                             <button class="header-button-1">Mon compte</button>
                         </a>
-                    <a href="logout.php">
+                        <a href="shopping-cart.php">
+                            <button class="header-button-1">Panier</button>
+                        </a>
+                        <a href="logout.php">
                         <button class="header-button-2">Se déconnecter</button>
-                    </a>
+                        </a>
 
                     <!-- boutons en mobile -->
                     <a href="clients.php">
