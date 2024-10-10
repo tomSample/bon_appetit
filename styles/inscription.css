@@ -1,0 +1,18 @@
+.questionnaire {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    padding-bottom: 4px;
+}
+
+.submit-button {
+    margin-top: 10%;
+}
+
+.inscription-title {
+    margin-top: 15%;
+}
+
+.inscription-undertitle {
+    text-align: center;
+}
