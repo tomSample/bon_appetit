@@ -1,0 +1,21 @@
+.clients__icon {
+    width: 15px;
+    height: 15px;
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
+    padding-top: 0.3rem;
+}
+
+.clients__icon__intern {
+    width: 15px;
+    height: 15px;
+    margin-left: 0.5rem;
+}
+
+.identity__icon {
+    width: 15px;
+    height: 15px;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    padding-top: 0.2rem;
+}
