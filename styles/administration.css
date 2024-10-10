@@ -81,3 +81,16 @@
 #view__table {
     max-width: 30rem;
 }
+
+.data__shop table {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.data__shop tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

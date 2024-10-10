@@ -42,16 +42,26 @@
 
                 <div class="grid__item__view" id="man__shops">
                     <div class="search" id="man__search" data-category="shop">
-                        <input class="search__views" id = "shop__input" type="search" placeholder="Rechercher un restaurant">
+                        <input class="search__views" id="shop__input" type="search" placeholder="Rechercher un restaurant">
                         <button class="submit-button" id="shop__button" type="submit">Rechercher</button>
                     </div>
                     <div class="add_shop">
                         <a src=""><i>Ajouter un restaurant</i></a>
                     </div>
                     <div class="views__list">
+                        <div class="data__shop">
+                            <table> <!-- https://openclassrooms.com/forum/sujet/centrer-un-texte-dune-cellule-dans-un-tableau-->
+                                <tr><th class="first"><a href="#">Restaurant 1</a></th><th class="first">Ville</th><th class="first"><img class="change__icon" src="./img/icon/order.png"></th><th><img class="change__icon" src="./img/icon/cutlery.png"></th><th><img class="change__icon" src="./img/icon/editing.png"></th><th><img class="change__icon" src="./img/icon/delete.png"></th>
+                                </tr> <!-- Lier le lien au restaurant affiché -->
+                                <tr><th class="follow"><a href="#">Restaurant 2</a></th><th class="follow">Ville</th><th class="follow"><img class="change__icon" src="./img/icon/order.png"></th><th><img class="change__icon" src="./img/icon/cutlery.png"></th><th><img class="change__icon" src="./img/icon/editing.png"></th><th><img class="change__icon" src="./img/icon/delete.png"></th>
+                                </tr>
+                                <tr><th class="follow"><a href="#">Restaurant 3</a></th><th class="follow">Ville</th><th class="follow"><img class="change__icon" src="./img/icon/order.png"></th><th><img class="change__icon" src="./img/icon/cutlery.png"></th><th><img class="change__icon" src="./img/icon/editing.png"></th><th><img class="change__icon" src="./img/icon/delete.png"></th>
+                                </tr>
+                            </table>
+                        </div>
                         <ui>
                             <li><a href="#">Restaurant 1</a>, Ville <img class="change__icon" src="./img/icon/order.png"><img class="change__icon" src="./img/icon/cutlery.png"><img class="change__icon" src="./img/icon/editing.png"><img class="change__icon" src="./img/icon/delete.png">
-                            </li><!-- Lier le lien au restaurant affiché -->
+                            </li>
                             <li><a href="#">Restaurant 2</a>, Ville <img class="change__icon" src="./img/icon/order.png"><img class="change__icon" src="./img/icon/cutlery.png"><img class="change__icon" src="./img/icon/editing.png"><img class="change__icon" src="./img/icon/delete.png">
                             </li>
                             <li><a href="#">Restaurant 3</a>, Ville <img class="change__icon" src="./img/icon/order.png"><img class="change__icon" src="./img/icon/cutlery.png"><img class="change__icon" src="./img/icon/editing.png"><img class="change__icon" src="./img/icon/delete.png">
@@ -62,7 +72,7 @@
 
                 <div class="grid__item__view hide" id="man__customers">
                     <div class="search" id="man__search" data-category="customer">
-                        <input class="search__views" id = "customer__input" type="search" placeholder="Rechercher un client">
+                        <input class="search__views" id="customer__input" type="search" placeholder="Rechercher un client">
                         <button class="submit-button" id="customer__button" type="submit">Rechercher</button>
                     </div>
                     <div class="views__list">
@@ -79,7 +89,7 @@
                 
                 <div class="grid__item__view hide" id="man__tables">
                     <div class="search" id="man__search" data-category="table">
-                        <input class="search__views" id = "table__input" type="search" placeholder="Rechercher une date">
+                        <input class="search__views" id="table__input" type="search" placeholder="Rechercher une date">
                         <button class="submit-button" id="table__button" type="submit">Rechercher</button>
                     </div>
                     <div class="filter__table" id="f__table">
