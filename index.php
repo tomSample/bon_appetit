@@ -1,7 +1,7 @@
 <?php include 'layout.php'; ?>
 <?php include 'header.php'; ?>
-<? var_dump($isLoggedIn); ?>
 
+?>
 <!-- ===fin header=== -->
 
 <!-- ===hero banner=== -->
@@ -61,7 +61,7 @@
                     <h2>Votre restaurant favori</h2>
                 </div>
                     <div class="restaurant-box">
-                      <a href="restaurant.php">
+                        <a href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">

@@ -1,5 +1,7 @@
 <?php
+session_name('BonAppetit');
 session_start();
+
 $isLoggedIn = isset($_SESSION['user_email']);
 $currentPage = basename($_SERVER['PHP_SELF']);
 $postData = $_POST;

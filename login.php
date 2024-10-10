@@ -3,53 +3,57 @@ include 'layout.php';
 include 'header.php';
 include 'users.php';
 
-$postData = $_POST;
 $errorMessage = '';
-$email = '';
-$password = '';
-$username = '';
+// $email = '';
+// $password = '';
+// $username = '';
 
 
-// vérifie si l'email et le password existent dans le tableau $postData 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Ajoutez cette ligne pour voir les données POST
+    // vérifie si l'email et le password existent dans le tableau $_POST 
 
-if (isset($postData['email']) && isset($postData['password'])) {
+// vérifie si l'email et le password existent dans le tableau $_POST 
 
-    // vérifie si l'email est incorrect (syntaxe) via la fonction FILTER_VALIDATE_EMAIL (autres filtres possibles URL, IP...)
-    // filter var = Filtre une variable avec un filtre spécifique
+    if (isset($_POST['email']) && isset($_POST['password'])) {
 
-    if (!filter_var($postData['email'], FILTER_VALIDATE_EMAIL)) {
-        $errorMessage = "L'adresse mail n'est pas valide.";
-    }
-    
-    // parcourt le tableau des users pour vérifier si l'email et le password sont corrects
+        // vérifie si l'email est incorrect (syntaxe) via la fonction FILTER_VALIDATE_EMAIL (autres filtres possibles URL, IP...)
+        // filter var = Filtre une variable avec un filtre spécifique
+
+        if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            $errorMessage = "L'adresse mail n'est pas valide.";
+        }
+        
+        // parcourt le tableau des users pour vérifier si l'email et le password sont corrects
 
 
-    else {
-        foreach ($users as $user) {
-            if (
-                $user['email'] === $postData['email'] &&
-                $user['password'] === $postData['password']
-            ) 
-            // si oui alors l'utilisateur est reconnu
-            {
-                $email = $_SESSION['user_email'] = $user['email']; // Stocker l'ID de l'utilisateur dans la session
-                $password = $_SESSION['user_password'] = $user['password']; // Stocker l'email de l'utilisateur dans la session
-                $username = $_SESSION['user_name'] = $user['username']; // Stocker le nom de l'utilisateur dans la session
-                // COOKIES =)
-                setcookie("email", $email, time() + 3600);
-                setcookie("password", $password, time() + 3600);
-                setcookie("username", $username, time() + 3600);
-                header('Location: index.php');
-                exit;
+        else {
+            foreach ($users as $user) {
+                if (
+                    $user['email'] === $_POST['email'] &&
+                    $user['password'] === $_POST['password']
+                ) 
+                // si oui alors l'utilisateur est reconnu
+                {
+                    $email = $_SESSION['user_email'] = $user['email']; // Stocker l'ID de l'utilisateur dans la session
+                    $password = $_SESSION['user_password'] = $user['password']; // Stocker l'email de l'utilisateur dans la session
+                    $username = $_SESSION['user_name'] = $user['username']; // Stocker le nom de l'utilisateur dans la session
+                    // COOKIES =)
+                    setcookie("email", $email, time() + 3600);
+                    setcookie("password", $password, time() + 3600);
+                    setcookie("username", $username, time() + 3600);
+                    header('Location: index.php');
+                    exit;
+                }
+            }
+
+            if (!isset($_SESSION['user_email'])) {
+                $errorMessage = "L'adresse mail et/ou le mot de passe est/sont incorrect(s).";
             }
         }
-
-        if (!isset($_SESSION['user_email'])) {
-            $errorMessage = "L'adresse mail et/ou le mot de passe est/sont incorrect(s).";
-        }
+    } else {
+        $errorMessage = "Veuillez remplir tous les champs.";
     }
-} else {
-    $errorMessage = "Veuillez remplir tous les champs.";
 }
 ?>
 
@@ -60,7 +64,7 @@ if (isset($postData['email']) && isset($postData['password'])) {
         <?php if ($errorMessage): ?>
             <div class="error-message"><?php echo $errorMessage; ?></div>
         <?php endif; ?>
-            <form method="post" action="login.php">
+            <form action="login.php"  method="POST">
                 <label>E-mail</label>
                 <input id="login-email" name="email" type="email" placeholder="toto@gmail.com">
                 <label>Mot de passe</label>
