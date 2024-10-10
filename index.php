@@ -4,6 +4,7 @@
 <!-- ===fin header=== -->
 
 <!-- ===hero banner=== -->
+<!-- si user n'est pasconnecté, affiche : -->
 <?php if ($isLoggedIn === false): ?>
     <body>
         <section class="hero-banner">
@@ -35,7 +36,7 @@
             </div>
         </section>
 <!-- ===fin main=== -->
-
+<!-- si user est connecté, affiche : -->
     <?php else: ?>
         <body>
         <div class="body-padding">
@@ -59,6 +60,30 @@
                     <h2>Votre restaurant favori</h2>
                 </div>
                     <div class="restaurant-box">
+                        <a href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="star-icon">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="star-icon">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>                       
                         <a href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>

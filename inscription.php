@@ -10,7 +10,7 @@
                 <div class="inscription-title">
                     <h1>Inscription</h1>
                     <div class="inscription-undertitle">
-                    <p>Indiquez vos informations</p>
+                    <p>Indiquez vos informations.</p>
                     </div>
                     </div>
                     <form>
