@@ -1171,6 +1171,84 @@ footer a {
         display: unset!important;
     }
 
+    .resto-id {
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+
+    #resto-id-photo {
+        display: flex;
+        margin-inline: auto;
+    }
+
+    #resto-nav {
+        display: none;
+    }
+
+    .list {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .photo-plat {
+        width: 100%;
+        max-width : 366.2px
+    }
+
+    .resto-id-text {
+        padding-left: 0;
+    }
+
+    .resto-id-title {
+        width: 100%;
+        text-align: left;
+    }
+
+    .resto-resume {
+        flex-direction: column;
+        padding-block: 2rem;
+    }
+
+    .mobile-resto-presentation {
+        width: 100%;
+    }
+
+    .mobile-resto-presentation h3 {
+        text-align: center;
+    }
+
+    #book-button {
+        margin-right:0;
+    }
+
+    .item-button {
+        display: none;
+    }
+
+    .footer-box {
+        margin-inline: 0.2rem;
+    }
+
+    .questionnaire {
+        display: flex;
+        height: 50px;
+        width: 250px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        justify-content: center;
+      }
+    
+      .inscription-container {
+        justify-content: center;
+        margin-left: 100%;
+      }
+
+      .inscription-confirmation-button {
+        margin-top: 10%;
+        margin-bottom: -30%;
+      }
+
     .mobile-login-form {
         width: 100%;
     }
