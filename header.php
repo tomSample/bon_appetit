@@ -1,3 +1,4 @@
+<?php include 'items.php' ?>
 <?php $username = $_SESSION['user_name'] ?? ''; ?>
 
 <header>
@@ -17,61 +18,94 @@
                 $currentPage == 'login.php' ||
                 $currentPage =='forgotten-password.php' ||
                 $currentPage =='logout.php'||
-                $currentPage =='administration.php') : ?>
-                    <?php if ($isLoggedIn): ?>
-                        <a href="clients.php">
-                            <button class="header-button-1"><span class="material-symbols-outlined">person</span><?php echo htmlspecialchars($username); ?></button>
-                        </a>
-                        <a href="shopping-cart.php">
-                            <button class="header-button-1">Panier</button>
-                        </a>
-                        <a href="logout.php">
-                        <button class="header-button-2">Se déconnecter</button>
-                        </a>
-
-                    <!-- boutons en mobile -->
-                    <a href="clients.php">
-                        <button class="mobile-header-button">
-                            <span class="material-symbols-outlined">person</span>
-                        </button>
-                    </a>
-                    <a href="shopping-cart.php">
-                        <button class="mobile-header-button">
-                            <span class="material-symbols-outlined">shopping_bag</span>
-                        </button>
-                    </a>
-                    <a href="logout.php">
-                        <button class="mobile-header-button">
-                            <span class="material-symbols-outlined">logout</span></button>
-                    </a>
-
-
-        <!-- et s'il n'est pas connecté : -->
-                    <?php else: ?>
-                        <a href="inscription.php">
-                            <button class="header-button-1">Inscription</button>
-                        </a>
-                        <a href="login.php">
-                            <button class="header-button-2">Connexion</button>
-                        </a>
+                $currentPage =='administration.php' ||
+                $currentPage == 'shopping-cart.php') : ?>
+        <?php if ($isLoggedIn): ?>
+            <a href="clients.php">
+                <button class="header-button-1"><span class="material-symbols-outlined">person</span><?php echo htmlspecialchars($username); ?></button>
+            </a>
+            <a>
+                <button onclick="toggleDrawer()" id="toggle-drawer" class="header-button-1">Panier</button>
+            </a>
+            <a href="logout.php">
+            <button class="header-button-2">Se déconnecter</button>
+            </a>
 
         <!-- boutons en mobile -->
-                    <a href="inscription.php">
-                        <button class="mobile-header-button">
-                            <span class="material-symbols-outlined">person_add</span>
-                        </button>
-                    </a>
-                    <a href="shopping-cart.php">
-                        <button class="mobile-header-button">
-                            <span class="material-symbols-outlined">shopping_bag</span>
-                        </button>
-                    </a>
-                    <a href="login.php">
-                        <button class="mobile-header-button">
-                            <span class="material-symbols-outlined">login</span></button>
-                    </a>
-                    <?php endif; ?>
-                <?php endif; ?>
+        <a href="clients.php">
+            <button class="mobile-header-button">
+                <span class="material-symbols-outlined">person</span>
+            </button>
+        </a>
+        <a>
+            <button onclick="toggleDrawer()" id="toggle-drawer" class="mobile-header-button">
+                <span class="material-symbols-outlined">shopping_bag</span>
+            </button>
+        </a>
+        <a href="logout.php">
+            <button class="mobile-header-button">
+                <span class="material-symbols-outlined">logout</span></button>
+        </a>
+
+
+<!-- et s'il n'est pas connecté : -->
+        <?php else: ?>
+            <a href="inscription.php">
+                <button class="header-button-1">Inscription</button>
+            </a>
+            <a>
+                <button onclick="toggleDrawer()" id="toggle-drawer" class="header-button-1">Panier</button>
+            </a>
+            <a href="login.php">
+                <button class="header-button-2">Connexion</button>
+            </a>
+
+<!-- boutons en mobile -->
+        <a href="inscription.php">
+            <button class="mobile-header-button">
+                <span class="material-symbols-outlined">person_add</span>
+            </button>
+        </a>
+        <a>
+            <button onclick="toggleDrawer()" id="toggle-drawer" class="mobile-header-button">
+                <span class="material-symbols-outlined">shopping_bag</span>
+            </button>
+        </a>
+        <a href="login.php">
+            <button class="mobile-header-button">
+                <span class="material-symbols-outlined">login</span></button>
+        </a>
+        <?php endif; ?>
+    <?php endif; ?>
+
+<!-- DRAWER -->
+
+<div id="restaurant-drawer-overlay">
+    <div id="restaurant-drawer-content">
+        <div>
+            <?php
+            //vérifier que le panier existe est n'est pas vide
+            if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+                    // Display cart items
+                    foreach ($_SESSION['cart'] as $item) {
+                        echo "<p>{$item['name']} - {$item['quantity']} - {$item['price']}€</p>";
+                    }
+                } else {
+                    // Display message if cart is empty
+                    echo "<p>Votre panier est vide</p>";
+                }
+                ?>
+        </div>
+        <div>
+            <?php if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) { ?>
+            <a href="shopping-cart.php" class="_borderradius10">Finaliser la commande</a> <?php } ?>
+        </div>
+        <div>
+            <button onclick="toggleDrawer()" id="restaurant-button-close"><span class="material-symbols-outlined">close</span></button>
+        </div>
+    </div>
+</div>
+
 
 
             

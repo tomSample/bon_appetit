@@ -1,7 +1,6 @@
 <?php include 'layout.php'; ?>
 <?php include 'header.php'; ?>
 
-
 <section class ="body-padding">
     <div class="resto-id">
         <div>
@@ -439,11 +438,5 @@
         <button onclick="ArticleManager.togglePopup()" id="popup-button-close">Fermer</button>
     </div>
 </div>
-
-
-
-
-
-
 
 <?php include 'footer.php'; ?>
