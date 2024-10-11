@@ -1,3 +1,5 @@
+<?php $username = $_SESSION['user_name'] ?? ''; ?>
+
 <header>
     <nav>        
         <a href="index.php">
@@ -18,7 +20,7 @@
                 $currentPage =='administration.php') : ?>
                     <?php if ($isLoggedIn): ?>
                         <a href="clients.php">
-                            <button class="header-button-1">Mon compte</button>
+                            <button class="header-button-1"><span class="material-symbols-outlined">person</span><?php echo htmlspecialchars($username); ?></button>
                         </a>
                         <a href="shopping-cart.php">
                             <button class="header-button-1">Panier</button>
