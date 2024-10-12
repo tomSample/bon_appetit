@@ -82,27 +82,29 @@
 
 <div id="restaurant-drawer-overlay">
     <div id="restaurant-drawer-content">
-        <div>
-            <?php
-            //vérifier que le panier existe est n'est pas vide
-            if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
-                    // Display cart items
-                    foreach ($_SESSION['cart'] as $item) {
-                        echo "<p>{$item['name']} - {$item['quantity']} - {$item['price']}€</p>";
+        <div id="restaurant-drawer-box">
+            <div>
+                <?php
+                //vérifier que le panier existe est n'est pas vide
+                if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+                        // Display cart items
+                        foreach ($_SESSION['cart'] as $item) {
+                            echo "<p>{$item['name']} - {$item['quantity']} - {$item['price']}€</p>";
+                        }
+                    } else {
+                        // Display message if cart is empty
+                        echo "<p>Votre panier est vide</p>";
                     }
-                } else {
-                    // Display message if cart is empty
-                    echo "<p>Votre panier est vide</p>";
-                }
-                ?>
+                    ?>
+            </div>
+            <div id="drawer-button-box">
+                <?php if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) { ?>
+                <a id="drawer-button-link" href="shopping-cart.php" class="_borderradius10">Finaliser la commande</a> <?php } ?>
+            </div>
         </div>
-        <div>
-            <?php if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) { ?>
-            <a href="shopping-cart.php" class="_borderradius10">Finaliser la commande</a> <?php } ?>
-        </div>
-        <div>
-            <button onclick="toggleDrawer()" id="restaurant-button-close"><span class="material-symbols-outlined">close</span></button>
-        </div>
+    </div>
+    <div>
+        <button onclick="toggleDrawer()" id="restaurant-button-close"><span class="material-symbols-outlined">close</span></button>
     </div>
 </div>
 
