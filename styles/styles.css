@@ -26,6 +26,10 @@ html {
     background-color: var(--darkwhite);
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 h1 {
     font-size: 6rem;
 }
@@ -144,6 +148,9 @@ nav a {
 }
 
 .header-button-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 120px;
     padding: 0.5rem;
     background-color: var(--orange);
@@ -447,6 +454,10 @@ footer a {
     display: none;
 }
 
+.item-added {
+    background-color: red; /* Example color, adjust as needed */
+    color: blue; /* Example color, adjust as needed */
+}
 
 
 /* =======customers======= */
@@ -871,6 +882,73 @@ footer a {
     text-align: center;
 }
 
+/* ============DRAWER=================== */
+
+#restaurant-drawer-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:var(--lightgrey-o7);
+    z-index:100;
+    display:none;
+}
+
+#restaurant-drawer-overlay.open {
+    display: block !important;
+}
+
+#restaurant-drawer-content {
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100%;
+    background: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#restaurant-drawer-content.open {
+    right: 0;
+}
+
+#restaurant-drawer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+}
+
+#drawer-button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+    border-radius: 5px;
+}
+
+#drawer-button-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width : 300px;
+    height: 50px;
+}
+
+#restaurant-button-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: var(--lightorange);
+    border-bottom-left-radius: 10px;
+}
+
 /* =======Restaurant.php <article> indisponible => n'apparait pas ======= */
 
 .unavailable {
@@ -1251,5 +1329,11 @@ footer a {
 
     .mobile-login-form {
         width: 100%;
+    }
+
+    #restaurant-drawer-content {
+        top: 10vh;
+        width: 90vw;
+        height: 80vh;
     }
 }

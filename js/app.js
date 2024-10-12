@@ -109,3 +109,23 @@ function decreaseQuantity(event, articleId) {
         console.log('Article retiré du panier:', articleId);
     }
 }
+
+//=====DRAWER====
+function toggleDrawer() {
+    document.getElementById('restaurant-drawer-content').classList.toggle('open');
+    document.getElementById('restaurant-drawer-overlay').classList.toggle('open');
+    document.body.classList.toggle('no-scroll');
+}
+
+//=====CART====
+
+function toggleCart() {
+    document.getElementById('shopping-cart-item-recap').classList.toggle('open');
+    document.getElementById('recap-arrow').classList.toggle('open');
+}
+
+//=====RADIO BUTTON====
+
+function checkRadio(value) {
+    document.getElementById(value).checked = true;
+}
