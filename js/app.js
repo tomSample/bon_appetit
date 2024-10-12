@@ -123,3 +123,9 @@ function toggleCart() {
     document.getElementById('shopping-cart-item-recap').classList.toggle('open');
     document.getElementById('recap-arrow').classList.toggle('open');
 }
+
+//=====RADIO BUTTON====
+
+function checkRadio(value) {
+    document.getElementById(value).checked = true;
+}
