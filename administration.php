@@ -50,23 +50,57 @@
                     </div>
                     <div class="views__list">
                         <div class="data__shop">
-                            <table> <!-- https://openclassrooms.com/forum/sujet/centrer-un-texte-dune-cellule-dans-un-tableau-->
-                                <tr><th class="first"><a href="#">Restaurant 1</a></th><th class="first">Ville</th><th class="first"><img class="change__icon" src="./img/icon/order.png"></th><th><img class="change__icon" src="./img/icon/cutlery.png"></th><th><img class="change__icon" src="./img/icon/editing.png"></th><th><img class="change__icon" src="./img/icon/delete.png"></th>
-                                </tr> <!-- Lier le lien au restaurant affiché -->
-                                <tr><th class="follow"><a href="#">Restaurant 2</a></th><th class="follow">Ville</th><th class="follow"><img class="change__icon" src="./img/icon/order.png"></th><th><img class="change__icon" src="./img/icon/cutlery.png"></th><th><img class="change__icon" src="./img/icon/editing.png"></th><th><img class="change__icon" src="./img/icon/delete.png"></th>
-                                </tr>
-                                <tr><th class="follow"><a href="#">Restaurant 3</a></th><th class="follow">Ville</th><th class="follow"><img class="change__icon" src="./img/icon/order.png"></th><th><img class="change__icon" src="./img/icon/cutlery.png"></th><th><img class="change__icon" src="./img/icon/editing.png"></th><th><img class="change__icon" src="./img/icon/delete.png"></th>
-                                </tr>
-                            </table>
+
+                            <div class="wrapTable">
+                                <div class="tableHeader">
+                                    <div class="col1 iteman"><span>Restaurant</span></div>
+                                    <div class="col2 iteman"><span>Ville</span></div>
+                                    <div class="col3 iteman"><span>Flux</span></div>
+                                    <div class="col4 iteman"><span>Couverts</span></div>
+                                    <div class="col5 iteman"><span></span></div>
+                                    <div class="col6 iteman"><span></span></div>
+                                </div>
+                                <div class="tableBody">
+                                    <div class="oneRow">
+                                        <div class="iteman col1">
+                                            <div class="description">
+                                                <p class="name"><a target="_blank" href="#">Aux plaisirs gustatifs</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="iteman col2"><span>Lannion</span></div>
+                                        <div class="iteman col3"><img class="change__icon" src="./img/icon/order.png"></span></div>
+                                        <div class="iteman col4"><img class="change__icon" src="./img/icon/cutlery.png"></div>
+                                        <div class="iteman col5"><img class="change__icon" src="./img/icon/editing.png"></div>
+                                        <div class="iteman col6"><img class="change__icon" src="./img/icon/delete.png"></div>
+                                    </div>
+                                    <div class="oneRow">
+                                        <div class="iteman col1">
+                                            <div class="description">
+                                                <p class="name"><a target="_blank" href="#">Mangez-nous</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="iteman col2"><span>Saint-Jacques-en-champagne</span></div>
+                                        <div class="iteman col3"><img class="change__icon" src="./img/icon/order.png"></span></div>
+                                        <div class="iteman col4"><img class="change__icon" src="./img/icon/cutlery.png"></div>
+                                        <div class="iteman col5"><img class="change__icon" src="./img/icon/editing.png"></div>
+                                        <div class="iteman col6"><img class="change__icon" src="./img/icon/delete.png"></div>
+                                    </div>
+                                    <div class="oneRow">
+                                        <div class="iteman col1">
+                                            <div class="description">
+                                                <p class="name"><a target="_blank" href="#">La bonne fourchette</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="iteman col2"><span>Lannion</span></div>
+                                        <div class="iteman col3"><img class="change__icon" src="./img/icon/order.png"></span></div>
+                                        <div class="iteman col4"><img class="change__icon" src="./img/icon/cutlery.png"></div>
+                                        <div class="iteman col5"><img class="change__icon" src="./img/icon/editing.png"></div>
+                                        <div class="iteman col6"><img class="change__icon" src="./img/icon/delete.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <ui>
-                            <li><a href="#">Restaurant 1</a>, Ville <img class="change__icon" src="./img/icon/order.png"><img class="change__icon" src="./img/icon/cutlery.png"><img class="change__icon" src="./img/icon/editing.png"><img class="change__icon" src="./img/icon/delete.png">
-                            </li>
-                            <li><a href="#">Restaurant 2</a>, Ville <img class="change__icon" src="./img/icon/order.png"><img class="change__icon" src="./img/icon/cutlery.png"><img class="change__icon" src="./img/icon/editing.png"><img class="change__icon" src="./img/icon/delete.png">
-                            </li>
-                            <li><a href="#">Restaurant 3</a>, Ville <img class="change__icon" src="./img/icon/order.png"><img class="change__icon" src="./img/icon/cutlery.png"><img class="change__icon" src="./img/icon/editing.png"><img class="change__icon" src="./img/icon/delete.png">
-                            </li>
-                        </ui> 
                     </div>
                 </div>
 
@@ -77,6 +111,7 @@
                     </div>
                     <div class="views__list">
                         <ui>
+                            <p id="z">Clients</p>
                             <li><a href="clients.html">John Doe</a>
                             </li><!-- Lier le lien à la personne affichée -->
                             <li><a href="clients.html">Jane Tiger</a>
@@ -89,53 +124,192 @@
                 
                 <div class="grid__item__view hide" id="man__tables">
                     <div class="search" id="man__search" data-category="table">
-                        <input class="search__views" id="table__input" type="search" placeholder="Rechercher une date">
+                        <input class="search__views" id="table__input" type="search" placeholder="Rechercher une date"> 
                         <button class="submit-button" id="table__button" type="submit">Rechercher</button>
                     </div>
                     <div class="filter__table" id="f__table">
-                        <a href="#" class="active ft hide" d-filter="day">jour</a> <a href="#" class="ft" d-filter="week">semaine</a> <a href="#" class="ft" d-filter="month">mois</a> <a href="#" class="ft" d-filter="year">année</a>
+                        <p>Filtrer par <a href="#" class="active ft hide" d-filter="day">jour</a> <a href="#" class="ft" d-filter="week">semaine</a> <a href="#" class="ft" d-filter="month">mois</a> <a href="#" class="ft" d-filter="year">année</a></p>
                     </div>
                     <div class="views__list" id="view__table">
-                        <ui class="ft" d-filter="day">
-                            <li>Aujourd'hui, <a href="#">80% de couverts</a>, <a href="#">Trop bon !</a>, <a href="#">Restaurant 1</a>
-                            </li><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
-                            <li>Hier, <a href="#">60% de couverts</a>, <a href="#">Il va vraiment fa...</a>, <a href="#">Restaurant 4</a>
-                            </li>
-                            <li>06/10/2024, <a href="#">70% de couverts</a>, <a href="#">Je reviendrai dans ce f...</a>, <a href="#">Restaurant 3</a>
-                            </li>
-                        </ui> 
+                        <div class="ft" d-filter="day">
+                            <div class="wrapTable">
+                                    <div class="tableHeader">
+                                        <div class="col1 iteman"><span>Jour</span></div>
+                                        <div class="col2 iteman"><span>Flux</span></div>
+                                        <div class="col3 iteman"><span>Avis</span></div>
+                                        <div class="col4 iteman"><span>Top restaurant</span></div>
+                                    </div>
+                                    <div class="tableBody">
+                                        <div class="oneRow">
+                                            <div class="iteman col1">
+                                                <div class="description">
+                                                    <p class="name"><a target="_blank" href="#">Aujourd'hui</a></p>
+                                                </div><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
+                                            </div>
+                                            <div class="iteman col2"><span><a href="#">80% de couverts</a></span></div>
+                                            <div class="iteman col3"><span><a href="#">Trop bon !</a></span></div>
+                                            <div class="iteman col4"><span><a href="#">Restaurant 1</a></span></div>
+                                        </div>
+                                        <div class="oneRow">
+                                            <div class="iteman col1">
+                                                <div class="description">
+                                                <p class="name"><a target="_blank" href="#">Hier</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="iteman col2"><span><a href="#">60% de couverts</a></span></div>
+                                            <div class="iteman col3"><span><a href="#">Il va vraiment fa...</a></span></div>
+                                            <div class="iteman col4"><span><a href="#">Restaurant 4</a></span></div>
+                                        </div>
+                                        <div class="oneRow">
+                                            <div class="iteman col1">
+                                                <div class="description">
+                                                <p class="name"><a target="_blank" href="#">06/10/2024</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="iteman col2"><span><a href="#">70% de couverts</a></span></div>
+                                            <div class="iteman col3"><span><a href="#">Je reviendrai dans ce f...</a></span></div>
+                                            <div class="iteman col4"><span><a href="#">Restaurant 3</a></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="views__list hide">
+                            <div class="ft" d-filter="week">
+                                <div class="wrapTable">
+                                        <div class="tableHeader">
+                                            <div class="col1 iteman"><span>Semaine</span></div>
+                                            <div class="col2 iteman"><span>Flux</span></div>
+                                            <div class="col3 iteman"><span>Avis</span></div>
+                                            <div class="col4 iteman"><span>Top restaurant</span></div>
+                                        </div>
+                                        <div class="tableBody">
+                                            <div class="oneRow">
+                                                <div class="iteman col1">
+                                                    <div class="description">
+                                                        <p class="name"><a target="_blank" href="#">Cette semaine</a></p>
+                                                    </div><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
+                                                </div>
+                                                <div class="iteman col2"><span><a href="#">80% de couverts</a></span></div>
+                                                <div class="iteman col3"><span><a href="#">Trop bon !</a></span></div>
+                                                <div class="iteman col4"><span><a href="#">Restaurant 1</a></span></div>
+                                            </div>
+                                            <div class="oneRow">
+                                                <div class="iteman col1">
+                                                    <div class="description">
+                                                    <p class="name"><a target="_blank" href="#">Semaine passée</a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="iteman col2"><span><a href="#">60% de couverts</a></span></div>
+                                                <div class="iteman col3"><span><a href="#">Il va vraiment fa...</a></span></div>
+                                                <div class="iteman col4"><span><a href="#">Restaurant 4</a></span></div>
+                                            </div>
+                                            <div class="oneRow">
+                                                <div class="iteman col1">
+                                                    <div class="description">
+                                                    <p class="name"><a target="_blank" href="#">06/10/2024</a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="iteman col2"><span><a href="#">70% de couverts</a></span></div>
+                                                <div class="iteman col3"><span><a href="#">Je reviendrai dans ce f...</a></span></div>
+                                                <div class="iteman col4"><span><a href="#">Restaurant 3</a></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="views__list hide">
+                            <div class="ft" d-filter="month">
+                                <div class="wrapTable">
+                                        <div class="tableHeader">
+                                            <div class="col1 iteman"><span>Mois</span></div>
+                                            <div class="col2 iteman"><span>Flux</span></div>
+                                            <div class="col3 iteman"><span>Avis</span></div>
+                                            <div class="col4 iteman"><span>Top restaurant</span></div>
+                                        </div>
+                                        <div class="tableBody">
+                                            <div class="oneRow">
+                                                <div class="iteman col1">
+                                                    <div class="description">
+                                                        <p class="name"><a target="_blank" href="#">Ce mois</a></p>
+                                                    </div><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
+                                                </div>
+                                                <div class="iteman col2"><span><a href="#">80% de couverts</a></span></div>
+                                                <div class="iteman col3"><span><a href="#">Trop bon !</a></span></div>
+                                                <div class="iteman col4"><span><a href="#">Restaurant 1</a></span></div>
+                                            </div>
+                                            <div class="oneRow">
+                                                <div class="iteman col1">
+                                                    <div class="description">
+                                                    <p class="name"><a target="_blank" href="#">Mois passé</a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="iteman col2"><span><a href="#">60% de couverts</a></span></div>
+                                                <div class="iteman col3"><span><a href="#">Il va vraiment fa...</a></span></div>
+                                                <div class="iteman col4"><span><a href="#">Restaurant 4</a></span></div>
+                                            </div>
+                                            <div class="oneRow">
+                                                <div class="iteman col1">
+                                                    <div class="description">
+                                                    <p class="name"><a target="_blank" href="#">06/10/2024</a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="iteman col2"><span><a href="#">70% de couverts</a></span></div>
+                                                <div class="iteman col3"><span><a href="#">Je reviendrai dans ce f...</a></span></div>
+                                                <div class="iteman col4"><span><a href="#">Restaurant 3</a></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="views__list hide">
+                            <div class="ft" d-filter="year">
+                                <div class="wrapTable">
+                                        <div class="tableHeader">
+                                            <div class="col1 iteman"><span>Année</span></div>
+                                            <div class="col2 iteman"><span>Flux</span></div>
+                                            <div class="col3 iteman"><span>Avis</span></div>
+                                            <div class="col4 iteman"><span>Top restaurant</span></div>
+                                        </div>
+                                        <div class="tableBody">
+                                            <div class="oneRow">
+                                                <div class="iteman col1">
+                                                    <div class="description">
+                                                        <p class="name"><a target="_blank" href="#">Cette année</a></p>
+                                                    </div><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
+                                                </div>
+                                                <div class="iteman col2"><span><a href="#">80% de couverts</a></span></div>
+                                                <div class="iteman col3"><span><a href="#">Trop bon !</a></span></div>
+                                                <div class="iteman col4"><span><a href="#">Restaurant 1</a></span></div>
+                                            </div>
+                                            <div class="oneRow">
+                                                <div class="iteman col1">
+                                                    <div class="description">
+                                                    <p class="name"><a target="_blank" href="#">Année passée</a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="iteman col2"><span><a href="#">60% de couverts</a></span></div>
+                                                <div class="iteman col3"><span><a href="#">Il va vraiment fa...</a></span></div>
+                                                <div class="iteman col4"><span><a href="#">Restaurant 4</a></span></div>
+                                            </div>
+                                            <div class="oneRow">
+                                                <div class="iteman col1">
+                                                    <div class="description">
+                                                    <p class="name"><a target="_blank" href="#">06/10/2024</a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="iteman col2"><span><a href="#">70% de couverts</a></span></div>
+                                                <div class="iteman col3"><span><a href="#">Je reviendrai dans ce f...</a></span></div>
+                                                <div class="iteman col4"><span><a href="#">Restaurant 3</a></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
                     </div>
-                    <div class="views__list hide">
-                        <ui class="ft" d-filter="week">
-                            <li>Cette semaine, <a href="#">80% de couverts</a>, <a href="#">Trop bon !</a>, <a href="#">Restaurant 1</a>
-                            </li><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
-                            <li>Semaine passée, <a href="#">60% de couverts</a>, <a href="#">Il va vraiment fa...</a>, <a href="#">Restaurant 4</a>
-                            </li>
-                            <li>06/10/2024, <a href="#">70% de couverts</a>, <a href="#">Je reviendrai dans ce f...</a>, <a href="#">Restaurant 3</a>
-                            </li>
-                        </ui> 
-                    </div>
-                    <div class="views__list hide">
-                        <ui class="ft" d-filter="month">
-                            <li>Ce mois, <a href="#">80% de couverts</a>, <a href="#">Trop bon !</a>, <a href="#">Restaurant 1</a>
-                            </li><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
-                            <li>Mois passé, <a href="#">60% de couverts</a>, <a href="#">Il va vraiment fa...</a>, <a href="#">Restaurant 4</a>
-                            </li>
-                            <li>06/10/2024, <a href="#">70% de couverts</a>, <a href="#">Je reviendrai dans ce f...</a>, <a href="#">Restaurant 3</a>
-                            </li>
-                        </ui> 
-                    </div>
-                    <div class="views__list hide">
-                        <ui class="ft" d-filter="year">
-                            <li>Cette année, <a href="#">80% de couverts</a>, <a href="#">Trop bon !</a>, <a href="#">Restaurant 1</a>
-                            </li><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
-                            <li>Année passée, <a href="#">60% de couverts</a>, <a href="#">Il va vraiment fa...</a>, <a href="#">Restaurant 4</a>
-                            </li>
-                            <li>06/10/2024, <a href="#">70% de couverts</a>, <a href="#">Je reviendrai dans ce f...</a>, <a href="#">Restaurant 3</a>
-                            </li>
-                        </ui> 
-                    </div>
-                </div>
 
                 <div class="grid__item__view hide" id="man__reports">
                     <div class="search" id="man__search" data-category="report">
@@ -143,47 +317,199 @@
                         <button class="submit-button" id="report__button" type="submit">Rechercher</button>
                     </div>
                     <div class="filter__report" id="f__report">
-                        <a href="#" class="active fr hide" r-filter="day">jour</a> <a href="#" class="fr" r-filter="week">semaine</a> <a href="#" class="fr" r-filter="month">mois</a> <a href="#" class="fr" r-filter="year">année</a>
+                        <p>Filtrer par <a href="#" class="active fr hide" r-filter="day">jour</a> <a href="#" class="fr" r-filter="week">semaine</a> <a href="#" class="fr" r-filter="month">mois</a> <a href="#" class="fr" r-filter="year">année</a></p>
                     </div>
                     <div class="views__list" r-filter="day">
-                        <ui class="fr" r-filter="day">
-                            <li>Aujourd'hui, 200k, 3 restaurants, 20€
-                            </li>
-                            <li>Hier, 200k, 3 restaurants, 18€
-                            </li>
-                            <li>06/10/2024, 150k, 2 restaurants, 25€
-                            </li>
-                        </ui> 
-                    </div>
+                        <div class="fr" r-filter="day">
+                            <div class="wrapTable">
+                                <div class="tableHeader">
+                                    <div class="col1 iteman"><span>Jour</span></div>
+                                    <div class="col2 iteman"><span>Chiffre d'affaires</span></div>
+                                    <div class="col3 iteman"><span>Nombre de restaurants</span></div>
+                                    <div class="col4 iteman"><span>Panier moyen</span></div>
+                                    <div class="col5 iteman"><span></span></div>
+                                </div>
+                                <div class="tableBody">
+                                    <div class="oneRow">
+                                        <div class="iteman col1">
+                                            <div class="description">
+                                                <p class="name"><a target="_blank" href="#">Aujourd'hui</a></p>
+                                            </div><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
+                                        </div>
+                                        <div class="iteman col2"><span><a href="#">200k€</a></span></div>
+                                        <div class="iteman col3"><span><a href="#">3 restaurants</a></span></div>
+                                        <div class="iteman col4"><span><a href="#">20€</a></span></div>
+                                        <div class="iteman col5"><img class="change__icon" src="./img/icon/upload.png"></div>
+                                    </div>
+                                    <div class="oneRow">
+                                        <div class="iteman col1">
+                                            <div class="description">
+                                            <p class="name"><a target="_blank" href="#">Hier</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="iteman col2"><span><a href="#">200k €</a></span></div>
+                                        <div class="iteman col3"><span><a href="#">3 restaurants</a></span></div>
+                                        <div class="iteman col4"><span><a href="#">18 €</a></span></div>
+                                        <div class="iteman col5"><img class="change__icon" src="./img/icon/upload.png"></div>
+                                    </div>
+                                    <div class="oneRow">
+                                        <div class="iteman col1">
+                                            <div class="description">
+                                            <p class="name"><a target="_blank" href="#">06/10/2024</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="iteman col2"><span><a href="#">150k €</a></span></div>
+                                        <div class="iteman col3"><span><a href="#">2 restaurants</a></span></div>
+                                        <div class="iteman col4"><span><a href="#">25 €</a></span></div>
+                                        <div class="iteman col5"><img class="change__icon" src="./img/icon/upload.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
                     <div class="views__list hide" r-filter="week">
-                        <ui class="fr" r-filter="week">
-                            <li>Cette semaine, 200k, 3 restaurants, 20€
-                            </li>
-                            <li>Semaine passée, 200k, 3 restaurants, 18€
-                            </li>
-                            <li>06/10/2024, 150k, 2 restaurants, 25€
-                            </li>
-                        </ui> 
+                        <div class="fr" r-filter="week">
+                            <div class="wrapTable">
+                                <div class="tableHeader">
+                                    <div class="col1 iteman"><span>Semaine</span></div>
+                                    <div class="col2 iteman"><span>Chiffre d'affaires</span></div>
+                                    <div class="col3 iteman"><span>Nombre de restaurants</span></div>
+                                    <div class="col4 iteman"><span>Panier moyen</span></div>
+                                    <div class="col5 iteman"><span></span></div>
+                                </div>
+                                <div class="tableBody">
+                                    <div class="oneRow">
+                                        <div class="iteman col1">
+                                            <div class="description">
+                                                <p class="name"><a target="_blank" href="#">Cette semaine</a></p>
+                                            </div><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
+                                        </div>
+                                        <div class="iteman col2"><span><a href="#">200k€</a></span></div>
+                                        <div class="iteman col3"><span><a href="#">3 restaurants</a></span></div>
+                                        <div class="iteman col4"><span><a href="#">20€</a></span></div>
+                                        <div class="iteman col5"><img class="change__icon" src="./img/icon/upload.png"></div>
+                                    </div>
+                                    <div class="oneRow">
+                                        <div class="iteman col1">
+                                            <div class="description">
+                                            <p class="name"><a target="_blank" href="#">Semaine passée</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="iteman col2"><span><a href="#">200k €</a></span></div>
+                                        <div class="iteman col3"><span><a href="#">3 restaurants</a></span></div>
+                                        <div class="iteman col4"><span><a href="#">18 €</a></span></div>
+                                        <div class="iteman col5"><img class="change__icon" src="./img/icon/upload.png"></div>
+                                    </div>
+                                    <div class="oneRow">
+                                        <div class="iteman col1">
+                                            <div class="description">
+                                            <p class="name"><a target="_blank" href="#">06/10/2024</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="iteman col2"><span><a href="#">150k €</a></span></div>
+                                        <div class="iteman col3"><span><a href="#">2 restaurants</a></span></div>
+                                        <div class="iteman col4"><span><a href="#">25 €</a></span></div>
+                                        <div class="iteman col5"><img class="change__icon" src="./img/icon/upload.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
                     </div>
                     <div class="views__list hide" r-filter="month">
-                        <ui class="fr" r-filter="month">
-                            <li>Ce mois, 200k, 3 restaurants, 20€
-                            </li>
-                            <li>Mois passé, 200k, 3 restaurants, 18€
-                            </li>
-                            <li>06/10/2024, 150k, 2 restaurants, 25€
-                            </li>
-                        </ui> 
+                        <div class="fr" r-filter="month">
+                            <div class="wrapTable">
+                                <div class="tableHeader">
+                                    <div class="col1 iteman"><span>Mois</span></div>
+                                    <div class="col2 iteman"><span>Chiffre d'affaires</span></div>
+                                    <div class="col3 iteman"><span>Nombre de restaurants</span></div>
+                                    <div class="col4 iteman"><span>Panier moyen</span></div>
+                                    <div class="col5 iteman"><span></span></div>
+                                </div>
+                                <div class="tableBody">
+                                    <div class="oneRow">
+                                        <div class="iteman col1">
+                                            <div class="description">
+                                                <p class="name"><a target="_blank" href="#">Ce mois</a></p>
+                                            </div><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
+                                        </div>
+                                        <div class="iteman col2"><span><a href="#">200k€</a></span></div>
+                                        <div class="iteman col3"><span><a href="#">3 restaurants</a></span></div>
+                                        <div class="iteman col4"><span><a href="#">20€</a></span></div>
+                                        <div class="iteman col5"><img class="change__icon" src="./img/icon/upload.png"></div>
+                                    </div>
+                                    <div class="oneRow">
+                                        <div class="iteman col1">
+                                            <div class="description">
+                                            <p class="name"><a target="_blank" href="#">Mois passé</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="iteman col2"><span><a href="#">200k €</a></span></div>
+                                        <div class="iteman col3"><span><a href="#">3 restaurants</a></span></div>
+                                        <div class="iteman col4"><span><a href="#">18 €</a></span></div>
+                                        <div class="iteman col5"><img class="change__icon" src="./img/icon/upload.png"></div>
+                                    </div>
+                                    <div class="oneRow">
+                                        <div class="iteman col1">
+                                            <div class="description">
+                                            <p class="name"><a target="_blank" href="#">06/10/2024</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="iteman col2"><span><a href="#">150k €</a></span></div>
+                                        <div class="iteman col3"><span><a href="#">2 restaurants</a></span></div>
+                                        <div class="iteman col4"><span><a href="#">25 €</a></span></div>
+                                        <div class="iteman col5"><img class="change__icon" src="./img/icon/upload.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
                     </div>
                     <div class="views__list hide" r-filter="year">
-                        <ui class="fr" r-filter="year">
-                            <li>Cette année, 200k, 3 restaurants, 20€
-                            </li>
-                            <li>Année passée, 200k, 3 restaurants, 18€
-                            </li>
-                            <li>06/10/2024, 150k, 2 restaurants, 25€
-                            </li>
-                        </ui> 
+                        <div class="fr" r-filter="year">
+                            <div class="wrapTable">
+                                <div class="tableHeader">
+                                    <div class="col1 iteman"><span>Année</span></div>
+                                    <div class="col2 iteman"><span>Chiffre d'affaires</span></div>
+                                    <div class="col3 iteman"><span>Nombre de restaurants</span></div>
+                                    <div class="col4 iteman"><span>Panier moyen</span></div>
+                                    <div class="col5 iteman"><span></span></div>
+                                </div>
+                                <div class="tableBody">
+                                    <div class="oneRow">
+                                        <div class="iteman col1">
+                                            <div class="description">
+                                                <p class="name"><a target="_blank" href="#">Cette année</a></p>
+                                            </div><!-- Lier les liens à des rapports sur la performance (par exemple : couverts) -->
+                                        </div>
+                                        <div class="iteman col2"><span><a href="#">200k€</a></span></div>
+                                        <div class="iteman col3"><span><a href="#">3 restaurants</a></span></div>
+                                        <div class="iteman col4"><span><a href="#">20€</a></span></div>
+                                        <div class="iteman col5"><img class="change__icon" src="./img/icon/upload.png"></div>
+                                    </div>
+                                    <div class="oneRow">
+                                        <div class="iteman col1">
+                                            <div class="description">
+                                            <p class="name"><a target="_blank" href="#">Année passée</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="iteman col2"><span><a href="#">200k €</a></span></div>
+                                        <div class="iteman col3"><span><a href="#">3 restaurants</a></span></div>
+                                        <div class="iteman col4"><span><a href="#">18 €</a></span></div>
+                                        <div class="iteman col5"><img class="change__icon" src="./img/icon/upload.png"></div>
+                                    </div>
+                                    <div class="oneRow">
+                                        <div class="iteman col1">
+                                            <div class="description">
+                                            <p class="name"><a target="_blank" href="#">06/10/2024</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="iteman col2"><span><a href="#">150k €</a></span></div>
+                                        <div class="iteman col3"><span><a href="#">2 restaurants</a></span></div>
+                                        <div class="iteman col4"><span><a href="#">25 €</a></span></div>
+                                        <div class="iteman col5"><img class="change__icon" src="./img/icon/upload.png"></div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
                     </div>
                 </div>
             </div>
