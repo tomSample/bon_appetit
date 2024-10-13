@@ -120,7 +120,7 @@ function toggleDrawer() {
 //=====CART====
 
 function toggleCart() {
-    document.getElementById('shopping-cart-item-recap').classList.toggle('open');
+    document.getElementById('checkout-item-recap').classList.toggle('open');
     document.getElementById('recap-arrow').classList.toggle('open');
 }
 

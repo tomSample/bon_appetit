@@ -921,6 +921,9 @@ footer a {
     justify-content: space-between;
     align-items: center;
     height: 80%;
+    position: relative;
+    top:40px;
+    padding-inline: 2rem;;
 }
 
 #drawer-button-box {
@@ -948,6 +951,42 @@ footer a {
     background-color: var(--lightorange);
     border-bottom-left-radius: 10px;
 }
+
+#restaurant-drawer-item-content {
+    width:100%
+}
+
+#restaurant-drawer-cart-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block : 0.5rem;
+}
+
+#restaurant-drawer-item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block : 0.5rem;
+    width:50%;
+}
+
+#restaurant-drawer-item-quantity {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+}
+
+#restaurant-drawer-item-quantity button{
+padding: 0.4rem;
+background-color: var(--lightorange);
+width: 30px;
+height: 30px;
+border-radius: 30px;
+cursor: pointer;
+}
+
 
 /* =======Restaurant.php <article> indisponible => n'apparait pas ======= */
 
