@@ -1,12 +1,8 @@
 <?php
 include 'layout.php';
-include 'header.php';
 include 'users.php';
 
 $errorMessage = '';
-// $email = '';
-// $password = '';
-// $username = '';
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -80,8 +76,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!-- ===footer=== -->
 
 <?php include 'footer.php'; ?>
+<?php include 'header.php'; ?>
 
 <!-- ===fin footer=== -->
+
 
 </body>
 </html>
