@@ -1,7 +1,6 @@
 <?php include 'layout.php'; ?>
 <?php include 'header.php'; ?>
 
-?>
 <!-- ===fin header=== -->
 
 <!-- ===hero banner=== -->
@@ -37,6 +36,7 @@
             </div>
         </section>
 <!-- ===fin main=== -->
+
 <!-- si user est connecté, affiche : -->
     <?php else: ?>
         <body>
@@ -54,6 +54,35 @@
                 </div>
             </section>
 
+    <!-- filters -->
+
+            <section>
+
+                <div id="index-food-filter-container">
+
+                    <div id="index-food-filter-content">
+                        <button id="index-food-filter-button" data-category="fast-food" onclick="toggleFilter(this)">FAST-FOOD</button>
+                    </div>
+                    <div id="index-food-filter-content">
+                        <button id="index-food-filter-button" data-category="italian" onclick="toggleFilter(this)">ITALIENNE</button>
+                    </div>
+                    <div id="index-food-filter-content">
+                        <button id="index-food-filter-button" data-category="asian" onclick="toggleFilter(this)">ASIATIQUE</button>
+                    </div>
+                    <div id="index-food-filter-content">
+                        <button id="index-food-filter-button" data-category="mexican" onclick="toggleFilter(this)">MEXICAINE</button>
+                    </div>
+                    <div id="index-food-filter-content">
+                        <button id="index-food-filter-button" data-category="french" onclick="toggleFilter(this)">FRANCAISE</button>
+                    </div>
+                    <div id="index-food-filter-content">
+                        <button id="index-food-filter-button" data-category="vegan" onclick="toggleFilter(this)">VEGAN</button>
+                    </div>
+
+                </div>
+
+            </section>
+
     <!-- section des restos favoris -->
 
             <section class="main-container restaurant-container">
@@ -61,38 +90,38 @@
                     <h2>Votre restaurant favori</h2>
                 </div>
                     <div class="restaurant-box">
-                        <a href="restaurant.php">
+                        <a class="restaurant-article-filter" data-category="fast-food" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
                                 </li>
                                 <li>
                                     <p>Nom du restaurant 1</p>
-                                    <p><span class="star-icon">star</span>Excellent !</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
                                 </li>
                             </ul>
                         </a>
-                        <a href="restaurant.php">
+                        <a class="restaurant-article-filter" data-category="italian" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
                                 </li>
                                 <li>
                                     <p>Nom du restaurant 1</p>
-                                    <p><span class="star-icon">star</span>Excellent !</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
                                 </li>
                             </ul>
                         </a>                       
-                        <a href="restaurant.php">
+                        <a class="restaurant-article-filter" data-category="asian" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
                                 </li>
                                 <li>
                                     <p>Nom du restaurant 1</p>
-                                    <p><span class="star-icon">star</span>Excellent !</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
                                 </li>
                             </ul>
@@ -107,67 +136,104 @@
                     <h2>Les mieux notés</h2>
                 </div>
                 <div class="restaurant-box">
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id">
-                            <li>
-                                <img src="img\resto_template_2.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                </div>
+                        <a class="restaurant-article-filter" data-category="fast-food" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="italian" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>                       
+                        <a class="restaurant-article-filter" data-category="vegan" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="french" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="mexican" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="italian" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>                       
+                        <a class="restaurant-article-filter" data-category="vegan" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="french" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+
             </section>
 
     <!-- section des autres resto de la ville -->
@@ -176,128 +242,106 @@
                 <div class="restaurant-title">    
                     <h2>Découvrez les resto de {nom ville}</h2>
                 </div>
+                
                 <div class="restaurant-box">
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id">
-                            <li>
-                                <img src="img\resto_template_2.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id">
-                            <li>
-                                <img src="img\resto_template_2.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id">
-                            <li>
-                                <img src="img\resto_template_2.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                    <a href="restaurant.php">
-                        <ul class="restaurant-id">
-                            <li>
-                                <img src="img\resto_template_1.jpg">
-                            </li>
-                            <li>
-                                <p>Nom du restaurant 1</p>
-                                <p><span class="star-icon">star</span>Excellent !</p>
-                                <p>distance : 1km</p>
-                            </li>
-                        </ul>
-                    </a>
-                </div>
+                        <a class="restaurant-article-filter" data-category="fast-food" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="italian" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>                       
+                        <a class="restaurant-article-filter" data-category="vegan" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="french" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="mexican" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="italian" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>                       
+                        <a class="restaurant-article-filter" data-category="vegan" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="french" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+
             </section>
         </div>
 
