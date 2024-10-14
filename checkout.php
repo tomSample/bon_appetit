@@ -12,6 +12,7 @@
         <div id="checkout-content">
             <div id="checkout-content-title">
                 <div id="checkout-delivery-address-title" onclick="toggleAddDeliveryadress()"><h2>Adresse de livraison</h2></div>
+                <span class="material-symbols-outlined">home_work</span>
             </div>
             <div onclick="checkRadio('address-1')" id="checkout-content-box">
                 <div>
@@ -23,9 +24,6 @@
                         <?php echo $users[0]['username'] . ', ' . $users[0]['delivery-address'][0]['address'] . ', ' . $users[0]['delivery-address'][0]['postal-code']; ?>
                         <?php endif; ?>                   
                     </div>
-                </div>
-                <div id="checkout-button-box">
-                    <button id="take-away-button" class="cart-modify-button">Modifier</button>
                 </div>
             </div>
             <div>
@@ -39,9 +37,6 @@
                             <?php echo $users[1]['username'] . ', ' . $users[0]['delivery-address'][1]['address'] . ', ' . $users[0]['delivery-address'][1]['postal-code'];?>
                             <?php endif; ?>          
                         </div>
-                    </div>
-                    <div id="checkout-button-box">
-                        <button id="delivery-button" class="cart-modify-button">Modifier</button>
                     </div>
                 </div>
             </div>
@@ -62,7 +57,8 @@
 
         <div id="checkout-content">
             <div id="checkout-content-title">
-                <div id="checkout-delivery-address-title" onclick="toggleAddPaymentMode()"><h2>Moyens de paiement</h2><</div>
+                <div id="checkout-delivery-address-title" onclick="toggleAddPaymentMode()"><h2>Moyens de paiement</h2></div>
+                <span class="material-symbols-outlined">payments</span>
             </div>
             <div onclick="checkRadio('payment-1')" id="checkout-content-box">
                 <div>
@@ -72,9 +68,6 @@
                     <div>
                         <p>VISA 4971 8545 2245 7889</p>
                     </div>
-                </div>
-                <div id="checkout-button-box">
-                    <button id="take-away-button" class="cart-modify-button">Modifier</button>
                 </div>
             </div>
 
@@ -94,21 +87,34 @@
     <div id="checkout-container-right">
         <div id="checkout-content">
             <div id="checkout-content-title">
-                <a id="checkout-recap-title" onclick="toggleCart()"><h2>Récapitulatif</h2><span onclick="toggleArrow()" id="recap-arrow" class="material-symbols-outlined">keyboard_arrow_down</span></a>
+                <div id="checkout-recap-title"><h2>Récapitulatif</h2></div>
             </div>
-            <div id="checkout-item-recap">
+
+<!-- Récapitulatif commande récupérée du drawer (nom de classe/id) -->
+
+            <div id="restaurant-drawer-item-content">
                 <?php
                 //vérifier que le panier existe est n'est pas vide
                 if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
-                        // Display cart items
-                        foreach ($_SESSION['cart'] as $item) {
-                            echo "<div id='checkout-item'>{$item['name']} - {$item['quantity']} - {$item['price']}€</div>";
-                        }
-                    } else {
-                        // Display message if cart is empty
-                        echo "<p>Votre panier est vide</p>";
+                    foreach ($_SESSION['cart'] as $item) {
+                        echo "<div id='restaurant-drawer-cart-box'>
+                                <div id='restaurant-drawer-item-details'>
+                                    <div id='restaurant-drawer-item'>
+                                        {$item['name']} {$item['price']}€
+                                    </div>
+
+                                    <div id='restaurant-drawer-item-quantity'>
+                                        <button onclick=\"decreaseQuantity('{$item['id']}')\"><strong>-</strong></button>
+                                        {$item['quantity']}
+                                        <button onclick=\"increaseQuantity('{$item['id']}')\"><strong>+</strong></button>
+                                    </div>
+                                </div>
+                            </div>";
                     }
-                    ?>
+                } else {
+                    echo "<p>Votre panier est vide</p>";
+                }
+                ?>
             </div>
             <div id="confirm-order-button-box">
                 <?php if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) { ?>

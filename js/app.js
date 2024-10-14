@@ -111,6 +111,7 @@ function decreaseQuantity(event, articleId) {
 }
 
 //=====DRAWER====
+
 function toggleDrawer() {
     document.getElementById('restaurant-drawer-content').classList.toggle('open');
     document.getElementById('restaurant-drawer-overlay').classList.toggle('open');
@@ -120,12 +121,18 @@ function toggleDrawer() {
 //=====CART====
 
 function toggleCart() {
-    document.getElementById('checkout-item-recap').classList.toggle('open');
-    document.getElementById('recap-arrow').classList.toggle('open');
+    document.getElementById('restaurant-drawer-item-content').classList.toggle('close');
+    document.getElementById('recap-arrow').classList.toggle('close');
 }
 
 //=====RADIO BUTTON====
 
 function checkRadio(value) {
     document.getElementById(value).checked = true;
+}
+
+//=====FILTERS====
+
+function toggleFilter () {
+    document.getElementById('')
 }

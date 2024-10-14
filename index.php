@@ -1,7 +1,6 @@
 <?php include 'layout.php'; ?>
 <?php include 'header.php'; ?>
 
-?>
 <!-- ===fin header=== -->
 
 <!-- ===hero banner=== -->
@@ -52,6 +51,18 @@
                         <button class="hero-search-bar-button" type="submit">Rechercher</button>
                     </form>
                 </div>
+            </section>
+
+    <!-- filters -->
+
+            <section>
+                <div id="index-food-filter-container">
+                    <button id="index-food-filter-button" onclick="toggleFilter('fast-food')">FAST-FOOD</button>
+                </div>
+                <div id="index-food-filter-container">
+                    <button id="index-food-filter-button" onclick="toggleFilter('italian')">ITALIENNE</button>
+                </div>
+                    
             </section>
 
     <!-- section des restos favoris -->

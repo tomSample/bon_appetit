@@ -25,10 +25,6 @@
     </div>
 </section>
 
-<!-- <section>
-    FILTERS
-</section> -->
-
 <section>
     <div class="resto-resume body-padding">
         <div class="_w_50 mobile-resto-presentation">
