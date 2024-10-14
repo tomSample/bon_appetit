@@ -46,7 +46,7 @@
                         <button class="submit-button" id="shop__button" type="submit">Rechercher</button>
                     </div>
                     <div class="add_shop">
-                        <a src=""><i>Ajouter un restaurant</i></a>
+                        <a src="create.php"><i>Ajouter un restaurant</i></a>
                     </div>
                     <div class="views__list">
                         <div class="data__shop">
