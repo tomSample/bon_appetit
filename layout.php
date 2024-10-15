@@ -17,4 +17,5 @@ $postData = $_POST;
         <link rel="stylesheet" href="styles\styles.css" type="text/css">
         <script src="js/app.js"></script>
         <title>Bon Appétit !</title>
+        <link rel="icon" type="image/png" href="/img/favicon.ico">
     </head>

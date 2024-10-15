@@ -2,9 +2,9 @@
 <?php include 'header.php'; ?>
 
 <head>
-        <link rel="stylesheet" href="styles\administration.css" type="text/css">
-        <script src="./js/administration.js" defer></script>
-    </head>
+    <link rel="stylesheet" href="styles\administration.css" type="text/css">
+    <script src="./js/administration.js" defer></script>
+</head>
 
 <body>
 
