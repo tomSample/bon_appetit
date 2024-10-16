@@ -1,5 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+<!-- Call map software (leaflet) -->
+
 <head>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -14,6 +16,8 @@
 <body>
     <div id="map">
         <script>
+
+          /* configuration of the map */
             var map = L.map('map').fitWorld();
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -21,7 +25,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
 }).addTo(map);
 
-map.locate({setView: true, maxZoom: 16});
+map.locate({setView: true, maxZoom: 16}); 
 
 /* test _ à conserver pour l'instant, svp
  var route = [
@@ -48,6 +52,8 @@ function onLocationError(e) {
 }
 
 map.on('locationerror', onLocationError);*/
+
+/* Localisation and follow movements */
 
 var currentLocation = L.marker([48.7321, -3.4614]).addTo(map);
         
