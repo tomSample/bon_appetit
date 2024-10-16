@@ -1,0 +1,61 @@
+#add__top {
+    margin-top: 6rem;
+}
+
+#add .picture {
+    margin-top: 2rem;
+}
+
+#item-select {
+    margin-bottom: 1rem;
+}
+
+#add__shop, #add__hours, #add__type, #add__kg, #add__order, #add__make {
+    height: 2rem;
+    border: solid;
+    border-width: 0.1rem;
+    border-radius: 6%;
+    margin-bottom: .5rem;
+    width: 150%;
+}
+
+#add__price {
+    height: 2rem;
+    border: solid;
+    border-width: 0.1rem;
+    border-radius: 6%;
+    margin-bottom: .5rem;
+    width: 100%;
+}
+
+#add__things__item {
+    border: solid;
+    border-width: 0.1rem;
+    border-radius: 6%;
+    width: 100%;
+}
+
+#add__things {
+    border: solid;
+    border-width: 0.1rem;
+    border-radius: 6%;
+    width: 100%;
+}
+
+#create__shop {
+    display: flex;
+}
+
+#add__item {
+    margin-top: 1.2rem;
+}
+
+#add__description {
+    padding-top: 1rem;
+    padding-bottom: .8rem;
+}
+
+#create__button {
+    margin-bottom: 1rem;
+    width: 8rem;
+}
