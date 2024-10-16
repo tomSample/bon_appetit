@@ -1,9 +1,12 @@
+<!-- Arrêt géolocalisation
+ <a href="#" onclick="stopWatch()">Stop Watch</a> -->
+
 <script type="text/javascript">
 if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(successCallback, errorCallback, {
+  var watchId = navigator.geolocation.watchPosition(successCallback, errorCallback, {
   enableHighAccuracy: true,
   timeout: 10000,
-  maximumAge: 600000,
+  maximumAge: 120000,
 })
 } else {
   alert('Votre navigateur ne prend pas en compte la géolocalisation HTML5')
@@ -25,5 +28,9 @@ function errorCallback(error) {
       alert("Le service n'a pas répondu à temps")
       break
   }
+}
+
+function stopWatch() {
+  navigator.geolocation.clearWatch(watchId)
 }
 </script>
