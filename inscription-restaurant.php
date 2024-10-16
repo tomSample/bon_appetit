@@ -1,6 +1,9 @@
 <?php include 'layout.php'; ?>
 <?php include 'header.php'; ?>
 
+<head>
+<link rel="stylesheet" href="styles\inscriptionrestaurant.css" type="text/css">
+</head>
 
 <!-- ===hero banner=== -->
 

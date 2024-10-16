@@ -1,0 +1,19 @@
+/* @import */
+
+.inscriptionrestaurant-container {
+    justify-items: center;
+    height: 80%;
+    width: 90%;
+}
+
+.section-inscrirestau1 {
+  float: left;
+    height: 100%;
+    width: 49%;
+  }
+  
+  .section-inscrirestau2 {
+    float: right;
+    height: 100%;
+    width: 49%;
+  }
