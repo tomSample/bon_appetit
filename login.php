@@ -34,6 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $email = $_SESSION['user_email'] = $user['email']; // Stocker l'ID de l'utilisateur dans la session
                     $password = $_SESSION['user_password'] = $user['password']; // Stocker l'email de l'utilisateur dans la session
                     $username = $_SESSION['user_name'] = $user['username']; // Stocker le nom de l'utilisateur dans la session
+                    $role = $_SESSION['user_role'] = $user['role']; // Stocker le rôle de l'utilisateur dans la session
                     // COOKIES =)
                     setcookie("email", $email, time() + 3600);
                     setcookie("password", $password, time() + 3600);

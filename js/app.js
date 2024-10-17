@@ -167,3 +167,10 @@ function toggleFilter(button) {
         button.classList.add('active');
     }
 }
+
+
+//=====DROPDOWN MENU====
+
+function toggleDropdown() {
+    document.getElementById('header-dropdown-container').classList.toggle('open');
+}

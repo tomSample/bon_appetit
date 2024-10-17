@@ -1,5 +1,6 @@
 <?php include 'items.php' ?>
-<?php $username = $_SESSION['user_name'] ?? ''; ?>
+
+
 
 <header>
     <nav>        
@@ -20,18 +21,35 @@
                 $currentPage =='logout.php'||
                 $currentPage =='administration.php' ||
                 $currentPage =='create.php') : ?>
-        <?php if ($isLoggedIn): ?>
-            <a href="clients.php">
-                <button class="header-button-1"><span class="material-symbols-outlined">person</span><?php echo htmlspecialchars($username); ?></button>
-            </a>
+
+        <!--  vérifie si l'utilisateur est connecté et s'il est admin -->
+
+        <?php if ($isLoggedIn && $role === 'admin'): ?>
+            <button onclick ="toggleDropdown()" id="header-dropdown-button"><span class="material-symbols-outlined">person</span><?php echo htmlspecialchars($username); ?></button>
+            <div id="header-dropdown-container">
+                <a id="header-dropdown-link" href="clients.php">Mon compte</a>
+                <a id="header-dropdown-link" href="clients.php">Tableau de bord</a>
+                <a id="header-dropdown-link" href="clients.php">Edition</a>
+                <a id="header-dropdown-link" href="logout.php">Déconnexion</a>
+            </div>
             <a>
                 <button onclick="toggleDrawer()" id="toggle-drawer" class="header-button-1">Panier</button>
-            </a>
-            <a href="logout.php">
-            <button class="header-button-2">Se déconnecter</button>
-            </a>            
+            </a> 
+
+        <!--  sinon si l'utilisateur est connecté -->
+
+        <?php elseif ($isLoggedIn) : ?>
+            <button onclick ="toggleDropdown()" id="header-dropdown-button"><span class="material-symbols-outlined">person</span><?php echo htmlspecialchars($username); ?></button>
+            <div id="header-dropdown-container">
+                <a id="header-dropdown-link" href="clients.php">Mon compte</a>
+                <a id="header-dropdown-link" href="logout.php">Déconnexion</a>
+            </div>
+            <a>
+                <button onclick="toggleDrawer()" id="toggle-drawer" class="header-button-1">Panier</button>
+            </a>      
 
         <!-- boutons en mobile -->
+
         <a href="clients.php">
             <button class="mobile-header-button">
                 <span class="material-symbols-outlined">person</span>
@@ -53,11 +71,11 @@
             <a href="inscription.php">
                 <button class="header-button-1">Inscription</button>
             </a>
-            <a>
-                <button onclick="toggleDrawer()" id="toggle-drawer" class="header-button-1">Panier</button>
-            </a>
             <a href="login.php">
                 <button class="header-button-2">Connexion</button>
+            </a>
+            <a>
+                <button onclick="toggleDrawer()" id="toggle-drawer" class="header-button-1">Panier</button>
             </a>
 
 <!-- boutons en mobile -->

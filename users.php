@@ -4,7 +4,8 @@
 
 $users = [
     [
-        'username' => 'user1',
+        'role' => 'admin',
+        'username' => 'root',
         'email' => 'user@example.com',
         'password' => '0000',
         'delivery-address' => [
@@ -23,7 +24,9 @@ $users = [
         ],
 
     ],
+    
     [
+        'role' => 'user',
         'username' => 'user2',
         'email' => 'user2@example.com',
         'password' => '1111',

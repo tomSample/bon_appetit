@@ -5,7 +5,7 @@
                 <h2>Découvrir</h2>
             </div>
             <div class="footer-box-padtop">
-                <a href ="" class="links">ajouter votre restaurant</a>
+                <a href ="create.php" class="links">ajouter votre restaurant</a>
                 <a href ="" class="links">à propos</a>
 
             </div>
@@ -42,7 +42,7 @@
             <div class="footer-box">
                 <h2>Découvrir</h2>
                 <div class="footer-box-padtop box-1">
-                    <a href="">ajouter votre restaurant</a>
+                    <a href="create.php">ajouter votre restaurant</a>
                     <a href="">à propos</a>
                 </div>
             </div>
