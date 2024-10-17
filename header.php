@@ -18,7 +18,8 @@
                 $currentPage == 'login.php' ||
                 $currentPage =='forgotten-password.php' ||
                 $currentPage =='logout.php'||
-                $currentPage =='administration.php') : ?>
+                $currentPage =='administration.php' ||
+                $currentPage =='create.php') : ?>
         <?php if ($isLoggedIn): ?>
             <a href="clients.php">
                 <button class="header-button-1"><span class="material-symbols-outlined">person</span><?php echo htmlspecialchars($username); ?></button>
@@ -28,7 +29,7 @@
             </a>
             <a href="logout.php">
             <button class="header-button-2">Se déconnecter</button>
-            </a>
+            </a>            
 
         <!-- boutons en mobile -->
         <a href="clients.php">

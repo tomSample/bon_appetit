@@ -1,6 +1,40 @@
-#add__top {
-    margin-top: 6rem;
+#create-super-container {
+    width : 60%;
+    margin-inline: auto;
+
 }
+
+.create-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:7rem;
+    width: 100%;
+    /* creer un conteneur pour les formulaires  */
+    /* passage en colonne pour mobile */
+}
+
+#create-container-presentation {
+    margin-top:4rem;
+}
+
+#add__top {
+    justify-content: space-around;
+    width:100%;
+    margin-top:2rem;
+    /* modifier la width + margin induites par la classe reso-id */
+        /* adapter la width à la taille de la div contenant add__top*/
+}
+
+#add__item {
+    justify-content: space-around;
+    width:100%;
+    margin-top:2rem;
+    /* modifier la width + margin induites par la classe reso-id */
+    /* adapter la width à la taille de la div contenant add__item */
+}
+
 
 #add .picture {
     margin-top: 2rem;
@@ -16,7 +50,7 @@
     border-width: 0.1rem;
     border-radius: 6%;
     margin-bottom: .5rem;
-    width: 150%;
+    width: 100%;
 }
 
 #add__price {
@@ -46,13 +80,12 @@
     display: flex;
 }
 
-#add__item {
-    margin-top: 1.2rem;
-}
-
 #add__description {
-    padding-top: 1rem;
-    padding-bottom: .8rem;
+    justify-content: center;
+    padding-inline:0;
+    padding-block: 0;
+    width:100%
+    /* alignement via justify-content */
 }
 
 #create__button {
