@@ -514,25 +514,8 @@
                 </div>
             </div>
         </div>
-        
-
     </section>
-<!-- Popup
-    <div id="popup-overlay">
-    <div class="popup-content">
-        <div id="popup-img-content">
-            <img src="img\lasagna.jpg" alt="">
-        </div>
-        <div id="popup-img-text">
-            <h2>Nom du Plat</h2>
-            <p>Description</p>
-                
-            <button onclick="" id="popup-button-addToCart" class="_borderradius10">Ajouter au panier pour {prix}</button>
-        </div>
-        <button onclick="ArticleManager.togglePopup()" id="popup-button-close">Fermer</button>
-    </div>
-</div>
- -->
+
     <!-- ===fin main=== -->
 
 
