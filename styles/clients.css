@@ -20,6 +20,23 @@
     padding-top: 0.2rem;
 }
 
+#dbutton {
+    background: none;
+    text-align: center;
+    justify-content: space-around;
+    justify-items: center;
+    margin-inline: auto;
+    
+}
+
+#dtest {
+    display: flex;
+    background: none;
+    text-align: center;
+    justify-content: space-around;
+    justify-items: center;
+}
+
 #popup-button-delete {
     width:100%;
     height: 50px;

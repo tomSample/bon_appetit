@@ -108,8 +108,12 @@
                 <p>Recevez les offres spéciales et les promotions.
                 </p><br>
                 
-                <br>    
-                <h4>Supprimer le compte</h4><article onclick="ArticleManager.togglePopup()" id="delete" class="item"></article>
+                <br>
+                <div class="dtest">
+                    <button id="dbutton"><h4>Supprimer le compte</h4>
+                    </button>
+                </div> 
+                <!--<article onclick="ArticleManager.togglePopup()" id="delete" class="item"></article> -->
                 <p class="delete">Vous voulez nous quitter ? Nous serons tristes mais c'est votre choix.
                 </p>
             </div>
