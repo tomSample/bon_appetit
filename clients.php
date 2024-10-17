@@ -2,11 +2,12 @@
 <?php include 'header.php'; ?>
 
 <head>
-        <link rel="stylesheet" href="styles\clients.css" type="text/css">
-    </head>
+    <link rel="stylesheet" href="styles\clients.css" type="text/css">
+    <script src="js/clients.js" defer></script>
+</head>
 
     <!-- ===main=== -->
-    
+<body>
     <section id="profile" class="fields">
         <div class="container" id="page__title">
             <div class="section-header">
@@ -107,14 +108,25 @@
                 <label for= "publicity">Notifications promotionnelles</label><br>
                 <p>Recevez les offres spéciales et les promotions.
                 </p><br>
-                
-                <br>    
-                <h4>Supprimer le compte</h4>
-                <p class="delete">Vous voulez nous quitter ? Nous serons tristes mais c'est votre choix.
-                </p>
+            </div> 
+            <div id="chosen2">
+                <br>
+                <div class="bsure">
+                    <button class="Me">Supprimer le compte</button>
+                    <p>Vous voulez nous quitter ? Nous serons tristes mais c'est votre choix.
+                    </p>
+                </div>
+                <div class="csure hide">
+                    <p class=psure>En êtes-vous certain(e) ? Votre compte ne sera pas récupérable ensuite.
+                    </p>
+                    <button>Oui, supprimer le compte.</button>
+                    <img id="delete__picture" src="img/delete.jpg" alt="">
+                </div>
             </div>
         </div>
     </section>
+
+</body>
 
     <!-- ===fin main=== -->
 

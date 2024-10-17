@@ -19,3 +19,49 @@
     margin-left: 0.5rem;
     padding-top: 0.2rem;
 }
+
+#chosen2 p {
+    font-size: .85rem;
+    color: #778899;
+}
+
+#delete__picture {
+    display: grid;
+    max-width: 20%;
+    margin-inline: auto;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width:749px) {
+    #delete__picture {
+        max-width: 60%;
+    }
+}
+
+.Me {
+    max-width: 10rem;
+}
+
+.bsure {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    margin-inline: auto;    
+}
+
+.psure {
+    display: grid;
+    text-align: center;
+    margin-inline: auto;    
+}
+
+.csure {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    margin-inline: auto;
+}
+
+.hide {
+    display: none;
+}
