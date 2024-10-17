@@ -31,10 +31,8 @@
 }
 
 .views__list {
-    background-color: white;
-    padding-top: 0.5rem;
     padding-bottom: 1rem;
-    max-width: 20rem;
+    max-width: 50rem;
     margin-inline: auto;
 }
 
@@ -53,12 +51,63 @@
 
 .add_shop {
     text-align: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.wrapTable {
+	margin-top: 0px;
+	.tableHeader {
+		padding: 20px 0;
+		border-bottom: 1px solid #333;
+		background-color: #ddd;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+        text-align: center;
+		.iteman {
+			width: 20%;
+            background-color: none;
+			&.col1 {
+				width: 40%;
+			}
+			&:nth-child(1) {
+				padding-left: 15px;
+			}
+		}
+	}
+	.oneRow {
+		padding: 20px 0;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #555;
+        text-align: center;
+		.iteman {
+			margin: 0;
+			width: 20%;
+            background-color: none;
+			&.col1 {
+				width: 40%;
+			}
+		}
+	}
+}
+
+.span {
+    background-color: none;
+}
+
+#z {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 0.8rem;
 }
 
 #f__table {
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 #f__table a.active {
@@ -67,7 +116,7 @@
 
 #f__report {
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 #f__report a.active {
@@ -76,4 +125,17 @@
 
 .views__list.hide {
     display: none;
+}
+
+.data__shop table {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.data__shop tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

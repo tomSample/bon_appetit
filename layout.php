@@ -1,9 +1,10 @@
 <?php
+session_name('BonAppetit');
 session_start();
-//$_SESSION['user_id'] = 1;       // décommenter pour simuler l'état de connexion : user connecté si =1
-unset($_SESSION['user_id']);   // décommenter pour simuler la déconnexion (et commenter la ligne précédente)
+
+$isLoggedIn = isset($_SESSION['user_email']);
 $currentPage = basename($_SERVER['PHP_SELF']);
-$isLoggedIn = isset($_SESSION['user_id']);
+$postData = $_POST;
 ?>
 
 <!DOCTYPE html>
@@ -16,4 +17,5 @@ $isLoggedIn = isset($_SESSION['user_id']);
         <link rel="stylesheet" href="styles\styles.css" type="text/css">
         <script src="js/app.js"></script>
         <title>Bon Appétit !</title>
+        <link rel="icon" type="image/png" href="/img/favicon.ico">
     </head>

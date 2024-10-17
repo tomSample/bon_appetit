@@ -1,7 +1,6 @@
 <?php include 'layout.php'; ?>
 <?php include 'header.php'; ?>
 
-
 <section class ="body-padding">
     <div class="resto-id">
         <div>
@@ -25,10 +24,6 @@
         </div>
     </div>
 </section>
-
-<!-- <section>
-    FILTERS
-</section> -->
 
 <section>
     <div class="resto-resume body-padding">
@@ -353,6 +348,73 @@
                     </div>
                 </div>
             </article>
+
+            <h3 id="boissons" class="resto-subtitle">Boissons</h3>
+
+            <article onclick="ArticleManager.togglePopup()" id="boissons-article-1" class="item">  
+                <div>
+                    <div>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article onclick="ArticleManager.togglePopup()" id="boissons-article-2" class="item">  
+                <div>
+                    <div>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article onclick="ArticleManager.togglePopup()" id="boissons-article-3" class="item">  
+                <div>
+                    <div>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article onclick="ArticleManager.togglePopup()" id="boissons-article-4" class="item">  
+                <div>
+                    <div>
+                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-description">
+                            <p>Lasagne au boeuf maison, 200g</p>
+                            <p>11,90€</p>
+                        </div>
+                        <div class="item-button">
+                            <button onclick="quickAddToCart(event)"><strong>+</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </div>
     </div>
 </section>
@@ -372,11 +434,5 @@
         <button onclick="ArticleManager.togglePopup()" id="popup-button-close">Fermer</button>
     </div>
 </div>
-
-
-
-
-
-
 
 <?php include 'footer.php'; ?>
