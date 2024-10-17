@@ -10,10 +10,15 @@
   float: left;
     height: 100%;
     width: 49%;
-  }
+}
   
   .section-inscrirestau2 {
     float: right;
     height: 100%;
     width: 49%;
-  }
+}
+
+.inscriptionrestaurant-title {
+  text-align: center;
+  padding-top: 5%;
+}

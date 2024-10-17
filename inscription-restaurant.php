@@ -9,7 +9,7 @@
 
     <section class="hero-banner">
             <div class="inscriptionrestaurant-container">
-                <div class="inscription-title">
+                <div class="inscriptionrestaurant-title">
                         <h1>Inscription restaurant</h1>
                 </div>
                 <div class="inscription-undertitle">
