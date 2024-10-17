@@ -20,29 +20,48 @@
     padding-top: 0.2rem;
 }
 
-#dbutton {
-    background: none;
+#chosen2 p {
+    font-size: .85rem;
+    color: #778899;
+}
+
+#delete__picture {
+    display: grid;
+    max-width: 20%;
+    margin-inline: auto;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width:749px) {
+    #delete__picture {
+        max-width: 60%;
+    }
+}
+
+.Me {
+    max-width: 10rem;
+}
+
+.bsure {
+    display: grid;
     text-align: center;
-    justify-content: space-around;
+    justify-items: center;
+    margin-inline: auto;    
+}
+
+.psure {
+    display: grid;
+    text-align: center;
+    margin-inline: auto;    
+}
+
+.csure {
+    display: grid;
+    text-align: center;
     justify-items: center;
     margin-inline: auto;
-    
 }
 
-#dtest {
-    display: flex;
-    background: none;
-    text-align: center;
-    justify-content: space-around;
-    justify-items: center;
-}
-
-#popup-button-delete {
-    width:100%;
-    height: 50px;
-    background-color: var(--lightorange);
-}
-
-#popup-button-delete:hover {
-    background-color: var(--orange);
+.hide {
+    display: none;
 }

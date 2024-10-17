@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="styles\clients.css" type="text/css">
+    <script src="js/clients.js" defer></script>
 </head>
 
     <!-- ===main=== -->
@@ -107,35 +108,23 @@
                 <label for= "publicity">Notifications promotionnelles</label><br>
                 <p>Recevez les offres spéciales et les promotions.
                 </p><br>
-                
+            </div> 
+            <div id="chosen2">
                 <br>
-                <div class="dtest">
-                    <button id="dbutton"><h4>Supprimer le compte</h4>
-                    </button>
-                </div> 
-                <!--<article onclick="ArticleManager.togglePopup()" id="delete" class="item"></article> -->
-                <p class="delete">Vous voulez nous quitter ? Nous serons tristes mais c'est votre choix.
-                </p>
+                <div class="bsure">
+                    <button class="Me">Supprimer le compte</button>
+                    <p>Vous voulez nous quitter ? Nous serons tristes mais c'est votre choix.
+                    </p>
+                </div>
+                <div class="csure hide">
+                    <p class=psure>En êtes-vous certain(e) ? Votre compte ne sera pas récupérable ensuite.
+                    </p>
+                    <button>Oui, supprimer le compte.</button>
+                    <img id="delete__picture" src="img/delete.jpg" alt="">
+                </div>
             </div>
         </div>
     </section>
-
-    <div id="popup-overlay">
-        <div class="popup-content">
-            <div id="popup-img-content">
-                <img src="img/delete.jpg" alt="">
-            </div>
-            <div id="popup-img-text">
-                <h2>Désinscription</h2>
-                <p>Etes-vous certain(e) de vouloir supprimer votre compte ?<br>
-                Celui-ci ne pourra pas être restauré.
-                </p>
-                    
-                <button onclick="" id="popup-button-delete" class="_borderradius10">Supprimer le compte</button>
-            </div>
-            <button onclick="ArticleManager.togglePopup()" id="popup-button-close">Fermer</button>
-        </div>
-    </div>
 
 </body>
 
