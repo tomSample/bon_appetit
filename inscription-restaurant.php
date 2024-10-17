@@ -56,7 +56,7 @@
                             </div>
                             <div class="questionnaire">
                             <div class="questionnaire-inscrirestau">
-                                <input id="hero-search-bar" type="search" placeholder="Entrez le nom de la marque">
+                                <input id="hero-search-bar" type="search" placeholder="Entrez votre E-mail">
                             </div>
                             </div>
                             </section>
