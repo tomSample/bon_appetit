@@ -1391,6 +1391,17 @@ cursor: pointer;
         margin-top: 10%;
         margin-bottom: -30%;
     }
+    
+      .inscription-container {
+        justify-content: center;
+        margin-left: 100%;
+      }
+
+      .inscription-confirmation-button {
+        margin-top: 10%;
+        margin-bottom: -30%;
+      }
+      
 
     .mobile-login-form {
         width: 100%;
