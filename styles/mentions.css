@@ -1,68 +1,70 @@
 /* @import */
 
-.inscriptionrestaurant-container {
-    justify-content: center;
+.mentions-container{
+  text-align: center;
+  width: 90%;
+}
+
+
+.mentions-section-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.sectionmentions1 {
+  display: block;
+  float: left;
+    background-color: #434848;
+    width: 30%;
+    margin-right: 2.5%;
+    padding: 1%;
   }
-  
-  .container-inscrirestau {
-      justify-items: center;
-      height: 100%;
-      width: 100%;
+
+  .sectionmentions2 {
+    background-color: #2e3333;
+    width: 30%;
+    padding: 1%;
   }
-  
-  .section-inscrirestau1 {
-    float: left;
-      height: 100%;
-      width: 50%;
-  }
-    
-    .section-inscrirestau2 {
-      display: block;
-      float: right;
-      height: 100%;
-      width: 50%;
-      text-align: right;
-  }
-  
-  .inscriptionrestaurant-title {
-    text-align: center;
-    width: 100%;
-  }
-  
-  .inscription-undertitle {
-    text-align: center;
-  }
-  
-  .inscription-confirmation-button-restauinscri {
-    position: flex;
-    text-align: center;
-  }
-  
-  .questionnaire-inscrirestau {
-    padding-bottom: 1%;
-    padding-top: 1%;
-  }
-  
-  @media screen and (max-width: 950px) {
-  
-  .inscriptionrestaurant-container {
+
+  .sectionmentions3 {
     display: block;
-    font-size:75%;
-    width: 100%;
-    padding-bottom: 25px;
-  }
-  
-  h1 {
-    font-size:25px;
-  }
-  
-  .inscription-confirmation-button-restauinscri {
-    position: flex;
+    float: right;
+    background-color: #434848;
+    width: 30%;
+    margin-left: 2.5%;
+    padding: 1%;
+  } 
+
+  .titresectionmention {
     text-align: center;
-    padding-top: 25%;
+    color: #ffffff;
+    font-size: 125%;
+    width: 100%;
+    padding: 1%;
+    text-decoration: underline;
   }
-  
-  .questionnaire-inscrirestau #hero-search-bar::placeholder {
-    font-size: 72%;
+
+  .textmention {
+    text-align: center;
+    color: #ffffff;
+    font-size: 100%;
+    width: 100%;
+    padding: 1%;
   }
-  }
+
+  @media screen and (max-width: 800px) {
+
+    .titresectionmention {
+      font-size: 90%;
+    }
+
+    .textmention {
+      font-size: 59%;
+    }
+
+    .mentions-section-container {
+      margin-left: 5%;
+    }
+    }

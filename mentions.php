@@ -8,63 +8,36 @@
 <!-- ===hero banner=== -->
 
     <section class="hero-banner">
-            <div class="inscriptionrestaurant-container">
-                <div class="inscriptionrestaurant-title">
-                        <h1>Mentions légales</h1>
-                </div>
-                <div class="inscription-undertitle">
-                        <p>Indiquez vos informations</p>
-                </div>
-                    <section class="container-inscrirestau">
-                        <section class="section-inscrirestau1">
-                            <div class="questionnaire">
-                            <div class="questionnaire-inscrirestau">
-                                <input id="hero-search-bar" type="search" placeholder="Entrez votre nom d'utilisateur">
-                            </div>
-                            </div>
-                            <div class="questionnaire">
-                            <div class="questionnaire-inscrirestau">
-                                <input id="hero-search-bar" type="search" placeholder="Entrez votre mot de passe">
-                            </div>
-                            </div>
-                            <div class="questionnaire">
-                            <div class="questionnaire-inscrirestau">
-                                <input id="hero-search-bar" type="search" div placeholder="Confirmez votre mot de passe">
-                            </div>
-                            </div>
-                            <div class="questionnaire">
-                            <div class="questionnaire-inscrirestau">
-                            <input id="hero-search-bar" type="search" placeholder="Entrez votre numéro de mobile">
-                            </div>
-                            </div>
+            <div class="mentions-container">
+                    <section class="mentions-section-container">
+                        <section class="sectionmentions1">
+                        <div class="titresectionmention">Responsables</div>
+                        <br>
+                        <div class="textmention">Thomas Grandjean</div>
+                        <div class="textmention">MAIL NUMBER</div>
+                        <br>
+                        <div class="textmention">Yannick Gras</div>
+                        <div class="textmention">pro@ygras.fr NUMBER</div>
+                        <br>
+                        <div class="textmention">Mathis Fossard</div>
+                        <div class="textmention">mathisfossard22@gmail.com 0766393865</div>
                         </section>
-                            <section class="section-inscrirestau2">
-                            <div class="questionnaire">
-                            <div class="questionnaire-inscrirestau">
-                                <input id="hero-search-bar" type="search" placeholder="Entrez le nom de l'établissement">
-                            </div>
-                            </div>
-                            <div class="questionnaire">
-                            <div class="questionnaire-inscrirestau">
-                                <input id="hero-search-bar" type="search" placeholder="Entrez l'adresse de l'établissement">
-                            </div>
-                            </div>
-                            <div class="questionnaire">
-                            <div class="questionnaire-inscrirestau">
-                                <input id="hero-search-bar" type="search" placeholder="Entrez le type d'entreprise">
-                            </div>
-                            </div>
-                            <div class="questionnaire">
-                            <div class="questionnaire-inscrirestau">
-                                <input id="hero-search-bar" type="search" placeholder="Entrez le nom de la marque">
-                            </div>
-                            </div>
-                            </section>
-                            <div class="inscription-confirmation-button-restauinscri">
-                    <div class="inscription-confirmation-button">
-                        <button class="submit-button submit-button-inscription" type="submit">S'inscrire</button>
-                    </div>
-                    </div>
+                        <section class="sectionmentions2">
+                        <div class="titresectionmention">Mentions légales</div>
+                        <br>
+                        <div class="textmention">Le présent site « bon appetit » est édité au GRETA CFA de Lannion</div>
+                        <br>
+                        <div class="textmention">Le traitement de vos données à caractère personnel est régi par la Charte du respect de la vie privée, conformément au Règlement Général sur la Protection des Données 2016/679 du 27 avril 2016 («RGPD»).</div>
+                        <br>
+                        <div class="textmention">Bon appetit by Yannick Gras Thomas Grandjean and Mathis Fossard is licensed under CC BY-NC 4.0 </div>
+                        </section>
+                        <section class="sectionmentions3">
+                        <div class="titresectionmention">Sources</div>
+                        <br>
+                        <div class="textmention">Toutes les images utilisées sont libres de droits</div>
+                        <br>
+                        <div class="textmention">stock.adobe.com</div>
+                        <div class="textmention">freepik.com</div>
                         </section>
                 </s>
             </div>
