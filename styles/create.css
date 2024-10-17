@@ -1,7 +1,6 @@
-#create-super-container {
+/* #create-super-container {
     width : 60%;
     margin-inline: auto;
-
 }
 
 .create-container {
@@ -11,8 +10,6 @@
     align-items: center;
     margin-top:7rem;
     width: 100%;
-    /* creer un conteneur pour les formulaires  */
-    /* passage en colonne pour mobile */
 }
 
 #create-container-presentation {
@@ -23,16 +20,12 @@
     justify-content: space-around;
     width:100%;
     margin-top:2rem;
-    /* modifier la width + margin induites par la classe reso-id */
-        /* adapter la width à la taille de la div contenant add__top*/
 }
 
 #add__item {
     justify-content: space-around;
     width:100%;
     margin-top:2rem;
-    /* modifier la width + margin induites par la classe reso-id */
-    /* adapter la width à la taille de la div contenant add__item */
 }
 
 
@@ -85,10 +78,9 @@
     padding-inline:0;
     padding-block: 0;
     width:100%
-    /* alignement via justify-content */
 }
 
 #create__button {
     margin-bottom: 1rem;
     width: 8rem;
-}
+} */

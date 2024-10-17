@@ -1,4 +1,4 @@
-#checkout-body {
+/* #checkout-body {
     display: flex;
     justify-content: space-around;
     margin-top :5rem;
@@ -129,13 +129,13 @@
 
 #confirm-order-button:hover {
     background-color: var(--orange);
-}
+} */
 
 
 /* ======= RESPONSIVE ======= */
 
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
 
     #checkout-body {
         display: flex;
@@ -162,4 +162,4 @@
         padding: 0;
     }
 
-}
+} */

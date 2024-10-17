@@ -1,4 +1,9 @@
-#management {
+.submit-button {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* #management {
     margin-top: 5rem;
 }
 
@@ -42,11 +47,6 @@
     margin-top: 0.5rem;
     margin-left: 0.5rem;
     padding-top: 0.2rem;
-}
-
-.submit-button {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
 }
 
 .add_shop {
@@ -138,4 +138,4 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+} */
