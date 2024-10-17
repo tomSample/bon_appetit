@@ -91,7 +91,7 @@
                 </div>
             </div>
             <div class="create__shop">
-                <button class="submit-button" id="create__button" type="submit">Créer le restaurant</button>
+                <button class="submit-button" id="create__button" type="submit">Enregistrer</button>
             </div>
         </section>
     </div>
