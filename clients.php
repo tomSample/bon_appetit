@@ -2,11 +2,11 @@
 <?php include 'header.php'; ?>
 
 <head>
-        <link rel="stylesheet" href="styles\clients.css" type="text/css">
-    </head>
+    <link rel="stylesheet" href="styles\clients.css" type="text/css">
+</head>
 
     <!-- ===main=== -->
-    
+<body>
     <section id="profile" class="fields">
         <div class="container" id="page__title">
             <div class="section-header">
@@ -109,12 +109,31 @@
                 </p><br>
                 
                 <br>    
-                <h4>Supprimer le compte</h4>
+                <h4>Supprimer le compte</h4><article onclick="ArticleManager.togglePopup()" id="delete" class="item"></article>
                 <p class="delete">Vous voulez nous quitter ? Nous serons tristes mais c'est votre choix.
                 </p>
             </div>
         </div>
     </section>
+
+    <div id="popup-overlay">
+        <div class="popup-content">
+            <div id="popup-img-content">
+                <img src="img/delete.jpg" alt="">
+            </div>
+            <div id="popup-img-text">
+                <h2>Désinscription</h2>
+                <p>Etes-vous certain(e) de vouloir supprimer votre compte ?<br>
+                Celui-ci ne pourra pas être restauré.
+                </p>
+                    
+                <button onclick="" id="popup-button-delete" class="_borderradius10">Supprimer le compte</button>
+            </div>
+            <button onclick="ArticleManager.togglePopup()" id="popup-button-close">Fermer</button>
+        </div>
+    </div>
+
+</body>
 
     <!-- ===fin main=== -->
 
