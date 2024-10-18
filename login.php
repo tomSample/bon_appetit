@@ -57,18 +57,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!-- ===hero banner=== -->
 
 <section class="hero-banner">
-    <div class="mobile-login-form _dp_column _w_30">
-        <?php if ($errorMessage): ?>
-            <div class="error-message"><?php echo $errorMessage; ?></div>
-        <?php endif; ?>
-            <form action="login.php"  method="POST">
-                <label>E-mail</label>
-                <input id="login-email" name="email" type="email" placeholder="toto@gmail.com">
-                <label>Mot de passe</label>
-                <input id="login-password" name="password" type="password" placeholder="">
-                <button class="submit-button" type="submit">Envoyer</button>
-            <a href="forgotten-password.php">Mot de passe oublié</a>
-        </form>
+    <div class="mobile-login-form _w_50">
+        <div id="login-title">
+            <h2>Connexion</h2>
+        </div>
+        <div id="login-form-container">
+                <form id="login-form" action="login.php"  method="POST">
+                    <label>E-mail</label>
+                    <input id="login-search-bar" name="email" type="email" placeholder="entrer votre e-mail">
+                    <label>Mot de passe</label>
+                    <input id="login-search-bar" name="password" type="password" placeholder="entrer votre mot de passe">
+                    <button class="submit-button" type="submit">Envoyer</button>
+                    <?php if ($errorMessage): ?>
+                        <div id="login-error-message" class="error-message"><?php echo $errorMessage; ?></div>
+                    <?php endif; ?>
+                <a href="forgotten-password.php">Mot de passe oublié</a>
+            </form>
+        </div>
     </div>
 </section>
 

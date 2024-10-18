@@ -9,10 +9,10 @@
 <!-- ===hero banner=== -->
         
         <section class="hero-banner">
-            <div class="_dp_column _w_50">
+            <div id="mobile-inscription" class="_dp_column _w_50">
                 <div class="inscription-container">
                         <div class="inscription-title">
-                            <h1>Inscription</h1>
+                            <h2>Inscription</h2>
                             <div class="inscription-undertitle">
                                 <p>Indiquez vos informations.</p>
                             </div>
@@ -20,13 +20,13 @@
                 <form>
                         <div class="_dp_column">
                             <div class="questionnaire">
-                                <input id="hero-search-bar" type="search" placeholder="Entrez votre nom d'utilisateur">
+                                <input id="search-bar" type="search" placeholder="Entrez votre nom d'utilisateur">
                             </div>
                             <div class="questionnaire">
-                                <input id="hero-search-bar" type="search" placeholder="Entrez votre mot de passe">
+                                <input id="search-bar" type="search" placeholder="Entrez votre mot de passe">
                             </div>
                             <div class="questionnaire">
-                                <input id="hero-search-bar" type="search" placeholder="Confirmez votre mot de passe">
+                                <input id="search-bar" type="search" placeholder="Confirmez votre mot de passe">
                             </div>
                             <div class="decalbutton">
                             <div class="inscription-confirmation-button">

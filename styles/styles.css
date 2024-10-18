@@ -168,18 +168,30 @@ nav a {
     min-width: 80px;
     height: 35px;
     border-radius: 30px;
+    margin-inline: 1rem;
+    padding-inline: 1rem;
+    cursor: pointer;
+    background-color: var(--orange);
+}
+
+.header-button-1:hover {
     background-color: var(--darkwhite);
 }
 
 .header-button-2 {
-    width: 120px;
-    padding: rem;
-    background-color: var(--green);
+    font-size : 16px;
+    width: fit-content;
+    min-width: 80px;
+    height: 35px;
+    border-radius: 30px;
+    margin-inline: 1rem;
+    padding-inline: 1rem;
     cursor: pointer;
+    background-color: var(--orange);
 }
 
 .header-button-2:hover {
-    background-color: var(--darkgreen);
+    background-color: var(--darkwhite);
 }
 
 #header-dropdown-container {
@@ -215,6 +227,7 @@ nav a {
     margin-inline: 1rem;
     padding-inline: 1rem;
     cursor: pointer;
+    background-color: var(--darkwhite);
 }
 
 /* =======hero-banner======= */
@@ -223,13 +236,14 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 75vh;
 }
 
 .hero-banner-container {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top : 4rem;
 }
 
 .hero-banner-search {
@@ -247,12 +261,19 @@ nav a {
 }
 
 .hero-banner form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding-block: 2rem;
 }
 
+.hero-banner p {
+    padding-block: 0.5rem;
+}
+
 #hero-search-bar {
-    width: 80%;
+    width: 75%;
     height: 4rem;
     padding: 1rem;
     border-radius: 30px;
@@ -261,34 +282,38 @@ nav a {
 }
 
 #search-bar {
-    width: 100%;
-    height: 4rem;
+    width: 400px;
     padding: 1rem;
+    margin-block: 0.2rem;
     border-radius: 30px;
     border: 2px solid;
     border-color: var(--black);
 }
 
 .hero-search-bar-button {
-    width: 18%;
-    height: 4rem;
-    background-color: var(--green);
+    width: 20%;
+    height: 3.5rem;
+    font-size : 16px;
+    border-radius: 40px;
+    background-color: var(--lightorange);
     cursor: pointer;
 }
 
 .hero-search-bar-button:hover {
-    background-color: var(--darkgreen);
+    background-color: var(--orange);
 }
 
 .submit-button {
-    width: 80px;
-    height: 40px;
-    background-color: var(--green);
+    height: 3.5rem;
+    width : 7rem;
+    font-size : 16px;
+    border-radius: 40px;
+    background-color: var(--lightorange);
     cursor: pointer;
 }
 
 .submit-button:hover {
-    background-color: var(--darkgreen);
+    background-color: var(--orange);
 }
 
 /* =======main======= */
@@ -298,10 +323,7 @@ nav a {
 }
 
 .main { 
-    height: 50vh;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    background-color: var(--black);
+    height: 60vh;
 }
 
 .main-container {
@@ -379,24 +401,24 @@ nav a {
 }
 
 .home-img-container {
-    height: inherit;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+    width : 100%;
+    height: 100%;
+    }
 
 .home-img-box {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.home-img {
-    display: flex;
     justify-content: center;
-    height: auto;
-    width: 400px;
-    object-fit: cover; 
+    align-items: center;
+    width : 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url('../img/chicken.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
 }
 
 /* =======footer======= */
@@ -412,17 +434,20 @@ footer a {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
-    margin-inline: auto;
-    width: 60%;
     padding-block: 2rem;
 }
 
+#footer-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
 .contact-footer-box {
-    height: 6rem;
     background-color: var(--lightgrey);
     padding: 1rem;
-    margin-inline:0.5rem
+    margin-inline: 1rem;
 }
 
 .contact-footer-box span {
@@ -438,8 +463,9 @@ footer a {
 .footer-box {
     display: flex;
     flex-direction: column;
-    height: 6rem;
+    width : 150px;
     padding: 1rem;
+    margin-inline: 1rem;
     background-color: var(--lightgrey);
 }
 
@@ -449,6 +475,7 @@ footer a {
 
 .footer-box-title {
     text-align: center;
+    padding-bottom: 0.5rem
 }
 
 .footer-box-title h2 {
@@ -1195,6 +1222,7 @@ cursor: pointer;
     height: 40px;
     width: 90px;
     background-color: #f8dc77;
+    cursor: pointer;
 }
 
 
@@ -1256,10 +1284,6 @@ cursor: pointer;
 
 #checkout-content-title {
     margin-bottom: 1rem;
-}
-
-#checkout-content-box {
-    cursor: pointer;
 }
 
 #checkout-content-box {
@@ -1459,6 +1483,57 @@ cursor: pointer;
     width: 8rem;
 }
 
+/* ======= INSCRIPTION ======= */
+
+.inscription-title {
+    text-align: center;
+    padding-block: 2rem;;
+}
+
+.inscription-container form {
+    display: unset;
+}
+
+#login-title {
+    text-align: center;
+    padding-block: 2rem; 
+}
+
+#login-form-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#login-form {
+    flex-direction: column;
+    width : 100%;
+}
+
+#login-search-bar {
+    width: 400px;
+    padding: 1rem;
+    margin-block: 0.2rem;
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: var(--black);
+}
+
+#login-error-message {
+    font-size: 16px;
+    padding-block:1rem;
+}
+
+.questionnaire {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+.inscription-undertitle {
+    text-align: center;
+}
+
 /* ======= RESPONSIVE ======= */
 
 
@@ -1544,7 +1619,11 @@ cursor: pointer;
         align-items: unset;
         height: 70vh;
         padding-inline: 1rem;
-        margin-bottom: 0;;
+        margin-bottom: 0;
+    }
+
+    .hero-banner p {
+        font-size : 1rem;
     }
 
     .hero-banner-search {
@@ -1784,10 +1863,6 @@ cursor: pointer;
         max-width : 366.2px
     }
 
-    .resto-id-text {
-        padding-left: 0;
-    }
-
     .resto-id-title {
         width: 100%;
         text-align: left;
@@ -1829,17 +1904,15 @@ cursor: pointer;
     
     .inscription-container {
         justify-content: center;
-        margin-left: 100%;
+    }
+
+    .inscription-title {
+        margin-top: 15%;
     }
 
     .inscription-confirmation-button {
         margin-top: 10%;
         margin-bottom: -30%;
-    }
-    
-    .inscription-container {
-        justify-content: center;
-        margin-left: 100%;
     }
 
     .inscription-confirmation-button {
@@ -1900,5 +1973,10 @@ cursor: pointer;
     #checkout-container-right {
         width: unset;
         padding: 0;
+    }
+
+    #mobile-inscription {
+        width:100%;
+
     }
 }

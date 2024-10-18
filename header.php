@@ -18,7 +18,6 @@
                 $currentPage == 'inscription.php' ||
                 $currentPage == 'login.php' ||
                 $currentPage =='forgotten-password.php' ||
-                $currentPage =='logout.php'||
                 $currentPage =='administration.php' ||
                 $currentPage =='create.php') : ?>
 
@@ -28,9 +27,9 @@
             <button onclick ="toggleDropdown()" id="header-dropdown-button"><span class="material-symbols-outlined">person</span><?php echo htmlspecialchars($username); ?></button>
             <div id="header-dropdown-container">
                 <a id="header-dropdown-link" href="clients.php">Mon compte</a>
-                <a id="header-dropdown-link" href="clients.php">Tableau de bord</a>
-                <a id="header-dropdown-link" href="clients.php">Edition</a>
-                <a id="header-dropdown-link" href="logout.php">Déconnexion</a>
+                <a id="header-dropdown-link" href="administration.php">Tableau de bord</a>
+                <a id="header-dropdown-link" href="create.php">Edition</a>
+                <a id="header-dropdown-link" href="logout-action.php">Déconnexion</a>
             </div>
             <a>
                 <button onclick="toggleDrawer()" id="toggle-drawer" class="header-button-1">Panier</button>
@@ -42,7 +41,7 @@
             <button onclick ="toggleDropdown()" id="header-dropdown-button"><span class="material-symbols-outlined">person</span><?php echo htmlspecialchars($username); ?></button>
             <div id="header-dropdown-container">
                 <a id="header-dropdown-link" href="clients.php">Mon compte</a>
-                <a id="header-dropdown-link" href="logout.php">Déconnexion</a>
+                <a id="header-dropdown-link" href="logout-action.php">Déconnexion</a>
             </div>
             <a>
                 <button onclick="toggleDrawer()" id="toggle-drawer" class="header-button-1">Panier</button>
@@ -60,7 +59,7 @@
                 <span class="material-symbols-outlined">shopping_bag</span>
             </button>
         </a>
-        <a href="logout.php">
+        <a href="logout-action.php">
             <button class="mobile-header-button">
                 <span class="material-symbols-outlined">logout</span></button>
         </a>

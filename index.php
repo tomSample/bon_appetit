@@ -4,7 +4,9 @@
 <!-- ===fin header=== -->
 
 <!-- ===hero banner=== -->
+
 <!-- si user n'est pasconnecté, affiche : -->
+
 <?php if ($isLoggedIn === false): ?>
     <body>
         <section class="hero-banner">
@@ -25,13 +27,6 @@
         <section class ="main">
             <div class="home-img-container">
                 <div class="home-img-box">
-                    <img class="home-img" src ="img\chicken.jpg" alt="">
-                </div>
-                <div class="home-img-box">
-                    <img class="home-img" src ="img\seafood.jpg" alt="">
-                </div>
-                <div class="home-img-box">
-                    <img class="home-img" src ="img\thaifood.jpg" alt="">
                 </div>
             </div>
         </section>

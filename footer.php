@@ -1,35 +1,39 @@
 <footer>
     <section class="footer-container">
-        <div class="footer-box">
-            <div class="footer-box-title">
-                <h2>Découvrir</h2>
-            </div>
-            <div class="footer-box-padtop">
-                <a href ="create.php" class="links">ajouter votre restaurant</a>
-                <a href ="" class="links">à propos</a>
-
-            </div>
-        </div>
-        <div class="contact-footer-box">
-            <div class="footer-box-title">
-                <h2>Contact</h2>
-            </div>
-            <div class="footer-box-icons">
-                <a class="links" href=""><span class="material-symbols-outlined">call</span></a>
-                <a class="links" href=""><span class="material-symbols-outlined">mail</span></a>
-                <a class="links" href=""><img src ="img\social network\whatsapp.png" alt=""></a>
-                <a class="links" href=""><img src ="img\social network\facebook.png" alt=""></a>
-                <a class="links" href=""><img src ="img\social network\instagram.png" alt=""></a>
+        <div id="footer-content">
+            <div class="footer-box">
+                <div class="footer-box-title">
+                    <h2>Découvrir</h2>
+                </div>
+                <div class="footer-box-padtop">
+                <?php if ($isLoggedIn && $role === 'admin'): ?>
+                    <a href ="create.php" class="links">Ajouter un restaurant</a>
+                <?php else: ?>
+                    <a href ="inscription-restaurant.php" class="links">Rejoignez le réseau</a>
+                <?php endif; ?>
+                    <a href ="" class="links">À propos de nous</a>
                 </div>
             </div>
-        </div>
-        <div class="footer-box">
-            <div class="footer-box-title">
-                <h2>Aide</h2>
-            </div>
-            <div class="footer-box-padtop">
-                <a href="" class="links">faq</a>
-                <a href="" class="links">Mentions légales</a>
+            <div class="contact-footer-box">
+                <div class="footer-box-title">
+                    <h2>Contact</h2>
+                </div>
+                <div class="footer-box-icons">
+                    <a class="links" href=""><span class="material-symbols-outlined">call</span></a>
+                    <a class="links" href=""><span class="material-symbols-outlined">mail</span></a>
+                    <a class="links" href=""><img src ="img\social network\whatsapp.png" alt=""></a>
+                    <a class="links" href=""><img src ="img\social network\facebook.png" alt=""></a>
+                    <a class="links" href=""><img src ="img\social network\instagram.png" alt=""></a>
+                    </div>
+                </div>
+            <div class="footer-box">
+                <div class="footer-box-title">
+                    <h2>Aide</h2>
+                </div>
+                <div class="footer-box-padtop">
+                    <a href="" class="links">Mentions légales</a>
+                    <a href="" class="links">FAQ</a>
+                </div>
             </div>
         </div>
     </section>
@@ -42,15 +46,19 @@
             <div class="footer-box">
                 <h2>Découvrir</h2>
                 <div class="footer-box-padtop box-1">
-                    <a href="create.php">ajouter votre restaurant</a>
-                    <a href="">à propos</a>
+                <?php if ($isLoggedIn && $role === 'admin'): ?>
+                    <a href ="create.php" class="links">Ajouter un restaurant</a>
+                <?php else: ?>
+                    <a href ="inscription-restaurant.php" class="links">Rejoignez le réseau</a>
+                <?php endif; ?>
+                    <a href="">À propos</a>
                 </div>
             </div>
             <div class="footer-box">
                 <h2>Aide</h2>
                 <div class="footer-box-padtop box-1">
-                    <a href="">faq</a>
                     <a href="">Mentions légales</a>
+                    <a href="">FAQ</a>
                 </div>
             </div>
         </div>
