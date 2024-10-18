@@ -1,3 +1,19 @@
+.clients__buttons__yellow {
+    background-color: var(--orange);
+}
+
+.clients__buttons__yellow:hover {
+    cursor: pointer;
+}
+
+.clients__buttons__black {
+    background-color: var(--black);
+}
+
+.clients__buttons__black:hover {
+    cursor: pointer;
+}
+
 .clients__icon {
     width: 15px;
     height: 15px;
@@ -15,9 +31,22 @@
 .identity__icon {
     width: 15px;
     height: 15px;
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     margin-left: 0.5rem;
-    padding-top: 0.2rem;
+}
+
+.identity__icon2 {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.clients_pay p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.25rem;
+    font-size: 1.05rem;
 }
 
 #chosen2 p {

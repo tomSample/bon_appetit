@@ -16,43 +16,104 @@
         </div>
         <div class="container" id="identity">
             <div class="subtitle">
-                <h2>Identité</h2><img class="identity__icon" src="./img/icon/editing.png">
-
-                    <!--Réutiliser inscription pour les modifications-->
+                <h2>Identité</h2><button class="clients__buttons__yellow"><img class="identity__icon" src="./img/icon/editing.png"></button>
             </div>
             <div class="grid">
-                <div class="grid__item__left">
-                    <p>Nom, Prénom<br>
-                    Adresse de livraison<br>
-                    Code postal<br>
-                    Ville<br>
-                    E-mail<br>
-                    Téléphone<br>
-                    <br>
-                    Adresse de facturation<br>
-                    Code postal<br>
-                    Ville<br>
-                    <br>
-                    Mode de paiement<br>
-                    Derniers numéros<br>
-                    </p>
+                <div class="together">
+                    <div class="clients__alone">
+                        <div class="grid__item__left">
+                            <p>Nom, Prénom</p>
+                        </div>
+                        <div>
+                            <p>John Doe</p>
+                        </div>
+                    </div>
+                    <div class="clients__alone">
+                        <div class="grid__item__left">
+                            <p>Adresse de livraison</p>
+                        </div>
+                        <div>
+                            <p>56 rue de Brest</p>
+                        </div>
+                    </div>
+                    <div class="clients__alone">
+                        <div class="grid__item__left">
+                            <p>Code postal</p>
+                        </div>
+                        <div>
+                            <p>22300</p>
+                        </div>
+                    </div>
+                    <div class="clients__alone">
+                        <div class="grid__item__left">
+                            <p>Ville</p>
+                        </div>
+                        <div>
+                            <p>Lannion</p>
+                        </div>
+                    </div>
+                    <div class="clients__alone">
+                        <div class="grid__item__left">
+                            <p>E-mail</p>
+                        </div>
+                        <div>
+                            <p>monadresse@email.fr</p>
+                        </div>
+                    </div>
+                    <div class="clients__alone">
+                        <div class="grid__item__left">
+                            <p>Téléphone</p>
+                        </div>
+                        <div>
+                            <p>06 78 98 65 15</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="grid__item__right">
-                    <p>John Doe<br>
-                    56 rue de Brest<br>
-                    22300<br>
-                    Lannion<br>
-                    monadresse@email.fr<br>
-                    06 78 98 65 15<br>
-                    <br>
-                    32 rue de Paris<img class="clients__icon__intern" src="./img/icon/add.png"><br>
-                    22300<br>
-                    Lannion<br>
-                    <br>
-                    Carte bleue<img class="clients__icon__intern" src="./img/icon/arrow.png"><br>
-                    2659<br>
-                    </p>
+                <div class="together">
+                    <div class="clients__alone">
+                        <div class="grid__item__left">
+                            <p>Adresse de facturation</p>
+                        </div>
+                        <div class="clients__alone">
+                            <p>32 rue de Paris</p><button class="clients__buttons__yellow"><img class="clients__icon__intern" src="./img/icon/add.png"></button>
+                        </div>
+                    </div>
+                    <div class="clients__alone">
+                        <div class="grid__item__left">
+                            <p>Code postal</p>
+                        </div>
+                        <div>
+                            <p>22300</p>
+                        </div>
+                    </div>
+                    <div class="clients__alone">
+                        <div class="grid__item__left">
+                            <p>Ville</p>
+                        </div>
+                        <div>
+                            <p>Lannion</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="together">
+                    <div class="clients__alone">
+                        <div class="grid__item__left">
+                            <p>Mode de paiement</p>
+                        </div>
+                        <div class="clients__alone">
+                            <p>Carte bleue</p><button class="clients__buttons__yellow"><img class="clients__icon__intern" src="./img/icon/arrow.png"></button>
+                        </div>
+                    </div>
+                    <div class="clients__alone">
+                        <div class="grid__item__left">
+                            <p>Derniers numéros<br></p>
+                        </div> 
+                        <div>
+                            <p>2659</p>
+                        </div>
+                    </div>
+                        <!--<div class=clients__pay>
+                        </div>--> 
                 </div>
             </div>
         </div>
@@ -65,22 +126,22 @@
                 <table>
                     <tr><th class="first">Date</th><th class="first">Restaurant</th><th class="first">Prix</th>
                     </tr>
-                    <tr><th class="follow">12/06/2024</th><th class="follow">Aux plaisirs gustatifs</th><th class="follow">19 €</th><th><img class="clients__icon" src="./img/icon/upload.png"></th>
+                    <tr><th class="follow">12/06/2024</th><th class="follow">Aux plaisirs gustatifs</th><th class="follow">19 €</th><th><button class="clients__buttons__black"><img class="clients__icon" src="./img/icon/upload.png"></button></th>
                     </tr>
-                    <tr><th class="follow">13/08/2024</th><th class="follow">Aux plaisirs gustatifs</th><th class="follow">23 €</th><th><img class="clients__icon" src="./img/icon/upload.png"></th>
+                    <tr><th class="follow">13/08/2024</th><th class="follow">Aux plaisirs gustatifs</th><th class="follow">23 €</th><th><button class="clients__buttons__black"><img class="clients__icon" src="./img/icon/upload.png"></button></th>
                     </tr>
-                    <tr><th class="follow">15/09/2024</th><th class="follow">La corne d'abondance</th><th class="follow">32 €</th><th><img class="clients__icon" src="./img/icon/upload.png"></th>
+                    <tr><th class="follow">15/09/2024</th><th class="follow">La corne d'abondance</th><th class="follow">32 €</th><th><button class="clients__buttons__black"><img class="clients__icon" src="./img/icon/upload.png"></button></th>
                     </tr>
                 </table>
             </div>
             <div class="add">
-                <p>En voir plus</p><img class="clients__icon" src="./img/icon/add.png">
+                <p>En voir plus</p><button class="clients__buttons__black"><img class="clients__icon" src="./img/icon/add.png"></button>
             </div>
         </div>
 
         <div class="container" id="love">
             <div class="subtitle">
-                <h2>Restaurant préféré</h2><img class="identity__icon" src="./img/icon/editing.png">
+                <h2>Restaurant préféré</h2><button class="clients__buttons__yellow"><img class="identity__icon2" src="./img/icon/editing.png"></button>
             </div>
             <div id="loved">
                 <p>Aux plaisirs gustatifs                    

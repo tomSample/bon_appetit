@@ -471,18 +471,29 @@ footer a {
 
 #profile .grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.together {
+    padding-top: 0.75rem;
+    padding-bottom: .75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.clients__alone {
+    display: flex;
+    flex-direction: row;
 }
 
 #profile .grid__item__left {
-    padding-right: 2rem;
+    padding-right: 1rem;
     font-weight: bold;
+    width: 11rem;
 }
 
 #profile p {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    line-height: 1.25rem;
+    line-height: 1.75rem;
     font-size: 1.05rem;
 }
 
