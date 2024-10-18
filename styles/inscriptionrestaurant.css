@@ -49,7 +49,6 @@
   display: block;
   font-size:75%;
   width: 100%;
-  padding-bottom: 25px;
 }
 
 h1 {
@@ -59,10 +58,32 @@ h1 {
 .inscription-confirmation-button-restauinscri {
   position: flex;
   text-align: center;
-  padding-top: 25%;
 }
 
 .questionnaire-inscrirestau #hero-search-bar::placeholder {
   font-size: 72%;
 }
+
+.section-inscrirestau1 {
+  float: left;
+    height: 100%;
+    width: 50%;
+}
+
+.section-inscrirestau2 {
+  float: left;
+    height: 100%;
+    width: 50%;
+}
+
+.questionnaire-inscrirestau #hero-search-bar {
+    height: 90%;
+}
+}
+
+@media screen and (max-width: 800px) {
+
+  .inscription-confirmation-button-restauinscri {
+    margin-top: -4%;
+  }
 }
