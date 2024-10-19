@@ -1534,6 +1534,61 @@ cursor: pointer;
     text-align: center;
 }
 
+#inscriptionrestaurant-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.inscriptionrestaurant-container {
+justify-content: center;
+margin-top: 4rem;
+width:80%;
+}
+
+.container-inscrirestau {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-block : 3rem;
+}
+
+.section-inscrirestau {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.inscriptionrestaurant-title {
+text-align: center;
+width: 100%;
+}
+
+.questionnaire-inscrirestau {
+display: flex;
+justify-content: center;
+width: 100%;
+}
+
+#inscription-restaurant-search-bar {
+width: 80%;
+padding: 1rem;
+margin-block: 0.2rem;
+border-radius: 30px;
+border: 2px solid;
+border-color: var(--black);
+}
+
+.inscription-confirmation-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ======= RESPONSIVE ======= */
 
 
@@ -1892,15 +1947,6 @@ cursor: pointer;
     .footer-box {
         margin-inline: 0.2rem;
     }
-
-    .questionnaire {
-        display: flex;
-        height: 50px;
-        width: 250px;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        justify-content: center;
-    }
     
     .inscription-container {
         justify-content: center;
@@ -1908,16 +1954,6 @@ cursor: pointer;
 
     .inscription-title {
         margin-top: 15%;
-    }
-
-    .inscription-confirmation-button {
-        margin-top: 10%;
-        margin-bottom: -30%;
-    }
-
-    .inscription-confirmation-button {
-        margin-top: 10%;
-        margin-bottom: -30%;
     }
 
     .mobile-login-form {
@@ -1979,4 +2015,28 @@ cursor: pointer;
         width:100%;
 
     }
+
+    #inscriptionrestaurant-main {
+        height: fit-content;
+        margin-top : 4rem;
+        margin-bottom: 4rem;
+    }
+
+.inscriptionrestaurant-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top : 2rem;
+}
+
+.container-inscrirestau {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem;
+}
+
+.section-inscrirestau {
+    width: 100%;
+}
 }

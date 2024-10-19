@@ -19,7 +19,8 @@
                 $currentPage == 'login.php' ||
                 $currentPage =='forgotten-password.php' ||
                 $currentPage =='administration.php' ||
-                $currentPage =='create.php') : ?>
+                $currentPage =='create.php' ||
+                $currentPage == 'inscription-restaurant.php') : ?>
 
         <!--  vérifie si l'utilisateur est connecté et s'il est admin -->
 
