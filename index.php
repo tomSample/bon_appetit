@@ -51,27 +51,84 @@
 
     <!-- filters -->
 
-            <section>
+            <section id="index-food-filter-main">
 
                 <div id="index-food-filter-container">
 
                     <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="fast-food" onclick="toggleFilter(this)">FAST-FOOD</button>
+                        <button id="index-food-filter-button" data-category="ramen" onclick="toggleFilter(this)">
+                            <img id="index-food-filter-icon" src ="img\icon\ramen.png">
+                        </button>
                     </div>
                     <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="italian" onclick="toggleFilter(this)">ITALIENNE</button>
+                        <button id="index-food-filter-button" data-category="churros" onclick="toggleFilter(this)">
+                            <img id="index-food-filter-icon" src ="img\icon\churros.png">
+                        </button>
                     </div>
                     <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="asian" onclick="toggleFilter(this)">ASIATIQUE</button>
+                        <button id="index-food-filter-button" data-category="satay" onclick="toggleFilter(this)">
+                            <img id="index-food-filter-icon" src ="img\icon\satay.png">
+                        </button>
                     </div>
                     <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="mexican" onclick="toggleFilter(this)">MEXICAINE</button>
+                        <button id="index-food-filter-button" data-category="pretzel" onclick="toggleFilter(this)">
+                            <img id="index-food-filter-icon" src ="img\icon\pretzel.png">
+                        </button>
                     </div>
                     <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="french" onclick="toggleFilter(this)">FRANCAISE</button>
+                        <button id="index-food-filter-button" data-category="fast-food" onclick="toggleFilter(this)">
+                            <img id="index-food-filter-icon" src ="img\icon\burger-sandwich.png">
+                        </button>
                     </div>
                     <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="vegan" onclick="toggleFilter(this)">VEGAN</button>
+                        <button id="index-food-filter-button" data-category="italian" onclick="toggleFilter(this)">
+                            <img id="index-food-filter-icon" src ="img\icon\pizza.png">
+                        </button>
+                    </div>
+                    <div id="index-food-filter-content">
+                        <button id="index-food-filter-button" data-category="sushi" onclick="toggleFilter(this)">
+                            <img id="index-food-filter-icon" src ="img\icon\sushi.png">
+                        </button>
+                    </div>
+                    <div id="index-food-filter-content">
+                        <button id="index-food-filter-button" data-category="falafel" onclick="toggleFilter(this)">
+                            <img id="index-food-filter-icon" src ="img\icon\falafel.png">
+                        </button>
+                    </div>
+                    <div id="index-food-filter-content">
+                        <button id="index-food-filter-button" data-category="meat" onclick="toggleFilter(this)">
+                            <img id="index-food-filter-icon" src ="img\icon\food.png">
+                        </button>
+                    </div>
+                    <div id="index-food-filter-content">
+                        <button id="index-food-filter-button" data-category="tacos" onclick="toggleFilter(this)">
+                            <img id="index-food-filter-icon" src ="img\icon\tacos.png">
+                        </button>
+                    </div>
+                    <div id="index-food-filter-content">
+                        <button id="index-food-filter-button" data-category="poke" onclick="toggleFilter(this)">
+                            <img id="index-food-filter-icon" src ="img\icon\poke.png">
+                        </button>
+                    </div>
+                    <div id="index-food-filter-content">
+                        <button id="index-food-filter-button" data-category="hot-dog" onclick="toggleFilter(this)">
+                            <img id="index-food-filter-icon" src ="img\icon\hot-dog.png">
+                        </button>
+                    </div>
+                    <div id="index-food-filter-content">
+                        <button id="index-food-filter-button" data-category="pasta" onclick="toggleFilter(this)">
+                            <img id="index-food-filter-icon" src ="img\icon\spaghetti.png">
+                        </button>
+                    </div>
+                    <div id="index-food-filter-content">
+                        <button id="index-food-filter-button" data-category="poutine" onclick="toggleFilter(this)">
+                            <img id="index-food-filter-icon" src ="img\icon\poutine.png">
+                        </button>
+                    </div>
+                    <div id="index-food-filter-content">
+                        <button id="index-food-filter-button" data-category="after-tea" onclick="toggleFilter(this)">
+                            <img id="index-food-filter-icon" src ="img\icon\afternoon-tea.png">
+                        </button>
                     </div>
 
                 </div>
@@ -82,7 +139,7 @@
 
             <section class="main-container restaurant-container">
                 <div class="restaurant-title">    
-                    <h2>Votre restaurant favori</h2>
+                    <h2>Mes favoris</h2>
                 </div>
                     <div class="restaurant-box">
                         <a class="restaurant-article-filter" data-category="fast-food" href="restaurant.php">
@@ -109,7 +166,7 @@
                                 </li>
                             </ul>
                         </a>                       
-                        <a class="restaurant-article-filter" data-category="asian" href="restaurant.php">
+                        <a class="restaurant-article-filter" data-category="sushi" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
@@ -155,7 +212,7 @@
                                 </li>
                             </ul>
                         </a>                       
-                        <a class="restaurant-article-filter" data-category="vegan" href="restaurant.php">
+                        <a class="restaurant-article-filter" data-category="tacos" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
@@ -167,7 +224,7 @@
                                 </li>
                             </ul>
                         </a>
-                        <a class="restaurant-article-filter" data-category="french" href="restaurant.php">
+                        <a class="restaurant-article-filter" data-category="meat" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
@@ -179,7 +236,7 @@
                                 </li>
                             </ul>
                         </a>
-                        <a class="restaurant-article-filter" data-category="mexican" href="restaurant.php">
+                        <a class="restaurant-article-filter" data-category="falafel" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
@@ -203,7 +260,7 @@
                                 </li>
                             </ul>
                         </a>                       
-                        <a class="restaurant-article-filter" data-category="vegan" href="restaurant.php">
+                        <a class="restaurant-article-filter" data-category="tacos" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
@@ -215,7 +272,7 @@
                                 </li>
                             </ul>
                         </a>
-                        <a class="restaurant-article-filter" data-category="french" href="restaurant.php">
+                        <a class="restaurant-article-filter" data-category="meat" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
@@ -263,7 +320,7 @@
                                 </li>
                             </ul>
                         </a>                       
-                        <a class="restaurant-article-filter" data-category="vegan" href="restaurant.php">
+                        <a class="restaurant-article-filter" data-category="tacos" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
@@ -275,7 +332,7 @@
                                 </li>
                             </ul>
                         </a>
-                        <a class="restaurant-article-filter" data-category="french" href="restaurant.php">
+                        <a class="restaurant-article-filter" data-category="meat" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
@@ -287,7 +344,7 @@
                                 </li>
                             </ul>
                         </a>
-                        <a class="restaurant-article-filter" data-category="mexican" href="restaurant.php">
+                        <a class="restaurant-article-filter" data-category="falafel" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
@@ -311,7 +368,7 @@
                                 </li>
                             </ul>
                         </a>                       
-                        <a class="restaurant-article-filter" data-category="vegan" href="restaurant.php">
+                        <a class="restaurant-article-filter" data-category="tacos" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
@@ -323,7 +380,7 @@
                                 </li>
                             </ul>
                         </a>
-                        <a class="restaurant-article-filter" data-category="french" href="restaurant.php">
+                        <a class="restaurant-article-filter" data-category="meat" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
