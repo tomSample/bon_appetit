@@ -4,7 +4,7 @@
 <section class ="body-padding">
     <div class="resto-id">
         <div>
-            <img id="resto-id-photo" src="img\resto_template_2.jpg" alt="PHOTO">
+            <img id="resto-id-photo" src="img\resto_template_1.jpg" alt="PHOTO">
         </div>
         <div class="resto-id-text _dp_column">
             <div class="resto-id-title">
@@ -89,7 +89,7 @@
             <article onclick="ArticleManager.togglePopup()" id="plats-article-1" class="item">  
                 <div>
                     <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                        <img class="photo-plat" src="img\penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table.jpg" alt="PHOTO">
                     </div>
                     <div class="item-content">
                         <div class="item-description">
@@ -105,7 +105,7 @@
             <article onclick="ArticleManager.togglePopup()" id="plats-article-2" class="item">  
                 <div>
                     <div>
-                        <img class="photo-plat" src="img\resto_template_2.jpg" alt="PHOTO">
+                        <img class="photo-plat" src="img\well-done-steak-homemade-potatoes.jpg" alt="PHOTO">
                     </div>
                     <div class="item-content">
                         <div class="item-description">

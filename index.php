@@ -236,7 +236,7 @@
                                 </li>
                             </ul>
                         </a>
-                        <a class="restaurant-article-filter" data-category="falafel" href="restaurant.php">
+                        <a class="restaurant-article-filter" data-category="fast-food" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
@@ -249,6 +249,42 @@
                             </ul>
                         </a>
                         <a class="restaurant-article-filter" data-category="italian" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>                       
+                        <a class="restaurant-article-filter" data-category="pretzel" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="poke" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="hot-dog" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
@@ -273,6 +309,42 @@
                             </ul>
                         </a>
                         <a class="restaurant-article-filter" data-category="meat" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="poutine" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>                       
+                        <a class="restaurant-article-filter" data-category="pasta" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="ramen" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">
@@ -309,6 +381,30 @@
                             </ul>
                         </a>
                         <a class="restaurant-article-filter" data-category="italian" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="after-tea" href="restaurant.php">
+                            <ul class="restaurant-id">
+                                <li>
+                                    <img src="img\resto_template_1.jpg">
+                                </li>
+                                <li>
+                                    <p>Nom du restaurant 1</p>
+                                    <p><span class="material-symbols-outlined">star</span>Excellent !</p>
+                                    <p>distance : 1km</p>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="restaurant-article-filter" data-category="pizza" href="restaurant.php">
                             <ul class="restaurant-id">
                                 <li>
                                     <img src="img\resto_template_1.jpg">

@@ -11,8 +11,9 @@
     <div id="checkout-container-left">
         <div id="checkout-content">
             <div id="checkout-content-title">
-                <div id="checkout-delivery-address-title" onclick="toggleAddDeliveryadress()"><h2>Adresse de livraison</h2></div>
-                <span class="material-symbols-outlined">home_work</span>
+                <div id="checkout-delivery-address-title" onclick="toggleAddDeliveryadress()"><h2>Adresse de livraison</h2>
+                    <span class="material-symbols-outlined">home_work</span>
+                </div>
             </div>
             <div onclick="checkRadio('address-1')" id="checkout-content-box">
                 <div>
@@ -57,8 +58,9 @@
 
         <div id="checkout-content">
             <div id="checkout-content-title">
-                <div id="checkout-delivery-address-title" onclick="toggleAddPaymentMode()"><h2>Moyens de paiement</h2></div>
-                <span class="material-symbols-outlined">payments</span>
+                <div id="checkout-delivery-address-title" onclick="toggleAddPaymentMode()"><h2>Moyens de paiement</h2>
+                    <span class="material-symbols-outlined">payments</span>
+                </div>
             </div>
             <div onclick="checkRadio('payment-1')" id="checkout-content-box">
                 <div>
