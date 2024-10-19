@@ -487,9 +487,10 @@ footer a {
 }
 
 #profile .grid__item__left {
-    padding-right: 1rem;
+    padding-left: .5rem;
+    padding-right: .4rem;
     font-weight: bold;
-    width: 11rem;
+    width: 7rem;
 }
 
 #profile p {

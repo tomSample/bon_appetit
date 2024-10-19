@@ -42,11 +42,65 @@
     margin-left: 0.5rem;
 }
 
-.clients_pay p {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    line-height: 1.25rem;
-    font-size: 1.05rem;
+#pay__select, #invoice__select {
+    font-size: .9rem;
+    background-color: var(--orange);
+    margin-bottom: .1rem;
+}
+
+#type__select, #favorite__select {
+    font-size: .9rem;
+    background-color: var(--orange);
+    margin-bottom: .4rem;
+}
+
+.option {
+    font-size: .9rem;
+    background-color: var(--orange);
+    padding: 1rem;
+}
+
+.option:hover {
+    background-color: var(--green);
+}
+
+#invoice__newp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#clients__newp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.selector {
+    display: flex;
+    flex-direction: row;
+}
+
+.close__invoice {
+    display: flex;
+    flex-direction: row;
+}
+
+#invoice__button {
+    margin-bottom: .8rem;
+}
+
+.add__type, .change__type, .add__invoice {
+    height: 2rem;
+    border: solid;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+    border-width: 0.1rem;
+    border-radius: 6%;
+    margin-bottom: .4rem;
+    width: 100%;
 }
 
 #chosen2 p {
@@ -89,6 +143,12 @@
     text-align: center;
     justify-items: center;
     margin-inline: auto;
+}
+
+.clients__favorite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hide {
