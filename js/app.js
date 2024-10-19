@@ -174,3 +174,44 @@ function toggleFilter(button) {
 function toggleDropdown() {
     document.getElementById('header-dropdown-container').classList.toggle('open');
 }
+
+//=======CAROUSEL
+
+let currentIndex = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('#index-food-filter-button');
+    const totalSlides = slides.length;
+    
+    // Vérifiez si l'index est hors des limites et ajustez-le
+    if (index >= totalSlides) {
+        currentIndex = 0; // Réinitialisez à la première diapositive
+    } else if (index < 0) {
+        currentIndex = totalSlides - 1; // Réinitialisez à la dernière diapositive
+    } else {
+        currentIndex = index;
+    }
+    
+    // Calculez la largeur de la diapositive et la marge
+    const slideWidth = slides[0].offsetWidth;
+    const margin = 145; // Ajustez cette valeur en fonction de votre marge réelle
+    
+    // Calculez l'offset en fonction de l'index actuel
+    const offset = -currentIndex * (slideWidth + margin);
+    
+    // Appliquez la transformation de translation
+    document.querySelector('#index-food-filter-carousel-inner').style.transform = `translateX(${offset}px)`;
+}
+
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
+
+// Initialisez le carrousel après le chargement complet du DOM
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentIndex);
+});

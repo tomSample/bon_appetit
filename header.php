@@ -25,13 +25,14 @@
         <!--  vérifie si l'utilisateur est connecté et s'il est admin -->
 
         <?php if ($isLoggedIn && $role === 'admin'): ?>
-            <button onclick ="toggleDropdown()" id="header-dropdown-button"><span class="material-symbols-outlined">person</span><?php echo htmlspecialchars($username); ?></button>
-            <div id="header-dropdown-container">
-                <a id="header-dropdown-link" href="clients.php">Mon compte</a>
-                <a id="header-dropdown-link" href="administration.php">Tableau de bord</a>
-                <a id="header-dropdown-link" href="create.php">Edition</a>
-                <a id="header-dropdown-link" href="logout-action.php">Déconnexion</a>
-            </div>
+            <button onclick ="toggleDropdown()" id="header-dropdown-button"><span class="material-symbols-outlined">person</span><?php echo htmlspecialchars($username); ?>
+                <div id="header-dropdown-container">
+                    <a id="header-dropdown-link" href="clients.php">Mon compte</a>
+                    <a id="header-dropdown-link" href="administration.php">Tableau de bord</a>
+                    <a id="header-dropdown-link" href="create.php">Edition</a>
+                    <a id="header-dropdown-link" href="logout-action.php">Déconnexion</a>
+                </div>
+            </button>
             <a>
                 <button onclick="toggleDrawer()" id="toggle-drawer" class="header-button-1">Panier</button>
             </a> 

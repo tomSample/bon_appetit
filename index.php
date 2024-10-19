@@ -53,84 +53,107 @@
 
             <section id="index-food-filter-main">
 
+
                 <div id="index-food-filter-container">
 
-                    <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="ramen" onclick="toggleFilter(this)">
-                            <img id="index-food-filter-icon" src ="img\icon\ramen.png">
-                        </button>
-                    </div>
-                    <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="churros" onclick="toggleFilter(this)">
-                            <img id="index-food-filter-icon" src ="img\icon\churros.png">
-                        </button>
-                    </div>
-                    <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="satay" onclick="toggleFilter(this)">
-                            <img id="index-food-filter-icon" src ="img\icon\satay.png">
-                        </button>
-                    </div>
-                    <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="pretzel" onclick="toggleFilter(this)">
-                            <img id="index-food-filter-icon" src ="img\icon\pretzel.png">
-                        </button>
-                    </div>
-                    <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="fast-food" onclick="toggleFilter(this)">
-                            <img id="index-food-filter-icon" src ="img\icon\burger-sandwich.png">
-                        </button>
-                    </div>
-                    <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="italian" onclick="toggleFilter(this)">
-                            <img id="index-food-filter-icon" src ="img\icon\pizza.png">
-                        </button>
-                    </div>
-                    <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="sushi" onclick="toggleFilter(this)">
-                            <img id="index-food-filter-icon" src ="img\icon\sushi.png">
-                        </button>
-                    </div>
-                    <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="falafel" onclick="toggleFilter(this)">
-                            <img id="index-food-filter-icon" src ="img\icon\falafel.png">
-                        </button>
-                    </div>
-                    <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="meat" onclick="toggleFilter(this)">
-                            <img id="index-food-filter-icon" src ="img\icon\food.png">
-                        </button>
-                    </div>
-                    <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="tacos" onclick="toggleFilter(this)">
-                            <img id="index-food-filter-icon" src ="img\icon\tacos.png">
-                        </button>
-                    </div>
-                    <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="poke" onclick="toggleFilter(this)">
-                            <img id="index-food-filter-icon" src ="img\icon\poke.png">
-                        </button>
-                    </div>
-                    <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="hot-dog" onclick="toggleFilter(this)">
-                            <img id="index-food-filter-icon" src ="img\icon\hot-dog.png">
-                        </button>
-                    </div>
-                    <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="pasta" onclick="toggleFilter(this)">
-                            <img id="index-food-filter-icon" src ="img\icon\spaghetti.png">
-                        </button>
-                    </div>
-                    <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="poutine" onclick="toggleFilter(this)">
-                            <img id="index-food-filter-icon" src ="img\icon\poutine.png">
-                        </button>
-                    </div>
-                    <div id="index-food-filter-content">
-                        <button id="index-food-filter-button" data-category="after-tea" onclick="toggleFilter(this)">
-                            <img id="index-food-filter-icon" src ="img\icon\afternoon-tea.png">
-                        </button>
-                    </div>
+                <button id="index-food-filter-carousel-control-prev" onclick="prevSlide()">&#10216;</button>
 
+                    <div id="index-food-filter-carousel-inner">
+                        <div id="index-food-filter-content">
+                            <button id="index-food-filter-button" data-category="ramen" onclick="toggleFilter(this)">
+                                <img id="index-food-filter-icon" src ="img\icon\ramen.png">
+                            </button>
+                            <p>Ramen</p>
+                        </div>
+                        <div id="index-food-filter-content">
+                            <button id="index-food-filter-button" data-category="churros" onclick="toggleFilter(this)">
+                                <img id="index-food-filter-icon" src ="img\icon\churros.png">
+                            </button>
+                            <p>Churros</p>
+                        </div>
+                        <div id="index-food-filter-content">
+                            <button id="index-food-filter-button" data-category="satay" onclick="toggleFilter(this)">
+                                <img id="index-food-filter-icon" src ="img\icon\satay.png">
+                            </button>
+                            <p>Satay</p>
+                        </div>
+                        <div id="index-food-filter-content">
+                            <button id="index-food-filter-button" data-category="pretzel" onclick="toggleFilter(this)">
+                                <img id="index-food-filter-icon" src ="img\icon\pretzel.png">
+                            </button>
+                            <p>Pretzel</p>
+                        </div>
+                        <div id="index-food-filter-content">
+                            <button id="index-food-filter-button" data-category="fast-food" onclick="toggleFilter(this)">
+                                <img id="index-food-filter-icon" src ="img\icon\burger-sandwich.png">
+                            </button>
+                            <p>Fast-food</p>
+                        </div>
+                        <div id="index-food-filter-content">
+                            <button id="index-food-filter-button" data-category="pizza" onclick="toggleFilter(this)">
+                                <img id="index-food-filter-icon" src ="img\icon\pizza.png">
+                            </button>
+                            <p>Pizza</p>
+                        </div>
+                        <div id="index-food-filter-content">
+                            <button id="index-food-filter-button" data-category="sushi" onclick="toggleFilter(this)">
+                                <img id="index-food-filter-icon" src ="img\icon\sushi.png">
+                            </button>
+                            <p>Sushi</p>
+                        </div>
+                        <div id="index-food-filter-content">
+                            <button id="index-food-filter-button" data-category="falafel" onclick="toggleFilter(this)">
+                                <img id="index-food-filter-icon" src ="img\icon\falafel.png">
+                            </button>
+                            <p>Falafel</p>
+                        </div>
+                        <div id="index-food-filter-content">
+                            <button id="index-food-filter-button" data-category="meat" onclick="toggleFilter(this)">
+                                <img id="index-food-filter-icon" src ="img\icon\food.png">
+                            </button>
+                            <p>Grillades</p>
+                        </div>
+                        <div id="index-food-filter-content">
+                            <button id="index-food-filter-button" data-category="tacos" onclick="toggleFilter(this)">
+                                <img id="index-food-filter-icon" src ="img\icon\tacos.png">
+                            </button>
+                            <p>Tacos</p>
+                        </div>
+                        <div id="index-food-filter-content">
+                            <button id="index-food-filter-button" data-category="poke" onclick="toggleFilter(this)">
+                                <img id="index-food-filter-icon" src ="img\icon\poke.png">
+                            </button>
+                            <p>Poke Bowl</p>
+                        </div>
+                        <div id="index-food-filter-content">
+                            <button id="index-food-filter-button" data-category="hot-dog" onclick="toggleFilter(this)">
+                                <img id="index-food-filter-icon" src ="img\icon\hot-dog.png">
+                            </button>
+                            <p>Hot-dog</p>
+                        </div>
+                        <div id="index-food-filter-content">
+                            <button id="index-food-filter-button" data-category="pasta" onclick="toggleFilter(this)">
+                                <img id="index-food-filter-icon" src ="img\icon\spaghetti.png">
+                            </button>
+                            <p>Pasta</p>
+                        </div>
+                        <div id="index-food-filter-content">
+                            <button id="index-food-filter-button" data-category="poutine" onclick="toggleFilter(this)">
+                                <img id="index-food-filter-icon" src ="img\icon\poutine.png">
+                            </button>
+                            <p>Poutine</p>
+                        </div>
+                        <div id="index-food-filter-content">
+                            <button id="index-food-filter-button" data-category="after-tea" onclick="toggleFilter(this)">
+                                <img id="index-food-filter-icon" src ="img\icon\afternoon-tea.png">
+                            </button>
+                            <p>Afternoon Tea</p>
+                        </div>
+                    </div>
+                    
+
+                <button id="index-food-filter-carousel-control-next" onclick="nextSlide()">&#10217;</button>
+                
                 </div>
 
             </section>

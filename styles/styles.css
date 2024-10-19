@@ -196,9 +196,9 @@ nav a {
 
 #header-dropdown-container {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 68px;
-    right: 96px;
+    right: 100px;
     width: fit-content;
     height: fit-content;
     z-index: 1;
@@ -1212,19 +1212,82 @@ cursor: pointer;
 /* ======= FOOD FILTER ======= */
 
 #index-food-filter-main {
-    position: absolute;
     display: flex;
-    width: 100%;
-    left:0;
-    
+    margin-inline: auto;
+    padding-inline: 2rem;
+    max-width : 660px;
+    overflow: hidden;
 }
 
 #index-food-filter-container {
     display: flex;
-    align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 90px;
+    height: fit-content;
+}
+
+#index-food-filter-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+    margin-inline: 1rem;
+    flex: 0 0 auto;
+}
+
+#index-food-filter-carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+#index-food-filter-carousel-control-prev {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    top: 30px;
+    left: 0px;
+    background-color: var(--black);
+    color: var(--lightorange);
+    border: none;
+    padding: 0.8rem;
+    padding-inline: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#index-food-filter-carousel-control-prev:hover {
+    background-color: var(--orange);
+}
+
+#index-food-filter-carousel-control-next {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    top: 30px;
+    right : 0px;
+    background-color: var(--black);
+    color: var(--lightorange);
+    border: none;
+    padding: 0.8rem;
+    padding-inline: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#index-food-filter-carousel-control-next:hover {
+    background-color: var(--orange);
 }
 
 #index-food-filter-button {
@@ -1238,6 +1301,7 @@ cursor: pointer;
     cursor: pointer;
     background-color:transparent;
 }
+
 #index-food-filter-button.active {
     background-color: var(--orange)
 }
@@ -1604,6 +1668,8 @@ border-color: var(--black);
     justify-content: center;
     align-items: center;
 }
+
+
 
 /* ======= RESPONSIVE ======= */
 
