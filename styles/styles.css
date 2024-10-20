@@ -1870,7 +1870,6 @@ border-color: var(--black);
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-bottom: 0;
         padding: 0;
         text-align: center;
         background-color: var(--orange);
@@ -2109,6 +2108,18 @@ border-color: var(--black);
         background-color: var(--darkwhite);
     }
 
+    #index-food-filter-carousel-control-prev {
+        display: none;
+    }
+
+    #index-food-filter-carousel-control-next {
+        display: none;
+    }
+
+    #index-food-filter-main {
+        padding-inline: 0;
+    }
+
     .restaurant-article-filter {
         margin-inline : auto;
     }
@@ -2205,6 +2216,11 @@ border-color: var(--black);
 
 #header-dropdown-container {
     right:80px;
+}
+
+.hero-search-bar-button {
+    background-color: var(--orange);
+    font-size: 14px;
 }
 
 }

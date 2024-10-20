@@ -169,19 +169,6 @@ function toggleFilter(button) {
 }
 
 
-//=====DROPDOWN MENU====
-
-function toggleDropdown() {
-    document.getElementById('header-dropdown-container').classList.toggle('open');
-}
-
-// Sélectionner l'élément déclencheur
-const triggerElement = document.getElementById('dropdown-trigger');
-
-// Ajouter des écouteurs d'événements pour les clics et les touches
-triggerElement.addEventListener('click', toggleDropdown);
-triggerElement.addEventListener('touchstart', toggleDropdown);
-
 //=======CAROUSEL
 
 let currentIndex = 0;
@@ -192,9 +179,9 @@ function showSlide(index) {
     
     // Vérifiez si l'index est hors des limites et ajustez-le
     if (index >= totalSlides) {
-        currentIndex = 0; // Réinitialisez à la première diapositive
-    } else if (index < 0) {
         currentIndex = totalSlides - 1; // Réinitialisez à la dernière diapositive
+    } else if (index < 0) {
+        currentIndex = 0; // Réinitialisez à la première diapositive
     } else {
         currentIndex = index;
     }
@@ -206,8 +193,12 @@ function showSlide(index) {
     // Calculez l'offset en fonction de l'index actuel
     const offset = -currentIndex * (slideWidth + margin);
     
-    // Appliquez la transformation de translation
-    document.querySelector('#index-food-filter-carousel-inner').style.transform = `translateX(${offset}px)`;
+    // Calculez l'offset maximum
+    const maxOffset = -(totalSlides - 1) * (slideWidth + margin);
+    
+    // Appliquez la transformation de translation avec des limites
+    const finalOffset = Math.max(maxOffset, Math.min(0, offset));
+    document.querySelector('#index-food-filter-carousel-inner').style.transform = `translateX(${finalOffset}px)`;
 }
 
 function nextSlide() {
@@ -222,3 +213,17 @@ function prevSlide() {
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentIndex);
 });
+
+//=====DROPDOWN MENU====
+
+function toggleDropdown() {
+    document.getElementById('header-dropdown-container').classList.toggle('open');
+}
+
+// Sélectionner l'élément déclencheur
+const triggerElement = document.getElementById('dropdown-trigger');
+
+// Ajouter des écouteurs d'événements pour les clics et les touches
+triggerElement.addEventListener('click', toggleDropdown);
+triggerElement.addEventListener('touchstart', toggleDropdown);
+
