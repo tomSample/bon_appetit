@@ -38,6 +38,7 @@
                         <br>
                         <div class="textmention">stock.adobe.com</div>
                         <div class="textmention">freepik.com</div>
+                        <div class="textmention">Icones faites par Pixel perfect de www.flaticon.com</div>
                         </section>
                 </s>
             </div>
