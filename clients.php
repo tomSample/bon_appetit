@@ -212,14 +212,14 @@
             <div id="chosen2">
                 <br>
                 <div class="bsure">
-                    <button class="Me">Supprimer le compte</button>
+                    <button class="Me" id="bye0">Supprimer le compte</button>
                     <p>Vous voulez nous quitter ? Nous serons tristes mais c'est votre choix.
                     </p>
                 </div>
                 <div class="csure hide">
                     <p class=psure>En êtes-vous certain(e) ? Votre compte ne sera pas récupérable ensuite.
                     </p>
-                    <button>Oui, supprimer le compte.</button>
+                    <button id="bye">Oui, supprimer le compte.</button>
                     <img id="delete__picture" src="img/delete.jpg" alt="">
                 </div>
             </div>

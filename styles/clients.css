@@ -151,6 +151,10 @@
     justify-content: center;
 }
 
+#bye:hover, #bye0:hover {
+    cursor: pointer;
+}
+
 .hide {
     display: none;
 }
