@@ -37,6 +37,19 @@
                 <button onclick="toggleDrawer()" id="toggle-drawer" class="header-button-1">Panier</button>
             </a> 
 
+    <!-- boutons en mobile -->
+
+        <a onclick ="toggleDropdown()">
+            <button class="mobile-header-button">
+                <span class="material-symbols-outlined">person</span>
+            </button>
+        </a>
+        <a>
+            <button onclick="toggleDrawer()" id="toggle-drawer" class="mobile-header-button">
+                <span class="material-symbols-outlined">shopping_bag</span>
+            </button>
+        </a>
+
         <!--  sinon si l'utilisateur est connecté -->
 
         <?php elseif ($isLoggedIn) : ?>
@@ -51,7 +64,7 @@
 
         <!-- boutons en mobile -->
 
-        <a href="clients.php">
+        <a onclick ="toggleDropdown()">
             <button class="mobile-header-button">
                 <span class="material-symbols-outlined">person</span>
             </button>
@@ -60,10 +73,6 @@
             <button onclick="toggleDrawer()" id="toggle-drawer" class="mobile-header-button">
                 <span class="material-symbols-outlined">shopping_bag</span>
             </button>
-        </a>
-        <a href="logout-action.php">
-            <button class="mobile-header-button">
-                <span class="material-symbols-outlined">logout</span></button>
         </a>
 
 
@@ -85,14 +94,14 @@
                 <span class="material-symbols-outlined">person_add</span>
             </button>
         </a>
+        <a href="login.php">
+            <button class="mobile-header-button">
+                <span class="material-symbols-outlined">login</span></button>
+        </a>
         <a>
             <button onclick="toggleDrawer()" id="toggle-drawer" class="mobile-header-button">
                 <span class="material-symbols-outlined">shopping_bag</span>
             </button>
-        </a>
-        <a href="login.php">
-            <button class="mobile-header-button">
-                <span class="material-symbols-outlined">login</span></button>
         </a>
         <?php endif; ?>
     <?php endif; ?>

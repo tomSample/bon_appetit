@@ -175,6 +175,13 @@ function toggleDropdown() {
     document.getElementById('header-dropdown-container').classList.toggle('open');
 }
 
+// Sélectionner l'élément déclencheur
+const triggerElement = document.getElementById('dropdown-trigger');
+
+// Ajouter des écouteurs d'événements pour les clics et les touches
+triggerElement.addEventListener('click', toggleDropdown);
+triggerElement.addEventListener('touchstart', toggleDropdown);
+
 //=======CAROUSEL
 
 let currentIndex = 0;

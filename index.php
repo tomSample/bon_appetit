@@ -30,7 +30,38 @@
                 </div>
             </div>
         </section>
+
+        <section id="index-main-container">
+            <div class="index-main-content">
+                <div>
+                    <img class="index-main-photo" src="img\livreuse_velo.jpeg">
+                </div>
+                <div class="index-main-text">
+                    <h3>La livraison éthique</h3>
+                    <p>Commandez en ligne et faites-vous livrer à vélo par des coursiers locaux, Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Necessitatibus exercitationem facere illum. Ullam debitis nam facere velit? Voluptatibus a 
+                        autem tenetur magnam dolores dolorum sit beatae rem ducimus repellat. Soluta.
+                    </p> 
+                </div>
+            </div>
+
+            <div id="index-main-content-2" class="index-main-content">
+                <div class="index-main-text">
+                    <h3>Les meilleurs restaurants</h3>
+                    <p>Nous sélectionnons rigoureusement nos partenaires. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Pariatur modi voluptatibus nobis ipsa, provident voluptatem amet quibusdam saepe ipsum nihil. Illum eos et 
+                        soluta aperiam commodi velit. Repudiandae, rem est?
+                    </p>
+                </div>
+                <div>
+                    <img class="index-main-photo" src="img\cuisine.jpeg">
+                </div>
+            </div>
+
+        </section>
 <!-- ===fin main=== -->
+
+
 
 <!-- si user est connecté, affiche : -->
     <?php else: ?>
@@ -174,6 +205,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -186,6 +218,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>                       
@@ -198,6 +231,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -220,6 +254,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -232,6 +267,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>                       
@@ -244,6 +280,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -256,6 +293,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -268,6 +306,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -280,6 +319,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>                       
@@ -292,6 +332,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -304,6 +345,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -316,6 +358,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>                       
@@ -328,6 +371,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -340,6 +384,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -352,6 +397,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>                       
@@ -364,6 +410,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -376,6 +423,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -400,6 +448,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -412,6 +461,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -424,6 +474,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -436,6 +487,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>                       
@@ -448,6 +500,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -460,6 +513,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -472,6 +526,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -484,6 +539,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>                       
@@ -496,6 +552,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
@@ -508,6 +565,7 @@
                                     <p>Nom du restaurant 1</p>
                                     <p><span class="material-symbols-outlined">star</span>Excellent !</p>
                                     <p>distance : 1km</p>
+                                    <p>type de cuisine</p>
                                 </li>
                             </ul>
                         </a>
