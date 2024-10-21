@@ -2804,9 +2804,36 @@ border-color: var(--black);
 
 
 
-/*==============MATHIS==============/*
+/*==============MATHIS==============*/
+/*===VALIDATION LIVRAISON===*/
 
-/*===VALIDATION LIVRAISON===/*
+.validlivraison-hero-banner {
+  display: flex;
+  justify-content: center;
+  height: 150vh;
+  width: 100%;
+}
+
+.validlivraison-sectioncontainer { 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: #488cff;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+}
+
+.validlivraison-section1 { 
+    text-align: center;
+    height: 5%;
+    width: 100%;
+    background-color: #ffcc35;
+    font-size: 200%;
+    padding: 1%;
+    text-decoration: underline;
+}
 
 
 
