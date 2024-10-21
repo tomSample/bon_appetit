@@ -1,3 +1,4 @@
+
 <?php include 'layout.php' ?>
 <?php include 'header.php' ?>
 
@@ -11,7 +12,7 @@
 
         <!-- Bouton "oui" qui redirigera vers la page d'accueil déconnectée-->
 
-                    <a class="logout-a" href="index.php">
+                    <a class="logout-a" href="logout-action.php">
                         <button class="submit-button">Oui</button>
                     </a>
         <!-- Bouton "non"  retour arrière-->
