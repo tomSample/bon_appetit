@@ -2187,9 +2187,6 @@ border-color: var(--black);
         justify-content: space-between;
     }
 
-    #search-bar {
-    }
-
     .hero-banner button  {
         width: 5rem;
         height: 3rem;
@@ -2199,7 +2196,6 @@ border-color: var(--black);
     .mobile-footer-container {
         display: flex;
         flex-wrap: wrap;
-        padding-block: 1rem;
         width: 100%;
     }
 
@@ -2812,7 +2808,9 @@ border-color: var(--black);
 
 
 
-/*====================MATHIS===========/*
+/*==============MATHIS==============/*
+
+/*===VALIDATION LIVRAISON===/*
 
 
 
