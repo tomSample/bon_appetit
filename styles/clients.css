@@ -1,0 +1,160 @@
+.clients__buttons__yellow {
+    background-color: var(--orange);
+}
+
+.clients__buttons__yellow:hover {
+    cursor: pointer;
+}
+
+.clients__buttons__black {
+    background-color: var(--black);
+}
+
+.clients__buttons__black:hover {
+    cursor: pointer;
+}
+
+.clients__icon {
+    width: 15px;
+    height: 15px;
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
+    padding-top: 0.3rem;
+}
+
+.clients__icon__intern {
+    width: 15px;
+    height: 15px;
+    margin-left: 0.5rem;
+}
+
+.identity__icon {
+    width: 15px;
+    height: 15px;
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
+}
+
+.identity__icon2 {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+#pay__select, #invoice__select {
+    font-size: .9rem;
+    background-color: var(--orange);
+    margin-bottom: .1rem;
+}
+
+#type__select, #favorite__select {
+    font-size: .9rem;
+    background-color: var(--orange);
+    margin-bottom: .4rem;
+}
+
+.option {
+    font-size: .9rem;
+    background-color: var(--orange);
+    padding: 1rem;
+}
+
+.option:hover {
+    background-color: var(--green);
+}
+
+#invoice__newp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#clients__newp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.selector {
+    display: flex;
+    flex-direction: row;
+}
+
+.close__invoice {
+    display: flex;
+    flex-direction: row;
+}
+
+#invoice__button {
+    margin-bottom: .8rem;
+}
+
+.add__type, .change__type, .add__invoice {
+    height: 2rem;
+    border: solid;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+    border-width: 0.1rem;
+    border-radius: 6%;
+    margin-bottom: .4rem;
+    width: 100%;
+}
+
+#chosen2 p {
+    font-size: .85rem;
+    color: #778899;
+}
+
+#delete__picture {
+    display: grid;
+    max-width: 20%;
+    margin-inline: auto;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width:749px) {
+    #delete__picture {
+        max-width: 60%;
+    }
+}
+
+.Me {
+    max-width: 10rem;
+}
+
+.bsure {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    margin-inline: auto;    
+}
+
+.psure {
+    display: grid;
+    text-align: center;
+    margin-inline: auto;    
+}
+
+.csure {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    margin-inline: auto;
+}
+
+.clients__favorite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bye:hover, #bye0:hover {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}

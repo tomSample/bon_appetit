@@ -1,0 +1,70 @@
+/* @import */
+
+.mentions-container{
+  text-align: center;
+  width: 90%;
+}
+
+
+.mentions-section-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.sectionmentions1 {
+  display: block;
+  float: left;
+    background-color: #434848;
+    width: 30%;
+    margin-right: 2.5%;
+    padding: 1%;
+  }
+
+  .sectionmentions2 {
+    background-color: #2e3333;
+    width: 30%;
+    padding: 1%;
+  }
+
+  .sectionmentions3 {
+    display: block;
+    float: right;
+    background-color: #434848;
+    width: 30%;
+    margin-left: 2.5%;
+    padding: 1%;
+  } 
+
+  .titresectionmention {
+    text-align: center;
+    color: #ffffff;
+    font-size: 125%;
+    width: 100%;
+    padding: 1%;
+    text-decoration: underline;
+  }
+
+  .textmention {
+    text-align: center;
+    color: #ffffff;
+    font-size: 100%;
+    width: 100%;
+    padding: 1%;
+  }
+
+  @media screen and (max-width: 800px) {
+
+    .titresectionmention {
+      font-size: 90%;
+    }
+
+    .textmention {
+      font-size: 59%;
+    }
+
+    .mentions-section-container {
+      margin-left: 5%;
+    }
+    }

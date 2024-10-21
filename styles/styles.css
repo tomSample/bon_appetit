@@ -593,18 +593,30 @@ footer a {
 
 #profile .grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.together {
+    padding-top: 0.75rem;
+    padding-bottom: .75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.clients__alone {
+    display: flex;
+    flex-direction: row;
 }
 
 #profile .grid__item__left {
-    padding-right: 2rem;
+    padding-left: .5rem;
+    padding-right: .4rem;
     font-weight: bold;
+    width: 7rem;
 }
 
 #profile p {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    line-height: 1.25rem;
+    line-height: 1.75rem;
     font-size: 1.05rem;
 }
 
@@ -614,6 +626,11 @@ footer a {
 
 #identity {
     padding-top: 0.5rem;
+}
+
+.change {
+    display: flex;
+    justify-content: center;
 }
 
 #history, #setup {
@@ -2125,9 +2142,25 @@ border-color: var(--black);
     .inscription-title {
         margin-top: 15%;
     }
+    
+      .inscription-container {
+        justify-content: center;
+        margin-left: 100%;
+      }
 
-    #login-form {
-        width : 100%;
+      .inscription-confirmation-button {
+        margin-top: 10%;
+        margin-bottom: -30%;
+      }
+    
+    .inscription-container {
+        justify-content: center;
+        margin-left: 100%;
+    }
+
+    .inscription-confirmation-button {
+        margin-top: 10%;
+        margin-bottom: -30%;
     }
 
     .mobile-login-form {
