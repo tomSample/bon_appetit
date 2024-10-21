@@ -1362,7 +1362,7 @@ cursor: pointer;
 }
 
 .slide {
-    opacity: 0;
+    opacity: 1;
 }
 
 .visible {

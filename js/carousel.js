@@ -1,5 +1,3 @@
-//=======CAROUSEL 
-
 document.addEventListener('DOMContentLoaded', function() {
     const slides = [
         { id: "1", category: 'ramen', imgSrc: 'img/icon/ramen.png', label: 'Ramen' },
@@ -20,34 +18,43 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     const slidesContainer = document.querySelector('.index-slides-content');
-    slidesContainer.innerHTML = slides.map(slide => `
-        <div class="slide">
-            <button onclick="toggleFilter(this)" id ="${slide.id}" class="index-food-filter-button" data-category="${slide.category}">
-                <img class="index-food-filter-icon" src="${slide.imgSrc}">
-            </button>
-            <p>${slide.label}</p>
-        </div>
-    `).join('');
+    let currentSlideIndex = 0;
+    const slidesPerPage = 5; // Number of slides to show per page
 
-    checkVisibility();
+    function renderSlides() {
+        const start = currentSlideIndex * slidesPerPage;
+        const end = start + slidesPerPage;
+        const visibleSlides = slides.slice(start, end);
+
+        slidesContainer.innerHTML = visibleSlides.map(slide => `
+            <div class="slide">
+                <button onclick="toggleFilter(this)" id ="${slide.id}" class="index-food-filter-button" data-category="${slide.category}">
+                    <img class="index-food-filter-icon" src="${slide.imgSrc}">
+                </button>
+                <p>${slide.label}</p>
+            </div>
+        `).join('');
+    }
+
+    function showPrevSlide() {
+        if (currentSlideIndex > 0) {
+            currentSlideIndex--;
+            renderSlides();
+        }
+    }
+
+    function showNextSlide() {
+        if ((currentSlideIndex + 1) * slidesPerPage < slides.length) {
+            currentSlideIndex++;
+            renderSlides();
+        }
+    }
+
+    renderSlides();
+
+    window.showPrevSlide = showPrevSlide;
+    window.showNextSlide = showNextSlide;
 });
-
-function checkVisibility() {
-    const slides = document.querySelectorAll('.slide');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            } else {
-                entry.targer.classList.remove('visible');
-            }
-        });
-    });
-
-    slides.forEach(slide => {
-        observer.observe(slide);
-    });
-}
 
 //=====FILTERS==== (2 clics sur un bouton filtre annule le filtrage)
 
@@ -85,3 +92,25 @@ function toggleFilter(button) {
         button.classList.add('active');
     }
 }
+
+
+
+
+
+
+// function checkVisibility() {
+//     const slides = document.querySelectorAll('.slide');
+//     const observer = new IntersectionObserver((entries) => {
+//         entries.forEach(entry => {
+//             if (entry.isIntersecting) {
+//                 entry.target.classList.add('visible');
+//             } else {
+//                 entry.targer.classList.remove('visible');
+//             }
+//         });
+//     });
+
+//     slides.forEach(slide => {
+//         observer.observe(slide);
+//     });
+// }
