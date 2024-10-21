@@ -858,6 +858,17 @@ footer a {
     text-align: center;
 }
 
+.administration-shop-button {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    height: 3.5rem;
+    width: 7rem;
+    font-size: 16px;
+    border-radius: 40px;
+    background-color: var(--lightorange);
+    cursor: pointer;
+}
+
 
 /* =====restaurant===== */
 
@@ -1442,6 +1453,141 @@ cursor: pointer;
     padding-top: 0.2rem;
 }
 
+.identity__icon2 {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+#pay__select, #invoice__select {
+    font-size: .9rem;
+    background-color: var(--orange);
+    margin-bottom: .1rem;
+}
+
+#type__select, #favorite__select {
+    font-size: .9rem;
+    background-color: var(--orange);
+    margin-bottom: .4rem;
+}
+
+.clients__buttons__yellow {
+    background-color: var(--orange);
+}
+
+.clients__buttons__yellow:hover {
+    cursor: pointer;
+}
+
+.clients__buttons__black {
+    background-color: var(--black);
+}
+
+.clients__buttons__black:hover {
+    cursor: pointer;
+}
+
+.option {
+    font-size: .9rem;
+    background-color: var(--orange);
+    padding: 1rem;
+}
+
+.option:hover {
+    background-color: var(--green);
+}
+
+#invoice__newp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#clients__newp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.selector {
+    display: flex;
+    flex-direction: row;
+}
+
+.close__invoice {
+    display: flex;
+    flex-direction: row;
+}
+
+#invoice__button {
+    margin-bottom: .8rem;
+}
+
+.add__type, .change__type, .add__invoice {
+    height: 2rem;
+    border: solid;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+    border-width: 0.1rem;
+    border-radius: 6%;
+    margin-bottom: .4rem;
+    width: 100%;
+}
+
+#chosen2 p {
+    font-size: .85rem;
+    color: #778899;
+}
+
+#delete__picture {
+    display: grid;
+    max-width: 20%;
+    margin-inline: auto;
+    margin-top: 1rem;
+}
+
+.Me {
+    max-width: 10rem;
+}
+
+.bsure {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    margin-inline: auto;    
+}
+
+.psure {
+    display: grid;
+    text-align: center;
+    margin-inline: auto;    
+}
+
+.csure {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    margin-inline: auto;
+}
+
+.clients__favorite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bye:hover, #bye0:hover {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
 /* ======= CHECKOUT.php ======= */
 
 #checkout-body {
@@ -1707,7 +1853,7 @@ cursor: pointer;
 
 #login-error-message {
     font-size: 16px;
-    padding-block:1rem;
+    padding-block:0.5rem;
 }
 
 .questionnaire {
@@ -1775,7 +1921,156 @@ border-color: var(--black);
     align-items: center;
 }
 
+#submit-button-inscription {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    height: 3.5rem;
+    width: 7rem;
+    font-size: 16px;
+    border-radius: 40px;
+    background-color: var(--lightorange);
+    cursor: pointer;
+}
 
+.login-submit-button {
+    margin-block : 0.5rem;
+    height: 3.5rem;
+    width : 7rem;
+    font-size : 16px;
+    border-radius: 40px;
+    background-color: var(--lightorange);
+    cursor: pointer;
+}
+
+/* ======= MENTIONS LEGALES ======= */
+
+.mentions-container{
+    text-align: center;
+    width: 90%;
+}
+
+.mentions-section-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.sectionmentions1 {
+    display: block;
+    float: left;
+    background-color: #434848;
+    width: 30%;
+    margin-right: 2.5%;
+    padding: 1%;
+    }
+
+    .sectionmentions2 {
+    background-color: #2e3333;
+    width: 30%;
+    padding: 1%;
+    }
+
+    .sectionmentions3 {
+    display: block;
+    float: right;
+    background-color: #434848;
+    width: 30%;
+    margin-left: 2.5%;
+    padding: 1%;
+} 
+
+.titresectionmention {
+    text-align: center;
+    color: #ffffff;
+    font-size: 125%;
+    width: 100%;
+    padding: 1%;
+    text-decoration: underline;
+}
+
+.textmention {
+    text-align: center;
+    color: #ffffff;
+    font-size: 100%;
+    width: 100%;
+    padding: 1%;
+}
+
+/* ======= COND GENERALES  ======= */
+
+.ConditionsGeneralesHeroBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 297vh;
+}
+
+.ConditionsGeneralesContainer1 {
+    justify-items: center;
+    width: 95%;
+    height: 90%;    
+}
+
+.ConditionsGeneralesSection1 {
+    position: fixed;
+    float: left;
+    width: 20%;
+    background-color: #434848;
+    justify-items: center;
+}
+
+.ConditionsGeneralesSection2 {
+    display: block;
+    float: right;
+    height: 100%;
+    width: 75%;
+    text-align: center;
+    background-color: #2e3333;
+}
+
+.ConditionsGeneralesUtilisationTitre {
+    font-size: 160%;
+    color: white;
+    text-decoration: underline;
+    padding: 1%;
+}
+
+.ConditionsGeneralesUtilisationTitre2 {
+    font-size: 160%;
+    color: white;
+    text-decoration: underline;
+    padding: 1%;
+}
+
+.ConditionsGeneralesUtilisationTitre3 {
+    font-size: 160%;
+    color: white;
+    text-decoration: underline;
+    padding: 1%;
+}
+
+.ConditionsGeneralesChartreText {
+    font-size: 110%;
+    color: white;
+    padding: 1%;
+}
+
+.ConditionsGeneralesbutton {
+    display: flex;
+    background-color: #afff90;
+    width: 92px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.ConditionsGeneralesbuttoncontainer {
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
 
 /* ======= RESPONSIVE ======= */
 
@@ -2143,15 +2438,15 @@ border-color: var(--black);
         margin-top: 15%;
     }
     
-      .inscription-container {
+    .inscription-container {
         justify-content: center;
         margin-left: 100%;
-      }
+    }
 
-      .inscription-confirmation-button {
+    .inscription-confirmation-button {
         margin-top: 10%;
         margin-bottom: -30%;
-      }
+    }
     
     .inscription-container {
         justify-content: center;
@@ -2303,6 +2598,87 @@ border-color: var(--black);
 .hero-search-bar-button {
     background-color: var(--orange);
     font-size: 14px;
+}
+
+#delete__picture {
+    max-width: 60%;
+}
+
+.titresectionmention {
+    font-size: 90%;
+}
+
+.textmention {
+    font-size: 59%;
+}
+
+.mentions-section-container {
+    margin-left: 5%;
+}
+
+
+
+/* ======= COND GENERALES RESPONSIVE ======= */
+
+
+@media screen and (max-width: 1050px) {
+
+    .ConditionsGeneralesHeroBanner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350vh;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .ConditionsGeneralesHeroBanner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .ConditionsGeneralesHeroBanner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 450vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .ConditionsGeneralesHeroBanner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .ConditionsGeneralesHeroBanner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .ConditionsGeneralesHeroBanner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 650vh;
+    }
 }
 
 }

@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <input id="login-search-bar" name="email" type="email" placeholder="entrer votre e-mail">
                     <label>Mot de passe</label>
                     <input id="login-search-bar" name="password" type="password" placeholder="entrer votre mot de passe">
-                    <button class="submit-button" type="submit">Envoyer</button>
+                    <button class="login-submit-button" type="submit">Envoyer</button>
                     <?php if ($errorMessage): ?>
                         <div id="login-error-message" class="error-message"><?php echo $errorMessage; ?></div>
                     <?php endif; ?>

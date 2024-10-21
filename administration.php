@@ -43,7 +43,7 @@
                 <div class="grid__item__view" id="man__shops">
                     <div class="search" id="man__search" data-category="shop">
                         <input class="search__views" id="shop__input" type="search" placeholder="Rechercher un restaurant">
-                        <button class="submit-button" id="shop__button" type="submit">Rechercher</button>
+                        <button class="administration-shop-button" type="submit">Rechercher</button>
                     </div>
                     <div class="add_shop">
                         <a src="create.php"><i>Ajouter un restaurant</i></a>
@@ -107,7 +107,7 @@
                 <div class="grid__item__view hide" id="man__customers">
                     <div class="search" id="man__search" data-category="customer">
                         <input class="search__views" id="customer__input" type="search" placeholder="Rechercher un client">
-                        <button class="submit-button" id="customer__button" type="submit">Rechercher</button>
+                        <button class="administration-shop-button" id="customer__button" type="submit">Rechercher</button>
                     </div>
                     <div class="views__list">
                         <ui>
@@ -125,7 +125,7 @@
                 <div class="grid__item__view hide" id="man__tables">
                     <div class="search" id="man__search" data-category="table">
                         <input class="search__views" id="table__input" type="search" placeholder="Rechercher une date"> 
-                        <button class="submit-button" id="table__button" type="submit">Rechercher</button>
+                        <button class="administration-shop-button" id="table__button" type="submit">Rechercher</button>
                     </div>
                     <div class="filter__table" id="f__table">
                         <p>Filtrer par <a href="#" class="active ft hide" d-filter="day">jour</a> <a href="#" class="ft" d-filter="week">semaine</a> <a href="#" class="ft" d-filter="month">mois</a> <a href="#" class="ft" d-filter="year">année</a></p>
@@ -314,7 +314,7 @@
                 <div class="grid__item__view hide" id="man__reports">
                     <div class="search" id="man__search" data-category="report">
                         <input class="search__views" id= "report__input" type="search" placeholder="Rechercher une date">
-                        <button class="submit-button" id="report__button" type="submit">Rechercher</button>
+                        <button class="administration-shop-button" id="report__button" type="submit">Rechercher</button>
                     </div>
                     <div class="filter__report" id="f__report">
                         <p>Filtrer par <a href="#" class="active fr hide" r-filter="day">jour</a> <a href="#" class="fr" r-filter="week">semaine</a> <a href="#" class="fr" r-filter="month">mois</a> <a href="#" class="fr" r-filter="year">année</a></p>

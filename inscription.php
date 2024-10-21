@@ -1,11 +1,6 @@
 <?php include 'layout.php'; ?>
 <?php include 'header.php'; ?>
 
-<head>
-    <link rel="stylesheet" href="styles\inscription.css" type="text/css">
-
-</head>
-
 <!-- ===hero banner=== -->
         
         <section class="hero-banner">
@@ -30,7 +25,7 @@
                             </div>
                             <div class="decalbutton">
                             <div class="inscription-confirmation-button">
-                               <button class="submit-button submit-button-inscription" type="submit">S'inscrire</button>
+                                <button id="submit-button-inscription" type="submit">S'inscrire</button>
                             </div>
                             </div>
                         </div>
