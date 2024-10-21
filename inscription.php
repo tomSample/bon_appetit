@@ -18,6 +18,9 @@
                                 <input id="search-bar" type="search" placeholder="Entrez votre nom d'utilisateur">
                             </div>
                             <div class="questionnaire">
+                                <input id="search-bar" type="search" placeholder="Enntrez votre e-mail">
+                            </div>
+                            <div class="questionnaire">
                                 <input id="search-bar" type="search" placeholder="Entrez votre mot de passe">
                             </div>
                             <div class="questionnaire">
