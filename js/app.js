@@ -169,50 +169,6 @@ function toggleFilter(button) {
 }
 
 
-//=======CAROUSEL
-
-let currentIndex = 0;
-
-function showSlide(index) {
-    const slides = document.querySelectorAll('#index-food-filter-button');
-    const totalSlides = slides.length;
-    
-    // Vérifiez si l'index est hors des limites et ajustez-le
-    if (index >= totalSlides) {
-        currentIndex = totalSlides - 1; // Réinitialisez à la dernière diapositive
-    } else if (index < 0) {
-        currentIndex = 0; // Réinitialisez à la première diapositive
-    } else {
-        currentIndex = index;
-    }
-    
-    // Calculez la largeur de la diapositive et la marge
-    const slideWidth = slides[0].offsetWidth;
-    const margin = 145; // Ajustez cette valeur en fonction de votre marge réelle
-    
-    // Calculez l'offset en fonction de l'index actuel
-    const offset = -currentIndex * (slideWidth + margin);
-    
-    // Calculez l'offset maximum
-    const maxOffset = -(totalSlides - 1) * (slideWidth + margin);
-    
-    // Appliquez la transformation de translation avec des limites
-    const finalOffset = Math.max(maxOffset, Math.min(0, offset));
-    document.querySelector('#index-food-filter-carousel-inner').style.transform = `translateX(${finalOffset}px)`;
-}
-
-function nextSlide() {
-    showSlide(currentIndex + 1);
-}
-
-function prevSlide() {
-    showSlide(currentIndex - 1);
-}
-
-// Initialisez le carrousel après le chargement complet du DOM
-document.addEventListener('DOMContentLoaded', () => {
-    showSlide(currentIndex);
-});
 
 //=====DROPDOWN MENU====
 
@@ -226,4 +182,6 @@ const triggerElement = document.getElementById('dropdown-trigger');
 // Ajouter des écouteurs d'événements pour les clics et les touches
 triggerElement.addEventListener('click', toggleDropdown);
 triggerElement.addEventListener('touchstart', toggleDropdown);
+
+
 

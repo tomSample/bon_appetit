@@ -1276,7 +1276,76 @@ cursor: pointer;
     flex: 0 0 auto;
 }
 
-#index-food-filter-carousel-inner {
+#index-food-filter-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    width : 80px;
+    height: 80px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color:transparent;
+}
+
+#index-food-filter-button.active {
+    background-color: var(--orange)
+}
+
+#index-food-filter-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.index-slides-container {
+    position: relative;
+    display: flex;
+    width : 50%;
+    margin-inline: auto;
+}
+
+.index-slides-content {
+    display: flex;
+    margin-inline: auto;
+    width: 80%;
+    overflow: hidden;
+}
+
+#index-slider-btn-prev {
+    position:absolute;
+    background: none;
+    height: 100%;
+    font-size: 2.5rem;
+    z-index: 1;
+    cursor: pointer;
+    transform: translateY(-10%);
+    left: 0;
+}
+
+#index-slider-btn-next {
+    position:absolute;
+    background: none;
+    height: 100%;
+    font-size: 2.5rem;
+    z-index: 1;
+    cursor: pointer;
+    transform: translateY(-10%);
+    right: 0;
+}
+
+/* .slide {
+    opacity: 0;
+} */
+
+.active {
+    opacity: 1;
+}
+
+.slide p{
+    text-align: center;
+}
+
+/* #index-food-filter-carousel-inner {
     display: flex;
     transition: transform 0.5s ease;
     width: 100%;
@@ -1328,28 +1397,8 @@ cursor: pointer;
 
 #index-food-filter-carousel-control-next:hover {
     background-color: var(--orange);
-}
+} */
 
-#index-food-filter-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1rem;
-    width : 80px;
-    height: 80px;
-    border-radius: 100px;
-    cursor: pointer;
-    background-color:transparent;
-}
-
-#index-food-filter-button.active {
-    background-color: var(--orange)
-}
-
-#index-food-filter-icon {
-    width: 60px;
-    height: 60px;
-}
 
 
 /* ======= CLIENTS.php ======= */
