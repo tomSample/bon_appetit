@@ -1034,6 +1034,14 @@ cursor: pointer;
 }
 
 
+/* ============ Page Order =================== */
+
+#map {
+    margin-top: 5rem;
+    height: 60%;
+    width: 65vw;
+}
+
 /* ======= RESPONSIVE ======= */
 
 
