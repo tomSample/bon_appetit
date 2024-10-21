@@ -2,7 +2,6 @@
 <?php include 'header.php'; ?>
 
 <head>
-    <link rel="stylesheet" href="styles\clients.css" type="text/css">
     <script src="js/clients.js" defer></script>
 </head>
 
@@ -27,7 +26,7 @@
                         <div class="changed" id="name">
                             <p>John Doe</p>
                         </div>
-                        <div class="change hide" id="name2">
+                        <div class="change hiden" id="name2">
                             <input id="change__name" type="change__type" class="change__type" placeholder=" John Doe">
                         </div>
                     </div>
@@ -38,7 +37,7 @@
                         <div class="changed" id="adress">
                             <p>56 rue de Brest</p>
                         </div>
-                        <div class="change hide" id="adress2">
+                        <div class="change hiden" id="adress2">
                             <input id="change__adress" type="change__type" class="change__type" placeholder=" 56 rue de Brest">
                         </div>
                     </div>
@@ -49,7 +48,7 @@
                         <div class="changed" id="postal__code">
                             <p>22300</p>
                         </div>
-                        <div class="change hide" id="postal__code2">
+                        <div class="change hiden" id="postal__code2">
                             <input id="change__city" type="change__type" class="change__type" placeholder=" 22300">
                         </div>
                     </div>
@@ -60,7 +59,7 @@
                         <div class="changed" id="city">
                             <p>Lannion</p>
                         </div>
-                        <div class="change hide" id="city2">
+                        <div class="change hiden" id="city2">
                             <input id="change__city" type="change__type" class="change__type" placeholder=" Lannion">
                         </div>
                     </div>
@@ -71,7 +70,7 @@
                         <div class="changed" id="email">
                             <p>monadresse@email.fr</p>
                         </div>
-                        <div class="change hide" id="email2">
+                        <div class="change hiden" id="email2">
                             <input id="change__email" type="change__type" class="change__type" placeholder=" monadresse@email.fr">
                         </div>
                     </div>
@@ -82,11 +81,11 @@
                         <div class="changed">
                             <p>06 78 98 65 15</p>
                         </div>
-                        <div class="change hide" id="phone2">
+                        <div class="change hiden" id="phone2">
                             <input id="change__phone" type="change__type" class="change__type" placeholder=" 06 78 98 65 15">
                         </div>
                     </div>
-                    <div class="change hide">
+                    <div class="change hiden">
                         <button class="submit-button" id="identity__button" type="submit">Enregistrer</button>
                     </div>
                 </div>
@@ -95,7 +94,7 @@
                         <div class="grid__item__left">
                             <p>Facturation</p>
                         </div>
-                        <div class="clients__alone" id="hide__me">
+                        <div class="clients__alone" id="hiden__me">
                             <label for="invoice__select"></label>
                                 <select name="invoice" id="invoice__select">  
                                     <option value="invoice1" class="option">32 rue de Paris, Lannion</option>
@@ -103,7 +102,7 @@
                                     <option value="invoice3" class="option">12 rue de Paris, Plougannou</option>
                                 </select><button class="clients__buttons__yellow addproof"><img class="clients__icon__intern" src="./img/icon/add.png"></button><button class="clients__buttons__yellow proof"><img class="clients__icon__intern" src="./img/icon/delete.png"></button>
                         </div>
-                        <div class="hide" id="newinvoice">
+                        <div class="hiden" id="newinvoice">
                             <div class="resto-id-specs" id="invoice__newp">
                                     <div class="close__invoice">
                                         <input id="invoice__name" type="add__invoice" class="add__invoice" placeholder=" Adresse"><button class="clients__buttons__yellow proof__off"><img class="clients__icon__intern" src="./img/icon/close.png"></button>
@@ -126,7 +125,7 @@
                                     <option value="pay3" class="option">Carte restaurant</option>
                                 </select><button class="clients__buttons__yellow turn"><img class="clients__icon__intern" src="./img/icon/add.png"></button><button class="clients__buttons__yellow turn"><img class="clients__icon__intern" src="./img/icon/delete.png"></button>
                         </div>
-                        <div class="hide" id="plus">
+                        <div class="hiden" id="plus">
                             <div class="resto-id-specs" id="clients__newp">
                                 <div class="selector">
                                     <label for="type__select"></label>
@@ -176,7 +175,7 @@
                 <p>Aux plaisirs gustatifs                    
                 </p>
             </div>
-            <div class="clients__favorite hide">
+            <div class="clients__favorite hiden">
                 <label for="favorite__select"></label>
                     <select name="favorite" id="favorite__select">  
                         <option value="" class="option">Choisir son favori</option>
@@ -216,7 +215,7 @@
                     <p>Vous voulez nous quitter ? Nous serons tristes mais c'est votre choix.
                     </p>
                 </div>
-                <div class="csure hide">
+                <div class="csure hiden">
                     <p class=psure>En êtes-vous certain(e) ? Votre compte ne sera pas récupérable ensuite.
                     </p>
                     <button id="bye">Oui, supprimer le compte.</button>
