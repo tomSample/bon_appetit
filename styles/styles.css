@@ -506,6 +506,11 @@ footer a {
     padding-top: 0.5rem;
 }
 
+.change {
+    display: flex;
+    justify-content: center;
+}
+
 #history, #setup {
     background-color: var(--black);
 }
@@ -1028,6 +1033,14 @@ cursor: pointer;
     background-color: #ffcc35; /* Couleur active */
 }
 
+
+/* ============ Page Order =================== */
+
+#map {
+    margin-top: 5rem;
+    height: 60%;
+    width: 65vw;
+}
 
 /* ======= RESPONSIVE ======= */
 

@@ -19,6 +19,7 @@
                 $currentPage =='forgotten-password.php' ||
                 $currentPage =='logout.php'||
                 $currentPage =='administration.php' ||
+                $currentPage =='order.php' ||
                 $currentPage =='create.php') : ?>
         <?php if ($isLoggedIn): ?>
             <a href="clients.php">
