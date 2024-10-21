@@ -1,22 +1,4 @@
-//=======CAROUSEL
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll(".index-slider-btn");
-    const slides = document.querySelectorAll(".slide");
-
-    buttons.forEach(button => {
-        button.addEventListener("click", (event) => {
-            const calcNextSlide = event.target.id === "index-slider-btn-next" ? 1 : -1;
-
-            const currentSlide = document.querySelector(".slide.car-active");
-
-            console.log(currentSlide);
-        });
-    });
-});
-
-//=========================Liste CAROUSEL
+//=======CAROUSEL 
 
 document.addEventListener('DOMContentLoaded', function() {
     const slides = [
@@ -40,10 +22,66 @@ document.addEventListener('DOMContentLoaded', function() {
     const slidesContainer = document.querySelector('.index-slides-content');
     slidesContainer.innerHTML = slides.map(slide => `
         <div class="slide">
-            <button id ="${slide.id}" class="index-food-filter-button" data-category="${slide.category}" onclick="toggleFilter(this)">
+            <button onclick="toggleFilter(this)" id ="${slide.id}" class="index-food-filter-button" data-category="${slide.category}">
                 <img class="index-food-filter-icon" src="${slide.imgSrc}">
             </button>
             <p>${slide.label}</p>
         </div>
     `).join('');
+
+    checkVisibility();
 });
+
+function checkVisibility() {
+    const slides = document.querySelectorAll('.slide');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            } else {
+                entry.targer.classList.remove('visible');
+            }
+        });
+    });
+
+    slides.forEach(slide => {
+        observer.observe(slide);
+    });
+}
+
+//=====FILTERS==== (2 clics sur un bouton filtre annule le filtrage)
+
+let currentCategory = null; // déclaration de variable et non de constante pour permettre l'annulation du filtrage 
+                            // (changement de valeur de currentCategory)
+
+function toggleFilter(button) {
+    const category = button.getAttribute('data-category');  // Récupère la catégorie du filtre sur le bouton
+
+    if (currentCategory === category) {
+        currentCategory = null;
+
+        // Si le filtre est déjà actif, le désactive et affiche tous les restaurants
+        document.querySelectorAll('.restaurant-article-filter').forEach(restaurant => {
+            restaurant.style.display = 'block';
+        });
+
+        // retire la classe active du bouton
+        button.classList.remove('active');
+    } else {
+        currentCategory = category;
+
+        // Affiche les restaurants de la catégorie sélectionnée et cache les autres
+        // (formulation via IA car méthode Element: computedStyleMap() incompatible avec Firefox)
+        document.querySelectorAll('.restaurant-article-filter').forEach(restaurant => {
+            restaurant.style.display = restaurant.getAttribute('data-category') === category ? 'block' : 'none';
+        });
+
+        // retire la classe active du bouton
+        document.querySelectorAll('.index-food-filter-button').forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        // ajoute la classe active du bouton
+        button.classList.add('active');
+    }
+}
