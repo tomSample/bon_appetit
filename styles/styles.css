@@ -266,7 +266,6 @@ nav a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-block: 2rem;
 }
 
 .hero-banner p {
@@ -1819,7 +1818,7 @@ cursor: pointer;
 
 .inscription-title {
     text-align: center;
-    padding-block: 2rem;;
+    padding-block: 2rem;
 }
 
 .inscription-container form {
@@ -1922,8 +1921,8 @@ border-color: var(--black);
 }
 
 #submit-button-inscription {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    margin-top: 0.4rem;
+    margin-bottom: 2rem;
     height: 3.5rem;
     width: 7rem;
     font-size: 16px;
@@ -2188,10 +2187,6 @@ border-color: var(--black);
         justify-content: space-between;
     }
 
-    #search-bar {
-            margin-block: 1.5rem;
-    }
-
     .hero-banner button  {
         width: 5rem;
         height: 3rem;
@@ -2201,7 +2196,6 @@ border-color: var(--black);
     .mobile-footer-container {
         display: flex;
         flex-wrap: wrap;
-        padding-block: 1rem;
         width: 100%;
     }
 
@@ -2439,8 +2433,8 @@ border-color: var(--black);
     }
     
     .inscription-container {
+        display: block;
         justify-content: center;
-        margin-left: 100%;
     }
 
     .inscription-confirmation-button {
@@ -2526,7 +2520,6 @@ border-color: var(--black);
     }
 
     #mobile-inscription {
-        width:100%;
 
     }
 
@@ -2815,7 +2808,9 @@ border-color: var(--black);
 
 
 
-/*====================MATHIS===========/*
+/*==============MATHIS==============/*
+
+/*===VALIDATION LIVRAISON===/*
 
 
 
