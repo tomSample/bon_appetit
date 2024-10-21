@@ -86,11 +86,11 @@
                 
                 Poids / nombre de sacs
                 Restaurant commandé
-                <div id="comments__order">
-                    <h4>Vos commentaires sur la livraison</h4>
-                    <p>Pas de couverts et livrer à la porte bleue, svp.
-                    </p>
-                </div>
+            </div>
+            <div id="comments__order">
+                <h4>Vos commentaires sur la livraison</h4>
+                <p>Pas de couverts et livrer à la porte bleue, svp.
+                </p>
             </div>
             <div id="details__order">
                 <div>

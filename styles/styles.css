@@ -3346,10 +3346,20 @@ border-color: var(--black);
 }
 
 #data__order {
-    height: 82%;
+    height: 50%;
 }
 
-#comments__order
+#comments__order {
+    text-align: center;
+}
+
+#comments__order p {
+    text-align: center;
+    background-color: var(--white);
+    margin-top: .5rem;
+    padding: .6rem;
+    height: 22%;
+}
 
 #details__order {
     height: 18%;
