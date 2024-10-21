@@ -506,6 +506,11 @@ footer a {
     padding-top: 0.5rem;
 }
 
+.change {
+    display: flex;
+    justify-content: center;
+}
+
 #history, #setup {
     background-color: var(--black);
 }
