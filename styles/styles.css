@@ -1748,6 +1748,13 @@ cursor: pointer;
         /* adapter la width à la taille de la div contenant add__top*/
 }
 
+@media screen and (min-width: 1027px) {
+
+    #add__top {
+        margin-left: 4rem;
+    }
+}
+
 #add__item {
     justify-content: space-around;
     width:100%;
@@ -1765,13 +1772,43 @@ cursor: pointer;
     margin-bottom: 1rem;
 }
 
-#add__shop, #add__hours, #add__type, #add__kg, #add__order, #add__make {
+#create__test {
+    text-align: right;
+}
+
+#add__shop, #add__hours, #add__type, #add__kg, #add__order, #add__make, #add__phone, #add__name {
     height: 2rem;
     border: solid;
     border-width: 0.1rem;
     border-radius: 6%;
     margin-bottom: .5rem;
     width: 100%;
+}
+
+#inputss {
+    text-align: center;
+}
+
+#add__shop, #add__order, #add__phone {
+    width: 60%;
+}
+
+#add__hours {
+    margin-top: 1.5rem;
+}
+
+#add__picture {
+    display: flex;
+    flex-direction: column;
+}
+
+#add__img {
+    width: 100%;
+}
+
+#add__inputs {
+    display: flex;
+    flex-direction: row;
 }
 
 #add__price {
