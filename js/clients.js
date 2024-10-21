@@ -6,12 +6,12 @@ function changeMe() {
     const others = document.querySelectorAll('.change');
 
     btn.addEventListener('click', () => {
-        btn.classList.add('hide');
+        btn.classList.add('hiden');
         links.forEach(link => {
-            link.classList.add('hide');
+            link.classList.add('hiden');
         });
         others.forEach(other => {
-            other.classList.remove('hide');
+            other.classList.remove('hiden');
         });
 })
 };
@@ -26,8 +26,8 @@ function invoiceMe() {
     const link = document.querySelector('#newinvoice');
 
     btn.addEventListener('click', () => {
-        btn.parentNode.classList.add('hide');
-        link.classList.remove('hide');
+        btn.parentNode.classList.add('hiden');
+        link.classList.remove('hiden');
     });
 }
 
@@ -36,18 +36,18 @@ invoiceMe();
 
 /* Cacher adresse de facturation */
 
-function hideMe() {
+function hidenMe() {
     const btn = document.querySelector('.proof__off');
     const link = document.querySelector('#newinvoice');
-    const renew = document.querySelector('#hide__me');
+    const renew = document.querySelector('#hiden__me');
 
     btn.addEventListener('click', () => {
-        renew.classList.remove('hide');
-        link.classList.add('hide');
+        renew.classList.remove('hiden');
+        link.classList.add('hiden');
     });
 }
 
-hideMe();
+hidenMe();
 
 
 /* Ajouter moyen de paiement */
@@ -57,8 +57,8 @@ function payMe() {
     const link = document.querySelector('#plus');
 
     btn.addEventListener('click', () => {
-        btn.parentNode.classList.add('hide');
-        link.classList.remove('hide');
+        btn.parentNode.classList.add('hiden');
+        link.classList.remove('hiden');
     });
 }
 
@@ -73,8 +73,8 @@ function findMe() {
     const renew = document.querySelector('#find__me');
 
     btn.addEventListener('click', () => {
-        renew.classList.remove('hide');
-        link.classList.add('hide');
+        renew.classList.remove('hiden');
+        link.classList.add('hiden');
     });
 }
 
@@ -89,9 +89,9 @@ function chooseMe() {
     const other = document.querySelector('#loved');
 
     btn.addEventListener('click', () => {
-        btn.classList.add('hide');
-        link.classList.remove('hide');
-        other.classList.add('hide');
+        btn.classList.add('hiden');
+        link.classList.remove('hiden');
+        other.classList.add('hiden');
     });
 }
 
@@ -105,9 +105,9 @@ function deleteMe() {
     const link = document.querySelector('.csure');
 
     btn.addEventListener('click', () => {
-        btn.parentNode.classList.add('hide');
+        btn.parentNode.classList.add('hiden');
         btn.parentNode.classList.remove('bsure');
-        link.classList.remove('hide');
+        link.classList.remove('hiden');
     });
 }
 
