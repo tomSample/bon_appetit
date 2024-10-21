@@ -3322,11 +3322,62 @@ border-color: var(--black);
 /*====================MATHIS===========/*
 /*====================YANNICK===========/*
 
+/* ============ ORDER =================== */
 
+#global__order {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    height: 75%;
+}
 
+.global__map {
+    height: 100%;
+    width: 60vw;
+}
 
+#map {
+    height: 100%;
+    width: 100%;
+}
 
+#side {
+    width: 40%;
+}
 
+#data__order {
+    height: 82%;
+}
+
+#comments__order
+
+#details__order {
+    height: 18%;
+    background-color: var(--orange);
+    text-align: center;
+}
+
+.burger .bar {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: var(--lightgrey);
+    border-radius: 20%;
+}
+
+.title__order h4 {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.horder {
+    display: none;
+}
+
+.pictures_order {
+    display: flex;
+    flex-direction: row;
+}
 
 
 

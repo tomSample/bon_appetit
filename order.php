@@ -15,63 +15,102 @@
     <!-- ===main=== -->
 
 <body>
-    <div id="map">
-        <script>
+    <div id="global__order">
 
-          /* map configuration */
-            var map = L.map('map').fitWorld();
+        <!-- ===map follow === -->
 
-            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 16,
-                attribution: '© OpenStreetMap'
-            }).addTo(map);
+        <div class="global__map">
+            <div id="map">
+                <script>
 
-            map.locate({setView: true, maxZoom: 16}); 
+                /* map configuration */
+                var map = L.map('map').fitWorld();
 
-            /* test _ à conserver pour l'instant, svp
-            var route = [
-                        [48.7321, -3.4614],
-                        [48.7332, -3.4600],
-                        [48.7343, -3.4589]
-                    ];
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 16,
+                    attribution: '© OpenStreetMap'
+                }).addTo(map);
 
-                    L.polyline(route, {color: 'red'}).addTo(map);
+                map.locate({setView: true, maxZoom: 16}); 
 
-            function onLocationFound(e) {
-                var radius = e.accuracy;
+                /* test _ à conserver pour l'instant, svp
+                var route = [
+                            [48.7321, -3.4614],
+                            [48.7332, -3.4600],
+                            [48.7343, -3.4589]
+                        ];
 
-                L.marker(e.latlng).addTo(map)
-                    .bindPopup("Vous êtes à " + radius + " mètres de ce point.").openPopup();
+                        L.polyline(route, {color: 'red'}).addTo(map);
 
-                L.circle(e.latlng, radius).addTo(map);
-            }
+                function onLocationFound(e) {
+                    var radius = e.accuracy;
 
-            map.on('locationfound', onLocationFound);
+                    L.marker(e.latlng).addTo(map)
+                        .bindPopup("Vous êtes à " + radius + " mètres de ce point.").openPopup();
 
-            function onLocationError(e) {
-                alert(e.message);
-            }
+                    L.circle(e.latlng, radius).addTo(map);
+                }
 
-            map.on('locationerror', onLocationError);*/
+                map.on('locationfound', onLocationFound);
 
-            /* Localisation and follow movements */
+                function onLocationError(e) {
+                    alert(e.message);
+                }
 
-            var currentLocation = L.marker([48.7321, -3.4614]).addTo(map);
+                map.on('locationerror', onLocationError);*/
+
+                /* Localisation and follow movements */
+
+                var currentLocation = L.marker([48.7321, -3.4614]).addTo(map);
+                        
+                    function updateLocation(position) {
+                        var lat = position.coords.latitude;
+                        var lon = position.coords.longitude;
+                        currentLocation.setLatLng([lat, lon]);
+                        map.setView([lat, lon], 16);
+                    }
                     
-                function updateLocation(position) {
-                    var lat = position.coords.latitude;
-                    var lon = position.coords.longitude;
-                    currentLocation.setLatLng([lat, lon]);
-                    map.setView([lat, lon], 16);
-                }
+                    if (navigator.geolocation) {
+                        navigator.geolocation.watchPosition(updateLocation);
+                    } else {
+                        alert("La géolocalisation n'est pas supportée par ce navigateur.");
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div id="side">
+            <div id="data__order">
+                Heure estimée de livraison 
                 
-                if (navigator.geolocation) {
-                    navigator.geolocation.watchPosition(updateLocation);
-                } else {
-                    alert("Geolocation n'est pas supporté par ce navigateur.");
-                }
-        </script>
+                
+                Poids / nombre de sacs
+                Restaurant commandé
+                <div id="comments__order">
+                    <h4>Vos commentaires sur la livraison</h4>
+                    <p>Pas de couverts et livrer à la porte bleue, svp.
+                    </p>
+                </div>
+            </div>
+            <div id="details__order">
+                <div>
+                    <br>
+                    <button class="burger"><span class="bar"></span></button>
+                    <br><br>
+                    <h4 class="title__order">Détails de livraison</h4>
+                    <br>
+                </div>
+                <div class="horder" id="hide_order">
+                    <div class="pictures_order">
+                        Photo + image Véhicule
+                    </div>    
+                    <p>Speedy Gonzales s'occupe de votre livraison.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+
 </body>
 
     <!-- ===fin main=== -->
@@ -80,7 +119,6 @@
     <!-- ===footer=== -->
 
     <?php include 'footer.php'; ?>
-
 
     <!-- ===fin footer=== -->
 
