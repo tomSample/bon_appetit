@@ -31,8 +31,8 @@
                     <h2>Aide</h2>
                 </div>
                 <div class="footer-box-padtop">
-                    <a href="" class="links">Mentions légales</a>
-                    <a href="" class="links">FAQ</a>
+                    <a href="mentions.php" class="links">Mentions légales</a>
+                    <a href="conditionsgenerales.php" class="links">Conditions générales</a>
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
                 <h2>Aide</h2>
                 <div class="footer-box-padtop box-1">
                     <a href="">Mentions légales</a>
-                    <a href="">FAQ</a>
+                    <a href="">Conditions générales</a>
                 </div>
             </div>
         </div>

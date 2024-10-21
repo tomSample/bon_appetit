@@ -21,7 +21,9 @@
                 $currentPage =='administration.php' ||
                 $currentPage =='create.php' ||
                 $currentPage == 'inscription-restaurant.php' ||
-                $currentPage =='create.php') : ?>
+                $currentPage =='create.php' ||
+                $currentPage =='conditionsgenerales.php' ||
+                $currentPage =='mentions.php') : ?>
 
         <!--  vérifie si l'utilisateur est connecté et s'il est admin -->
 
