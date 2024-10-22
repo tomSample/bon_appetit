@@ -81,23 +81,35 @@
 
         <div id="side">
             <div id="data__order">
-                Heure estimée de livraison 
-                
-                
-                Poids / nombre de sacs
-                Restaurant commandé
+                <div id="logo_side">
+                    <img class="picture__side" src="./img/logo/logo chef hat.png">
+                </div>
+                <div id="your__order">
+                    <div class="hours">
+                        <p class="hour">12h12</p>
+                        <p>Arrivée estimée</p>
+                    </div>
+                    <div class="hours">
+                        <p>Votre code</p>    
+                        <p class="hour2">56fr87</p>
+                    </div>
+                </div>
+                    <div class="size">
+                        <i>Aux plaisirs gustatifs : 1,5 kg dans trois sacs
+                        </i>
+                    </div>
             </div>
             <div id="comments__order">
-                <h4>Vos commentaires sur la livraison</h4>
-                <p>Pas de couverts et livrer à la porte bleue, svp.
+                <h4>Vos commentaires pour la livraison</h4>
+                <p>Pas de couverts. Livrer à la porte bleue, svp.
                 </p>
             </div>
             <div id="details__order">
                 <div>
                     <br>
-                    <button class="burger"><span class="bar"></span></button>
+                    <button class="clients__buttons__yellow"><img class="clients__icon__intern" src="./img/icon/add.png"></button>
                     <br><br>
-                    <h4 class="title__order">Détails de livraison</h4>
+                    <h4 class="title__order">Détails de la livraison</h4>
                     <br>
                 </div>
                 <div class="horder" id="hide_order">
