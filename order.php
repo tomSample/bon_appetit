@@ -81,7 +81,7 @@
 
         <div id="side">
             <div id="data__order">
-                <div id="logo_side">
+                <div id="logo__side">
                     <img class="picture__side" src="./img/logo/logo chef hat.png">
                 </div>
                 <div id="your__order">
@@ -95,7 +95,9 @@
                     </div>
                 </div>
                     <div class="size">
-                        <i>Aux plaisirs gustatifs : 1,5 kg dans trois sacs
+                        <p>Cuisiné par "Aux plaisirs gustatifs"
+                        </p>
+                        <i>1,5 kg dans trois sacs
                         </i>
                     </div>
             </div>
@@ -105,15 +107,25 @@
                 </p>
             </div>
             <div id="details__order">
-                <div>
+                <!--<div>
                     <br>
                     <button class="clients__buttons__yellow"><img class="clients__icon__intern" src="./img/icon/add.png"></button>
                     <br><br>
                     <h4 class="title__order">Détails de la livraison</h4>
                     <br>
+                </div>-->
+                <div id="ordering">
+                    <div id="img__order">
+                        <img width="30" class="people__order" src="./img/Speedy.jpeg">
+                        <img width="30" class="locomotion__order" src="./img/Velo.png">
+                    </div>
+                    <div id="text__order">
+                        <p>Speedy Gonzales s'occupe de votre livraison.
+                        </p>
+                    </div>
                 </div>
-                <div class="horder" id="hide_order">
-                    <div class="pictures_order">
+                <div class="horder" id="hide__order">
+                    <div class="pictures__order">
                         Photo + image Véhicule
                     </div>    
                     <p>Speedy Gonzales s'occupe de votre livraison.
@@ -133,5 +145,7 @@
     <?php include 'footer.php'; ?>
 
     <!-- ===fin footer=== -->
+
+    <!-- Crédit icone : <a href="https://www.flaticon.com/free-icons/velo" title="velo icons">Velo icons created by egorpolyakov - Flaticon</a>-->
 
 </html>
