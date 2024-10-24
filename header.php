@@ -1,7 +1,6 @@
 <?php include 'items.php' ?>
 
 
-
 <header>
     <nav>        
         <a href="index.php">
