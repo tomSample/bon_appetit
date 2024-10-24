@@ -1,4 +1,6 @@
 <?php include 'items.php' ?>
+<?php include 'notification.php' ?>
+
 
 
 <header>
@@ -26,7 +28,7 @@
 
         <!--  vérifie si l'utilisateur est connecté et s'il est admin -->
 
-        <?php if ($isLoggedIn && $role === 'admin'): ?>
+        <?php if ($isLoggedIn && $role === 'restaurateur'): ?>
             <button onclick ="toggleDropdown()" id="header-dropdown-button"><span class="material-symbols-outlined">person</span><?php echo htmlspecialchars($username); ?>
                 <div id="header-dropdown-container">
                     <a id="header-dropdown-link" href="clients.php">Mon compte</a>

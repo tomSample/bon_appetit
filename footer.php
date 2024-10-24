@@ -31,8 +31,8 @@
                     <h2>Aide</h2>
                 </div>
                 <div class="footer-box-padtop">
-                    <a href="mentions.php" class="links">Mentions légales</a>
-                    <a href="conditionsgenerales.php" class="links">Conditions générales</a>
+                    <a class="links" href="mentions.php" class="links">Mentions légales</a>
+                    <a class="links" href="conditionsgenerales.php" class="links">Conditions générales</a>
                 </div>
             </div>
         </div>
@@ -47,18 +47,18 @@
                 <h2>Découvrir</h2>
                 <div class="footer-box-padtop box-1">
                 <?php if ($isLoggedIn && $role === 'admin'): ?>
-                    <a href ="create.php" class="links">Ajouter un restaurant</a>
+                    <a class="links" href ="create.php" class="links">Ajouter un restaurant</a>
                 <?php else: ?>
-                    <a href ="inscription-restaurant.php" class="links">Rejoignez le réseau</a>
+                    <a class="links"href ="inscription-restaurant.php" class="links">Rejoignez le réseau</a>
                 <?php endif; ?>
-                    <a href="">À propos</a>
+                    <a class="links" href="">À propos</a>
                 </div>
             </div>
             <div class="footer-box">
                 <h2>Aide</h2>
                 <div class="footer-box-padtop box-1">
-                    <a href="">Mentions légales</a>
-                    <a href="">Conditions générales</a>
+                    <a class="links" href="">Mentions légales</a>
+                    <a class="links" href="">Conditions générales</a>
                 </div>
             </div>
         </div>
@@ -67,9 +67,9 @@
                 <div class="footer-box-padtop">
                     <a href=""><span class="material-symbols-outlined">call</span></a>
                     <a href=""><span class="material-symbols-outlined">mail</span></a>
-                    <a class="links" href=""><img src ="img\social network\whatsapp.png" alt=""></a>
-                    <a class="links" href=""><img src ="img\social network\facebook.png" alt=""></a>
-                    <a class="links" href=""><img src ="img\social network\instagram.png" alt=""></a>
+                    <a href=""><img src ="img\social network\whatsapp.png" alt=""></a>
+                    <a href=""><img src ="img\social network\facebook.png" alt=""></a>
+                    <a href=""><img src ="img\social network\instagram.png" alt=""></a>
                 </div>
             <!-- </div> -->
         </div>

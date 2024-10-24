@@ -8,29 +8,38 @@ $users = [
         'username' => 'root',
         'email' => 'user@example.com',
         'password' => '0000',
-        'delivery-address' => [
-            [
-                'address' => '13 rue de la Chance',
-                'postal-code' => '75020',
-                'city' => 'Paris',
-                'country' => 'France',
-            ],
-            [
-                'address' => '25 rue de la Liberté',
-                'postal-code' => '22300',
-                'city' => 'Lannion',
-                'country' => 'France',
-            ],
-        ],
+        
 
     ],
     
     [
         'role' => 'user',
-        'username' => 'user2',
-        'email' => 'user2@example.com',
-        'password' => '1111',
+        'username' => 'user',
+        'email' => 'user@example.com',
+        'password' => '0000',
         'delivery-address' => [
+            [
+                'address' => '50 avenue CDG',
+                'postal-code' => '67900',
+                'city' => 'Clermond-Ferrand',
+                'country' => 'France',
+            ],
+        ],
+    ],
+
+    [
+        'role' => 'livreur',
+        'username' => 'livreur',
+        'email' => 'livreur@example.com',
+        'password' => '0000',
+    ],
+
+    [
+        'role' => 'restaurateur',
+        'username' => 'restaurateur',
+        'email' => 'restaurateur@example.com',
+        'password' => '0000',
+        'pickup-address' => [
             [
                 'address' => '50 avenue CDG',
                 'postal-code' => '67900',

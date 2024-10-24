@@ -11,7 +11,7 @@
     <div id="checkout-container-left">
         <div id="checkout-content">
             <div id="checkout-content-title">
-                <div id="checkout-delivery-address-title" onclick="toggleAddDeliveryadress()"><h2>Adresse de livraison</h2>
+                <div id="checkout-delivery-address-title"><h2>Adresse de livraison</h2>
                     <span class="material-symbols-outlined">home_work</span>
                 </div>
             </div>
@@ -41,24 +41,20 @@
                     </div>
                 </div>
             </div>
-
 <!-- Modifier/Ajouter de livraison -->
-
             <div>
-                <div id="checkout-address-edit">
+                <div  onclick="toggleAddDeliveryadress()" id="checkout-address-edit">
                     <h3>Ajouter/Modifier une adresse</h3>
                     <span class="material-symbols-outlined">edit</span>
                 </div>
             </div>
-
-
         </div>
 
 <!-- Modes de paiement -->
 
         <div id="checkout-content">
             <div id="checkout-content-title">
-                <div id="checkout-delivery-address-title" onclick="toggleAddPaymentMode()"><h2>Moyens de paiement</h2>
+                <div id="checkout-delivery-address-title"><h2>Moyens de paiement</h2>
                     <span class="material-symbols-outlined">payments</span>
                 </div>
             </div>
@@ -75,14 +71,34 @@
 
 <!-- Modifier/Ajouter un moyen de paiement -->
 
-        <div>
-            <div id="checkout-payement-edit">
-                <h3>Ajouter/Modifier</h3>
-                <span class="material-symbols-outlined">edit</span>
+            <div>
+                <div id="checkout-payement-edit">
+                    <h3>Ajouter/Modifier</h3>
+                    <span class="material-symbols-outlined">edit</span>
+                </div>
             </div>
         </div>
+
+<!-- Instructions de livraisons -->
+
+        <div id="checkout-content">
+            <div id="checkout-content-title">
+                <div id="checkout-delivery-address-title"><h2>Instructions de livraisons</h2>
+                    <span class="material-symbols-outlined">pin_drop</span>
+                </div>
+            </div>
+            <div id='checkout-delivery-instructions-content'>
+                <form>
+                    <label for="checkout-delivery-instructions">Donner des précisions à nos livreurs (300 caractères max)</label>
+                        <div id ="checkout-delivery-instructions-box" >
+                            <textarea id='checkout-delivery-instructions' type="textarea" cols ="3" rows="4" maxlength="300" id="checkout-delivery-instructions"></textarea>
+                            <button type="submit" id="checkout-delivery-instructions-button">Valider</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+
     </div>
-</div>
 
 <!-- Récapitulatif commande et bouton commander/payer -->
 
