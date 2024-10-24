@@ -1365,7 +1365,7 @@ cursor: pointer;
 }
 
 .slide {
-    opacity: 1;
+    margin-inline: auto;
 }
 
 .visible {
