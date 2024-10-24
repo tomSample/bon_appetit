@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: "12", category: 'hot-dog', imgSrc: 'img/icon/hot-dog.png', label: 'Hot-dog' },
         { id: "13", category: 'pasta', imgSrc: 'img/icon/spaghetti.png', label: 'Pasta' },
         { id: "14", category: 'poutine', imgSrc: 'img/icon/poutine.png', label: 'Poutine' },
-        { id: "15", category: 'after-tea', imgSrc: 'img/icon/afternoon-tea.png', label: 'Afternoon Tea' }
+        { id: "15", category: 'after-tea', imgSrc: 'img/icon/afternoon-tea.png', label: 'Salon de thé' }
     ];
 
     const slidesContainer = document.querySelector('.index-slides-content');
