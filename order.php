@@ -1,13 +1,11 @@
 
 
+    <!-- === map call with leaflet  === -->
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />    
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
-     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-     crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
      <link rel="stylesheet" href="styles\styles.css" type="text/css">
 </head>
 
@@ -17,21 +15,43 @@
 <body>
     <div id="global__order">
 
-        <!-- ===map follow === -->
+        <!-- === map part === -->
 
         <div class="global__map">
             <div id="map">
                 <script>
 
-                /* map configuration */
+                /* map initialization */
+
                 var map = L.map('map').fitWorld();
 
+                /* OpenStreetMap attribution (and level of zoom) */
+
                 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    maxZoom: 16,
+                    maxZoom: 15,
                     attribution: '© OpenStreetMap'
                 }).addTo(map);
 
-                map.locate({setView: true, maxZoom: 16}); 
+                /* zoom on the detected location */
+
+                map.locate({setView: true, Zoom: 15}); 
+
+                /* home icon for customer */
+
+                var myIcon = L.icon({
+                    iconUrl: './img/icon/home.png',
+                    iconSize: [38, 38],
+                    iconAnchor: [0, 0],
+                    popupAnchor: [0, 0],
+                    shadowUrl: 'my-icon-shadow.png',
+                    shadowSize: [0, 0],
+                    shadowAnchor: [0, 0]
+                });
+
+                /* Customer localization */
+
+                L.marker([48.7320409, -3.4588383], {icon: myIcon}).addTo(map);
+
 
                 /* test _ à conserver pour l'instant, svp
                 var route = [
@@ -59,22 +79,11 @@
 
                 map.on('locationerror', onLocationError);*/
 
-                /* Localisation and follow movements */
 
-                var currentLocation = L.marker([48.7321, -3.4614]).addTo(map);
-                        
-                    function updateLocation(position) {
-                        var lat = position.coords.latitude;
-                        var lon = position.coords.longitude;
-                        currentLocation.setLatLng([lat, lon]);
-                        map.setView([lat, lon], 16);
-                    }
-                    
-                    if (navigator.geolocation) {
-                        navigator.geolocation.watchPosition(updateLocation);
-                    } else {
-                        alert("La géolocalisation n'est pas supportée par ce navigateur.");
-                    }
+                /* Localization and follow movements (link geolocalization from infolivraison) */
+
+                L.marker([48.7321, -3.4614]).addTo(map);
+ 
                 </script>
             </div>
         </div>
@@ -85,11 +94,11 @@
                     <img class="picture__side" src="./img/logo/logo chef hat.png">
                 </div>
                 <div id="your__order">
-                    <div class="hours">
+                    <div class="hours" id="hours__top">
                         <p class="hour">12h12</p>
                         <p>Arrivée estimée</p>
                     </div>
-                    <div class="hours">
+                    <div class="hours" id="hours__code">
                         <p>Votre code</p>    
                         <p class="hour2">56fr87</p>
                     </div>
@@ -100,9 +109,13 @@
                         <i>1,5 kg dans trois sacs
                         </i>
                     </div>
+                    <div class="hours2">
+                        <p>Votre code</p>    
+                        <p class="hour2">56fr87</p>
+                    </div>
             </div>
             <div id="comments__order">
-                <h4>Vos commentaires pour la livraison</h4>
+                <h4>Vos commentaires</h4>
                 <p>Pas de couverts. Livrer à la porte bleue, svp.
                 </p>
             </div>
@@ -146,6 +159,7 @@
 
     <!-- ===fin footer=== -->
 
-    <!-- Crédit icone : <a href="https://www.flaticon.com/free-icons/velo" title="velo icons">Velo icons created by egorpolyakov - Flaticon</a>-->
+    <!-- Crédit icone : <a href="https://www.flaticon.com/free-icons/velo" title="velo icons">Velo icons created by egorpolyakov - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/linternet" title="l'internet icônes">L'internet icônes créées par Freepik - Flaticon</a>-->
 
 </html>
