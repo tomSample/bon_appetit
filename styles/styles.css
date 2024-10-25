@@ -470,8 +470,12 @@ nav a {
 footer {
     background-color: var(--darkgrey);
     width: 100%;
+<<<<<<< HEAD
     height: 220px;
     z-index: 1;
+=======
+    height: 240px;
+>>>>>>> fb9fe1d6525fcc0eebcd379c0dbade48e872575e
 }
 
 footer a {
@@ -1328,7 +1332,7 @@ cursor: pointer;
 .index-slides-container {
     position: relative;
     display: flex;
-    width : 50%;
+    width : 500px;
     margin-inline: auto;
 }
 
@@ -1339,10 +1343,15 @@ cursor: pointer;
     overflow: hidden;
 }
 
+.index-slider-btn {
+    padding: 1rem;
+    height: 60px;
+    top: 10px;
+}
+
 #index-slider-btn-prev {
     position:absolute;
     background: none;
-    height: 100%;
     font-size: 2.5rem;
     z-index: 1;
     cursor: pointer;
@@ -1353,7 +1362,6 @@ cursor: pointer;
 #index-slider-btn-next {
     position:absolute;
     background: none;
-    height: 100%;
     font-size: 2.5rem;
     z-index: 1;
     cursor: pointer;
@@ -1362,71 +1370,16 @@ cursor: pointer;
 }
 
 .slide {
-    opacity: 1;
+    margin-inline: auto;
 }
 
-/* .active {
+.visible {
     opacity: 1;
-} */
+}
 
 .slide p {
     text-align: center;
 }
-
-/* #index-food-filter-carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: 100%;
-}
-
-#index-food-filter-carousel-control-prev {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 40px;
-    top: 30px;
-    left: 0px;
-    background-color: var(--black);
-    color: var(--lightorange);
-    border: none;
-    padding: 0.8rem;
-    padding-inline: 1rem;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    z-index: 1;
-}
-
-#index-food-filter-carousel-control-prev:hover {
-    background-color: var(--orange);
-}
-
-#index-food-filter-carousel-control-next {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 40px;
-    top: 30px;
-    right : 0px;
-    background-color: var(--black);
-    color: var(--lightorange);
-    border: none;
-    padding: 0.8rem;
-    padding-inline: 1rem;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    z-index: 1;
-}
-
-#index-food-filter-carousel-control-next:hover {
-    background-color: var(--orange);
-} */
-
 
 
 /* ======= CLIENTS.php ======= */
@@ -1749,6 +1702,13 @@ cursor: pointer;
         /* adapter la width à la taille de la div contenant add__top*/
 }
 
+@media screen and (min-width: 1027px) {
+
+    #add__top {
+        margin-left: 4rem;
+    }
+}
+
 #add__item {
     justify-content: space-around;
     width:100%;
@@ -1766,13 +1726,43 @@ cursor: pointer;
     margin-bottom: 1rem;
 }
 
-#add__shop, #add__hours, #add__type, #add__kg, #add__order, #add__make {
+#create__test {
+    text-align: right;
+}
+
+#add__shop, #add__hours, #add__type, #add__kg, #add__order, #add__make, #add__phone, #add__name {
     height: 2rem;
     border: solid;
     border-width: 0.1rem;
     border-radius: 6%;
     margin-bottom: .5rem;
     width: 100%;
+}
+
+#inputss {
+    text-align: center;
+}
+
+#add__shop, #add__order, #add__phone {
+    width: 60%;
+}
+
+#add__hours {
+    margin-top: 1.5rem;
+}
+
+#add__picture {
+    display: flex;
+    flex-direction: column;
+}
+
+#add__img {
+    width: 100%;
+}
+
+#add__inputs {
+    display: flex;
+    flex-direction: row;
 }
 
 #add__price {
@@ -2606,6 +2596,9 @@ border-color: var(--black);
     margin-left: 5%;
 }
 
+.index-slides-container  {
+    width: 100%;
+}
 
 
 /* ======= COND GENERALES RESPONSIVE ======= */

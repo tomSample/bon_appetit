@@ -80,12 +80,12 @@
                 </div>
             </section>
 
-    <!-- filters dynamiue (carousel.js) -->
+    <!-- filtres dynamiques (js) -->
 
-    <section>
+<section>
     <div class="index-slides-container">
-        <button id="index-slider-btn-prev" class ="index-slider-btn">&#10216;</button>
-        <button id="index-slider-btn-next" class ="index-slider-btn"> &#10217;</button>
+        <button onclick="showPrevSlide()" id="index-slider-btn-prev" class ="index-slider-btn">&#10216;</button>
+        <button onclick="showNextSlide()" id="index-slider-btn-next" class ="index-slider-btn"> &#10217;</button>
         <div class="index-slides-content"></div>
     </div>
 </section>

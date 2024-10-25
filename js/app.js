@@ -131,44 +131,6 @@ function checkRadio(value) {
     document.getElementById(value).checked = true;
 }
 
-//=====FILTERS==== (2 clics sur un bouton filtre annule le filtrage)
-
-let currentCategory = null; // déclaration de variable et non de constante pour permettre l'annulation du filtrage 
-                            // (changement de valeur de currentCategory)
-
-function toggleFilter(button) {
-    const category = button.getAttribute('data-category');  // Récupère la catégorie du filtre sur le bouton
-
-    if (currentCategory === category) {
-        currentCategory = null;
-
-        // Si le filtre est déjà actif, le désactive et affiche tous les restaurants
-        document.querySelectorAll('.restaurant-article-filter').forEach(restaurant => {
-            restaurant.style.display = 'block';
-        });
-
-        // retire la classe active du bouton
-        button.classList.remove('active');
-    } else {
-        currentCategory = category;
-
-        // Affiche les restaurants de la catégorie sélectionnée et cache les autres
-        // (formulation via IA car méthode Element: computedStyleMap() incompatible avec Firefox)
-        document.querySelectorAll('.restaurant-article-filter').forEach(restaurant => {
-            restaurant.style.display = restaurant.getAttribute('data-category') === category ? 'block' : 'none';
-        });
-
-        // retire la classe active du bouton
-        document.querySelectorAll('#index-food-filter-button').forEach(btn => {
-            btn.classList.remove('active');
-        });
-
-        // ajoute la classe active du bouton
-        button.classList.add('active');
-    }
-}
-
-
 
 //=====DROPDOWN MENU====
 
@@ -176,12 +138,6 @@ function toggleDropdown() {
     document.getElementById('header-dropdown-container').classList.toggle('open');
 }
 
-// Sélectionner l'élément déclencheur
-const triggerElement = document.getElementById('dropdown-trigger');
-
-// Ajouter des écouteurs d'événements pour les clics et les touches
-triggerElement.addEventListener('click', toggleDropdown);
-triggerElement.addEventListener('touchstart', toggleDropdown);
 
 
 

@@ -13,30 +13,33 @@
         <section class ="create-container">
             <div class="resto-id"  id="add__top">
                 <div class="add__picture">
-                    <h4>Télécharger une image du restaurant :</h4>
-                    <br>
-                    <br>
-                    <input type="file" name="file">
-                </div>
-                <div class="resto-id-text _dp_column">
-                    <div class="resto-id-title">
-                        <h4>Informations du restaurant :</h4>
+                    <div id="add__img">
+                        <h4>Télécharger une image du restaurant&nbsp;:</h4>
                         <br>
-                        <input id="add__shop" type="add" placeholder=" Nom du restaurant">
+                        <br>
+                        <input type="file" name="file">
                     </div>
-                    <div class="resto-id-specs">
+                    <div id="add__inputs">
+                        <input id="add__hours" type="add" placeholder=" Horaires d'ouverture">
+                    </div>
+                </div>
+                <div class="resto-id-text _dp_column" id="create__test">
+                    <div class="resto-id-title">
+                        <h4>Informations du restaurant&nbsp;:</h4>
+                        <br>
+                    </div>
+                    <div class="resto-id-specs" id="inputss">
                         <div>
-                            <input id="add__hours" type="add" placeholder=" Horaires d'ouverture">
-                        </div>
-                        <div>
-                            <input id="add__order" type="add" placeholder=" Délai préparation commande">
+                            <input id="add__shop" type="add" placeholder=" Nom du restaurant">
+                            <input id="add__phone" type="add" placeholder=" Numéro de téléphone">
+                            <input id="add__order" type="add" placeholder=" Délai de préparation d'une commande">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="resto-id" id="add__item">
                 <div class="add__picture">
-                    <h4>Télécharger une image de l'item :</h4>
+                    <h4>Télécharger une image de l'item&nbsp;:</h4>
                     <br>
                     <br>
                     <input type="file" name="file">
@@ -52,7 +55,7 @@
                 </div>
                 <div class="resto-id-text _dp_column">
                     <div class="resto-id-title">
-                        <h4>Ajout d'items :</h4>
+                        <h4>Ajout d'items&nbsp;:</h4>
                         <br>
                         <div>
                             <label for="item-select">Type :</label>
@@ -67,7 +70,7 @@
                     </div>
                     <div class="resto-id-specs">
                         <div>
-                            <input id="add__shop" type="add" placeholder=" Intitulé">
+                            <input id="add__name" type="add" placeholder=" Intitulé">
                         </div>
                         <div>
                             <input id="add__kg" type="add" placeholder=" Poids">
@@ -85,7 +88,7 @@
         <section class ="create-container" id="create-container-presentation">
             <div class="resto-resume body-padding" id="add__description">
                 <div class="_w_50 mobile-resto-presentation">
-                    <h4>Présentation du restaurant :</h4>
+                    <h4>Présentation du restaurant&nbsp;:</h4>
                     <br>
                     <textarea id="add__things" name="txtmulti" cols="25" rows="3" wrap="virtual" placeholder=" Description du restaurant"></textarea>
                 </div>
