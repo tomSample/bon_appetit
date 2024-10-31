@@ -14,14 +14,19 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: "12", category: 'hot-dog', imgSrc: 'img/icon/hot-dog.png', label: 'Hot-dog' },
         { id: "13", category: 'pasta', imgSrc: 'img/icon/spaghetti.png', label: 'Pasta' },
         { id: "14", category: 'poutine', imgSrc: 'img/icon/poutine.png', label: 'Poutine' },
-        { id: "15", category: 'after-tea', imgSrc: 'img/icon/afternoon-tea.png', label: 'Salon de thé' }
+        { id: "15", category: 'after-tea', imgSrc: 'img/icon/afternoon-tea.png', label: 'Afternoon Tea' }
     ];
 
     const slidesContainer = document.querySelector('.index-slides-content');
     let currentSlideIndex = 0;
-    const slidesPerPage = 5; // Number of slides to show per page
+
+    function getSlidesPerPage() {
+        const mobileBreakpoint = 768; // Define the mobile breakpoint
+        return window.innerWidth <= mobileBreakpoint ? 4 : 5;
+    }
 
     function renderSlides() {
+        const slidesPerPage = getSlidesPerPage();
         const start = currentSlideIndex * slidesPerPage;
         const end = start + slidesPerPage;
         const visibleSlides = slides.slice(start, end);
@@ -44,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function showNextSlide() {
+        const slidesPerPage = getSlidesPerPage();
         if ((currentSlideIndex + 1) * slidesPerPage < slides.length) {
             currentSlideIndex++;
             renderSlides();
@@ -54,6 +60,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.showPrevSlide = showPrevSlide;
     window.showNextSlide = showNextSlide;
+
+    window.addEventListener('resize', renderSlides); // Re-render slides on window resize
 });
 
 //=====FILTERS==== (2 clics sur un bouton filtre annule le filtrage)

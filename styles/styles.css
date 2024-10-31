@@ -470,7 +470,12 @@ nav a {
 footer {
     background-color: var(--darkgrey);
     width: 100%;
+<<<<<<< HEAD
     height: 220px;
+    z-index: 1;
+=======
+    height: 240px;
+>>>>>>> fb9fe1d6525fcc0eebcd379c0dbade48e872575e
 }
 
 footer a {
@@ -1365,7 +1370,7 @@ cursor: pointer;
 }
 
 .slide {
-    opacity: 1;
+    margin-inline: auto;
 }
 
 .visible {
@@ -2591,6 +2596,9 @@ border-color: var(--black);
     margin-left: 5%;
 }
 
+.index-slides-container  {
+    width: 100%;
+}
 
 
 /* ======= COND GENERALES RESPONSIVE ======= */
@@ -2794,35 +2802,227 @@ border-color: var(--black);
 /*===VALIDATION LIVRAISON===*/
 
 .validlivraison-hero-banner {
-  display: flex;
-  justify-content: center;
-  height: 150vh;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 79vh;
+    width: 100%;
 }
 
-.validlivraison-sectioncontainer { 
-    display: flex;
+.validlivraison-container1 { 
+    display: block;
     width: 100%;
-    justify-content: center;
-    margin-top: 100px;
-    background-color: #488cff;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 50px;
+    height: 9%;
+    background-color:#efefef;
+    text-decoration: underline 2px;
+    position: relative;
+    top: 15%;
 }
 
 .validlivraison-section1 { 
-    text-align: center;
-    height: 5%;
-    width: 100%;
+    width: 75%;
+    height: 100%;
     background-color: #ffcc35;
-    font-size: 200%;
-    padding: 1%;
-    text-decoration: underline;
+    justify-self: center;
+    display: flex;
+    text-align: center;
+    font-size: 225%;
+    justify-content: center;
+    padding-top: 1%;
 }
 
+.validlivraison-container2 { 
+    display: block;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    background-color: var(--darkwhite);
+    position: relative;
+    top: 25%;
+}
 
+.validlivraison-container3 { 
+    display: block;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background-color: var(--darkwhite);
+    position: relative;
+    top: 25%;
+}
 
+.validlivraison-section2 { 
+    height: 100%;
+    width: 42%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    background-color: #ffcc35;
+    margin-left: 5%;
+    font-size: 100%;
+    flex-direction: column;
+}
+
+.validlivraison-section3 { 
+    height: 100%;
+    width: 42%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    background-color: #ffcc35;
+    margin-right: 5%;
+    font-size: 100%;
+    flex-direction: column;
+}
+
+.validlivraison-section4 { 
+    width: 41%;
+    float: left;
+    display: flex;
+    background-color: var(--darkwhite);
+    margin-left: 5%;
+    font-size: 125%;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.validlivraison-section5 { 
+    width: 41%;
+    float: right;
+    display: flex;
+    background-color: var(--darkwhite);
+    font-size: 125%;
+    flex-direction: column;
+    padding-right: 6%;
+    padding-top: 5%;
+}
+
+.validlivraison-titresection1 { 
+    height: 15%;
+    text-decoration: underline 3px;
+    font-size: 200%;
+    width: 100%;
+}
+
+.validlivraison-button1 {
+    display: flex;
+    background-color: #afff90;
+    width: 102.5%;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.validlivraison-button2 {
+    display: flex;
+    background-color: #ff0000e4;
+    width: 102.5%;
+    height: 75px;
+    justify-content: center;
+    align-items: center;    
+}
+
+.validlivraison-section6 {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+
+    .validlivraison-section6 {
+        display: block;
+        font-size: 125%;
+    }
+
+    .validlivraison-hero-banner {
+        height: 90vh;
+        width: 90%;
+        padding-left: 6%;
+    }
+
+    .validlivraison-section2 {
+        font-size: 110%;
+        height: 48%;
+        width: 88%;
+        margin-bottom: 2%;
+    }
+
+    .validlivraison-titresection1 { 
+        display: flex;
+        font-size: 125%;
+        height: 5%;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .validlivraison-section3 {
+        font-size: 110%;
+        height: 50%;
+        width: 88%;
+        margin-bottom: 0%;
+        margin-left: 5%;
+    }
+
+    .validlivraison-section1 {
+        font-size: 150%;
+        height: 80%;
+    }
+
+    .validlivraison-container2 {
+        display: flex;
+        height: 50%;
+        flex-direction: column;
+        top: 23.5%;
+    }
+
+    .validlivraison-containerbutton2 {
+        padding-left: 30%; 
+        padding-right: 4%;
+        display: none;
+    }
+
+    .validlivraison-container3 {
+        top: -40%;
+    }
+
+    .validlivraison-section4 {
+        width: 86%;
+        float: left;
+        display: flex;
+        background-color: var(--darkwhite);
+        margin-left: 5%;
+        font-size: 125%;
+        flex-direction: column;
+        padding-top: 2%;
+    }
+
+    .validlivraison-section5 {
+        padding-top: 0%;
+    }
+
+    .validlivraison-buttonmobile1 {
+        display: flex;
+        background-color: #ff0000e4;
+        width: 102.3%;
+        height: 60px;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    .validlivraison-containerbuttonmobile1 {
+        position: relative;
+        padding-left: 5%; 
+        top: 180%;
+        padding-right: 9%;
+    }
+
+    .validlivraison-container1 {
+    top: 14%;
+    height: 12%;
+    }
+
+    .validlivraison-button1 {
+        height: 60px;
+        }
+}
 
 
 
