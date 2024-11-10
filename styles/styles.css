@@ -470,12 +470,7 @@ nav a {
 footer {
     background-color: var(--darkgrey);
     width: 100%;
-<<<<<<< HEAD
-    height: 220px;
-    z-index: 1;
-=======
     height: 240px;
->>>>>>> fb9fe1d6525fcc0eebcd379c0dbade48e872575e
 }
 
 footer a {
