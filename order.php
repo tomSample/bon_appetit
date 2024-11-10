@@ -5,9 +5,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />    
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-     <link rel="stylesheet" href="styles\styles.css" type="text/css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
+
+<?php include 'layout.php'; ?>
+<?php include 'header.php'; ?>
 
 
     <!-- ===main=== -->
@@ -103,8 +105,14 @@
                         <p class="hour2">56fr87</p>
                     </div>
                 </div>
-                    <div class="size">
+                    <div class="size" id="order__cook">
                         <p>Cuisiné par "Aux plaisirs gustatifs"
+                        </p>
+                        <i>1,5 kg dans trois sacs
+                        </i>
+                    </div>
+                    <div class="size" id="order__cook2">
+                        <p>"Aux plaisirs gustatifs"
                         </p>
                         <i>1,5 kg dans trois sacs
                         </i>

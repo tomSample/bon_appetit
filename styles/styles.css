@@ -3327,7 +3327,7 @@ border-color: var(--black);
 #global__order {
     display: flex;
     flex-direction: row;
-    margin-top: 5rem;
+    margin-top: 67.6px;
     height: 75%;
 }
 
@@ -3392,6 +3392,11 @@ border-color: var(--black);
     height: 100%;
 }
 
+#order__cook2 {
+    display: none;
+}
+
+
 #comments__order {
     text-align: center;
     background-color: var(--white);
@@ -3406,7 +3411,7 @@ border-color: var(--black);
 }
 
 #details__order {
-    height: 18%;
+    height: 18.2%;
     background-color: var(--orange);
     text-align: center;
 }
@@ -3445,13 +3450,25 @@ margin-bottom: .5rem;
         display: none;
     }
 
+    #data__order {
+        height: 55%;
+    }
+
     #your__order {
         flex-direction: column;
+    }
 
+    .hours {
+        text-align: center;
+        width: 100%;
     }
 
     #hours__code {
         display: none;
+    }
+
+    .hour2, .hour {
+        font-size: 50px;
     }
 
     .hours2 {
@@ -3459,6 +3476,23 @@ margin-bottom: .5rem;
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        font-size: 5px;
+    }
+
+    #order__cook {
+        display: none;
+    }
+
+    #order__cook2 {
+        display: block;
+    }
+
+    #comments__order p {
+        height: 12.7%;
+    }
+
+    #details__order {
+        height: 21%;
     }
 }
 
