@@ -58,30 +58,6 @@
                     L.marker([48.7320409, -3.4588383], {icon: homeIcon},{alt:'Mon emplacement'}).addTo(map).bindPopup("Mon emplacement");
                     L.marker([48.7520409, -3.4588383], {icon: cookIcon},{alt:'Emplacement du restaurant'}).addTo(map).bindPopup("Aux plaisirs gustatifs");
                     L.marker([48.7460409, -3.4588383], {icon: deliveryIcon},{alt:'Emplacement du livreur'}).addTo(map).bindPopup("Je livre à la vitesse de l'éclair !");
-
-    /* code pour infolivraison
-    
-        /* Call to leaflet (before the header and layout php) - MODIFICATIONS A FAIRE à la fin de la balise "script" de "head"
-
-        <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />    
-            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-            <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="">!!!! Ouvrir la balise de fermeture, à la place de ce commentaire !!!!!/script>
-        </head> 
-
-        (Dans une balise 'script' (imbriquée dans une div ?))
-
-        /* I have found you !
-
-    function onLocationFound(e) {
-        var deliveryll = e.latlng;
-    };
-
-        /* Localization error 
-
-    function onLocationError(e) {
-        alert(e.message);
-    };   */ 
                 </script>
             </div>
         </div>
