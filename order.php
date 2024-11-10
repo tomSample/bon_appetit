@@ -23,7 +23,7 @@
             <div id="map">
                 <script>
 
-                        /* map and zoom initialization on the delivery man (add one time dynamic delivery localization) */
+                        /* map and zoom initialization on the delivery man (add dynamic delivery localization) */
 
                     var map = L.map('map').setView([48.7460409, -3.4588383], 14.5);
 
@@ -33,10 +33,6 @@
                         maxZoom: 16,
                         attribution: '© OpenStreetMap'
                     }).addTo(map);
-
-                        /* dynamic localization _ HAVE TO BE CHECKED WITH WIFI _ on the delivery man (add API dynamic delivery localization) */
-
-                    map.locate({setView: [48.7460409, -3.4588383], Zoom: 14.5});
 
                         /* icons options */
 
