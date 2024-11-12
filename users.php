@@ -6,7 +6,7 @@ $users = [
     [
         'role' => 'admin',
         'username' => 'root',
-        'email' => 'user@example.com',
+        'email' => 'admin@example.com',
         'password' => '0000',
         
 

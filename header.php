@@ -1,6 +1,5 @@
-<?php include 'items.php' ?>
-<?php include 'notification.php' ?>
-
+<?php include 'items.php'; ?>
+<?php $etatCommande = 'reçue';?>
 
 
 <header>
@@ -8,6 +7,22 @@
         <a href="index.php">
             <img class="header-logo" src="img\logo\logo chef hat.png" alt="">
         </a>
+        <div id="notification-bar-header-div">
+            <?php if (($isLoggedIn === true) && (isset($etatCommande))) {
+                echo "<div id='notification-container'>";
+                echo    "<div id='notification-content'>";
+                echo        "<div id='notification-bar'></div>";
+                echo        "<div id='notification-dot-1'></div>";
+                echo        "<div id='notification-dot-2'></div>";
+                echo        "<div id='notification-dot-3'></div>";
+                echo        "<div id='notification-dot-4'></div>";
+                echo        "<div id='notification'>Commande " . $etatCommande . "</div>";
+                echo    "</div>";
+                echo "</div>";
+                
+            } ?>
+        </div>
+        
         <div class="header-container">
 
 
@@ -54,9 +69,9 @@
             </button>
         </a>
 
-        <!--  sinon si l'utilisateur est connecté -->
+        <!--  sinon si l'utilisateur est connecté et s'il est user -->
 
-        <?php elseif ($isLoggedIn) : ?>
+        <?php elseif ($isLoggedIn && $role === 'user') : ?>
             <button onclick ="toggleDropdown()" id="header-dropdown-button"><span class="material-symbols-outlined">person</span><?php echo htmlspecialchars($username); ?></button>
             <div id="header-dropdown-container">
                 <a id="header-dropdown-link" href="clients.php">Mon compte</a>
@@ -78,6 +93,35 @@
                 <span class="material-symbols-outlined">shopping_bag</span>
             </button>
         </a>
+
+<!--  sinon si l'utilisateur est connecté et s'il est livreur -->
+
+<?php elseif ($isLoggedIn && $role === 'livreur') : ?>
+            <button onclick ="toggleDropdown()" id="header-dropdown-button"><span class="material-symbols-outlined">person</span><?php echo htmlspecialchars($username); ?></button>
+            <div id="header-dropdown-container">
+                <a id="header-dropdown-link" href="clients.php">Mon compte</a>
+                <a id="header-dropdown-link" href="logout-action.php">Déconnexion</a>
+            </div>
+            <a>
+                <button onclick="toggleDrawer()" id="toggle-drawer" class="header-button-1">Panier</button>
+            </a>      
+
+        <!-- boutons en mobile -->
+
+        <a onclick ="toggleDropdown()">
+            <button class="mobile-header-button">
+                <span class="material-symbols-outlined">person</span>
+            </button>
+        </a>
+        <a>
+            <button onclick="toggleDrawer()" id="toggle-drawer" class="mobile-header-button">
+                <span class="material-symbols-outlined">shopping_bag</span>
+            </button>
+        </a>
+
+        <!--  sinon si l'utilisateur est connecté et s'il est livreur -->
+
+
 
 
 <!-- et s'il n'est pas connecté : -->
