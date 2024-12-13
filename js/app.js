@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ArticleManager.init();
 });
 
+
 //  pour tester cette fonctionnalité
 //  1/ ouvrir la console
 //  2/ taper ArticleManager.addUnavailable('plats-article-1')
