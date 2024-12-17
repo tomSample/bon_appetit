@@ -24,7 +24,7 @@
 
 
 html {
-    background-color: var(--darkwhite);
+    background-color: var(--white);
 }
 
 body.no-scroll {
@@ -3066,3 +3066,23 @@ margin-bottom: .5rem;
         display: none;
     }
 };
+
+/* Historique */
+
+#history__title {
+    display: flex;
+    margin-top: 1005rem;
+    justify-content: center;
+}
+
+.sectionHeaderHistory {
+    display: flex;
+    margin-top: 1005rem;
+    justify-content: center;
+}
+
+#history__page {
+    display: flex;
+    margin-top: 1005rem;
+    justify-content: center;
+}
