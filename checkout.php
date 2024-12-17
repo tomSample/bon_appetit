@@ -84,6 +84,7 @@
     </div>
 </div>
 
+
 <!-- Récapitulatif commande et bouton commander/payer -->
 
     <div id="checkout-container-right">
@@ -91,6 +92,7 @@
             <div id="checkout-content-title">
                 <div id="checkout-recap-title"><h2>Récapitulatif</h2></div>
             </div>
+            
 
 <!-- Récapitulatif commande récupérée du drawer (nom de classe/id) -->
 
@@ -118,39 +120,107 @@
                 }
                 ?>
             </div>
+
+            <!-- Choix mode de livraison -->
+            <div id="delivery-buttons-container">
+                <form>
+                    <p>Veuillez choisir un mode de livraison :</p>
+                    <div id="radio-label-container">
+                        <div id="radio-label-btn">
+                            <label for="livraison1">Vélo</label>
+                            <input type="radio" id="livraison1" name="livraison" value="bike" />
+                        </div>
+
+                        <div id="radio-label-btn">
+                            <label for="livraison2">Scooter</label>
+                            <input type="radio" id="livraison2" name="livraison" value="scooter" />
+                        </div>
+                        
+                        <div id="radio-label-btn">
+                            <label for="livraison3">Voiture</label>
+                            <input type="radio" id="livraison3" name="livraison" value="car" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+
             <div id="confirm-order-button-box">
                 <?php if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) { ?>
                 <button id="confirm-order-button" href="" class="_borderradius10">Commander et payer</button> <?php } ?>
             </div>
+
+
+<!-- Total commande -->
 
             <div id="checkout-content">
                 <div>
                     <h3>Total commande</h3>
                 </div>
                 <div id="checkout-content-box">
+
+<!-- Calcul du sous-total (prix unitaire * quantité) -->
+
                     <div>
                         <p>Sous-total</p>
                     </div>
                     <div>
-                        <p>"formule calcul"</p>
+                        <p>
+                        <?php
+                        $sousTotal=0;
+                        if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+                            foreach ($_SESSION['cart'] as $item) {
+                                $sousTotal += $item['price'] * $item['quantity'];
+                        }
+                    echo number_format($sousTotal, 2, ',', ' ') . ' €';
+                    }
+                    ?>
+                    </p>
                     </div>
                 </div>
+
+<!-- Calcul du coût de la livraison (10% si total sup à 100e / 5% si inf à 50 / 7.5% si entre les deux-->
 
                 <div id="checkout-content-box">
                     <div>
                         <p>Livraison</p>
                     </div>
                     <div>
-                        <p>"formule calcul"</p>
+                        <p>
+                        <?php
+                        $coutLivraison=0;
+                        if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+                            if ($sousTotal > 100) {
+                                    $tauxLivraison = 0.1;
+                                    echo("10%");
+                                } elseif ($sousTotal < 50) {
+                                    $tauxLivraison = 0.05;
+                                    echo("5%");
+                                } else {
+                                    $tauxLivraison = 0.075;
+                                    echo("7.5%");
+                                };
+                            };
+                        ?>
+                        </p>
                     </div>
                 </div>
 
+<!-- Calcul du total (sous total + livraison) -->
+
                 <div id="checkout-content-box">
                     <div>
-                        <h4>Total</h4>
+                        <h4>Total à payer</h4>
                     </div>
                     <div>
-                        <p>"formule calcul"</p>
+                        <p>
+                        <?php
+                        $total=0;
+                            if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+                                $total = $sousTotal + ($sousTotal * $tauxLivraison);
+                                echo number_format($total, 2, ',', ' ') . ' €';
+                            }
+                        ?>
+                        </p>
                     </div> 
 
                 </div>

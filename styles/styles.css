@@ -2057,6 +2057,21 @@ border-color: var(--black);
     padding-top: 5%;
 }
 
+#delivery-buttons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-block: 20px;
+}
+
+#radio-label-btn {
+    padding: 10px;
+}
+
+#radio-label-container {
+    display: flex;
+}
+
 /* ======= RESPONSIVE ======= */
 
 
