@@ -8,7 +8,7 @@
       
     <section id="history__page" class="fields">
         <div class="container__title" id="history__title">
-            <div class="sectionHeaderHistory">
+            <div class="sectionHeaderHistory" id="history__header">
                 <h1>Historique</h1>
             </div>
         </div>

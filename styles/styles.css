@@ -16,7 +16,7 @@
 }
 
 * {
-    margin: 0;
+    margin-top: 5rem;
     padding: 0;
     border: 0;
     color: var(--black);
@@ -3081,7 +3081,7 @@ margin-bottom: .5rem;
     justify-content: center;
 }
 
-#history__page {
+#history__header {
     display: flex;
     margin-top: 1005rem;
     justify-content: center;
