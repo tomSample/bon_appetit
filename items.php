@@ -5,7 +5,7 @@ $_SESSION['cart'] = [
         'id' => 1,
         'name' => 'Poulet',
         'price' => 10,
-        'quantity' => 1
+        'quantity' => 2
     ],
     [
         'id' => 2,
@@ -17,7 +17,7 @@ $_SESSION['cart'] = [
         'id' => 3,
         'name' => 'Poisson',
         'price' => 20,
-        'quantity' => 3
+        'quantity' => 1
     ],
 ];
 ?>

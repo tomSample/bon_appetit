@@ -189,15 +189,15 @@
                         <?php
                         $coutLivraison=0;
                         if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
-                            if ($sousTotal > 99) {
+                            if ($sousTotal > 100) {
                                     $tauxLivraison = 0.1;
                                     echo("10%");
-                                } elseif ($sousTotal < 51) {
-                                    $tauxLivraison = 0.05;
-                                    echo("5%");
-                                } else {
+                                } elseif ($sousTotal > 50) {
                                     $tauxLivraison = 0.075;
                                     echo("7.5%");
+                                } else {
+                                    $tauxLivraison = 0.05;
+                                    echo("5%");
                                 };
                             };
                         ?>
